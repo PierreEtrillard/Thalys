@@ -1,0 +1,13 @@
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@mixin reducer{
+    transform: scale(0);
+}
