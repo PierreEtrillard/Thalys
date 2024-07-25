@@ -1,0 +1,8 @@
+@use 'colors'as color;
+
+    html body{
+        margin: 0;
+        padding: 0;
+        background-color: color.$accent;
+    }
+    

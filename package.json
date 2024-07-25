@@ -4,9 +4,25 @@
   "description": "Site vitrine de Thalys développement",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "sass src/scss/main.scss dist/css/raw-styles.css",
+    "minify:css": "postcss dist/css/raw-styles.css --use autoprefixer --use cssnano --output dist/css/styles.css",
+    "build:js": "terser src/js/index.js --compress --mangle --output dist/js/index.js",
+    "build:html": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/index.html -o dist/index.html",
+    "build": "npm run build:css && npm run minify:css && npm run build:js && npm run build:html"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.77.8",
+    "terser": "^5.31.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.4",
+    "html-minifier-terser": "^5.1.1",
+    "postcss": "^8.4.40",
+    "postcss-cli": "^11.0.0"
+  }
 }
