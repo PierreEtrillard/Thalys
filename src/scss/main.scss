@@ -12,39 +12,61 @@ header{
     flex-direction: column;
     border-bottom: solid 0.2rem color.$warn;
 }
+//  ****      BANNIERE TITRE ET BOUTON MENU     ****
 #top-header{
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-around;      
   align-items: center;
 }
+//  bouton d'activation du menu
 #menuTrigger {
     border: none;
     @include layout.centralizer;
     flex-direction: column;
     z-index: 10;
     cursor: pointer;
-  .band {
+  .stripe {
     background-color: color.$primary;
     margin: 0.3rem;;
     border-radius:50px ;
     height: 0.1rem;
     width: 2rem;
-    transition: ease-out;
+    transition: ease-out 200ms;
+    &-top-opened{
+      transform-origin: right ;
+      transform: rotate(-35deg) scaleX(1.2);
+    }
+    &-middle-opened{
+      opacity: 0;
+    }
+    &-bottom-opened{
+      transform-origin: right ;
+      transform: rotate(35deg) scaleX(1.2);
+    }
   }
 }
+//  ****      -------------------------     ****
+.menu{
+    position: fixed;
+    right: 0;
+    background-color: color.$light;
+    height: 100vh;
+    width: 100vw;
+    transition: 500ms;
+    &-hidden{
+      transform-origin: right;
+      transform: translateX(100%);
+    }
+}
+//  ****      -------------------------     ****
 .introduction{
     background-color: color.$primary;
     color: white;
     @include layout.centralizer;
     flex-direction: column
 }
+//  ****      -------------------------     ****
 .disapeared{
-    @include animation.reducer;
-}
-.menu{
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-
+    opacity :0;
 }
