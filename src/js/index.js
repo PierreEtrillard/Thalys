@@ -14,3 +14,4 @@ function toggleMenu() {
   menuStripes[2].classList.toggle('stripe-bottom-opened')
 
 }
+function postToIframe(event){alert('envoie de'+ event.target)}
