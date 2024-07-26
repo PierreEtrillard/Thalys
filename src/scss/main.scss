@@ -1,72 +1,102 @@
 @use "colors" as color;
 @use "layouts" as layout;
 @use "animations" as animation;
+@use "typos" as *;
 
 html body {
+  font-family: "body", sans-serif;
   margin: 0;
   padding: 0;
   background-color: color.$light;
 }
-header{
-    display: flex;
-    flex-direction: column;
-    border-bottom: solid 0.2rem color.$warn;
+li {
+  list-style: none;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 0.2rem color.$warn;
 }
 //  ****      BANNIERE TITRE ET BOUTON MENU     ****
-#top-header{
+#top-header {
+  font-family: "title", sans-serif;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;      
+  justify-content: space-around;
   align-items: center;
 }
 //  bouton d'activation du menu
 #menuTrigger {
-    border: none;
-    @include layout.centralizer;
-    flex-direction: column;
-    z-index: 10;
-    cursor: pointer;
+  border: none;
+  @include layout.centralizer;
+  flex-direction: column;
+  z-index: 10;
+  cursor: pointer;
   .stripe {
     background-color: color.$primary;
-    margin: 0.3rem;;
-    border-radius:50px ;
+    margin: 0.3rem;
+    border-radius: 50px;
     height: 0.1rem;
     width: 2rem;
     transition: ease-out 200ms;
-    &-top-opened{
-      transform-origin: right ;
+    &-top-opened {
+      transform-origin: right;
       transform: rotate(-35deg) scaleX(1.2);
     }
-    &-middle-opened{
+    &-middle-opened {
       opacity: 0;
     }
-    &-bottom-opened{
-      transform-origin: right ;
+    &-bottom-opened {
+      transform-origin: right;
       transform: rotate(35deg) scaleX(1.2);
     }
   }
 }
 //  ****      -------------------------     ****
-.menu{
-    position: fixed;
-    right: 0;
-    background-color: color.$light;
-    height: 100vh;
+.menu {
+  color: color.$primary;
+  position: fixed;
+  right: 0;
+  background-color: color.$light;
+  height: 100vh;
+  width: 100vw;
+  transition: 500ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  &-hidden {
+    transform-origin: right;
+    transform: translateX(100%);
+  }
+  li {
+    margin: 2rem;
+    border-bottom: 1px solid white;
     width: 100vw;
-    transition: 500ms;
-    &-hidden{
-      transform-origin: right;
-      transform: translateX(100%);
+  }
+  a {
+    text-decoration: none;
+    color: color.$primary;
+    font-size: 2rem;
+    display: block;
+    width: 100vw;
+    &:hover {
+      color: color.$accent;
     }
+  }
 }
 //  ****      -------------------------     ****
-.introduction{
-    background-color: color.$primary;
-    color: white;
-    @include layout.centralizer;
-    flex-direction: column
+.introduction {
+  background-color: color.$primary;
+  color: white;
+  @include layout.centralizer;
+  flex-direction: column;
 }
 //  ****      -------------------------     ****
-.disapeared{
-    opacity :0;
+.presentation {
+  color: color.$grey;
+  font-family: "citation", sans-serif;
+  @include layout.centralizer;
+  flex-direction: column;
+  font-size: 1.5rem;
 }
