@@ -44,50 +44,78 @@
         <section id="feeling">
             <h3>VOUS SENTEZ-VOUS PARFOIS ENVAHIS PAR...</h3>
             <h4>La lassitude ?</h4>
-            <img src="../assets/" alt="photo d'une personne pensive devant la mer">
+            <img src="../assets/anais_perplexe.webp" alt="photo d'une personne pensive devant la mer">
             <p>Comme un vide en vous, une fatigue pesante qui ne passe pas?</p>
             <h4>La solitude ?</h4>
-            <img src="../assets/" alt="oiseau isolé">
+            <img src="../assets/solitude.webp" alt="oiseau isolé">
             <p>L'impression que personne ne mesure ce que vous vivez vraiment?</p>
             <h4>La confusion ?</h4>
-            <img src="../assets/" alt="homme dans le brouillard">
+            <img src="../assets/brume.webp" alt="homme dans le brouillard">
             <p>Comme du brouillard dans la tête, de la difficulté à prendre des décisions? </p>
-            <div class="cta">
-                <button class="cta-btn">
-                    <a href="contact.html" class="link">Me contacter</a>
-                </button>
-            </div>
+
+            <button class="cta-btn">
+                <a href="contact.html" class="link">Me contacter</a>
+            </button>
+
         </section>
         <section id="target">
             <h3>ASPIREZ VOUS SINCEREMENT A RETROUVER...</h3>
             <h4>La joie de vivre ?</h4>
-            <img src="../assets/" alt="enfant jouant avec les vagues de la mer">
+            <img src="../assets/anais_fuite.webp" alt="enfant jouant avec les vagues de la mer">
             <p>Retrouver de la spontanéité, le plaisir des bonheurs simples, de la liberté, de la créativité et de la
                 légèreté!</p>
             <h4>La sérénité ?</h4>
-            <img src="../assets/" alt="couple détendu marchant sur la plage">
+            <img src="../assets/anais_arc_en_ciel.webp" alt="couple détendu marchant sur la plage">
             <p>Goûter l'apaisement d'un accueil bienveillant, recevoir ​une écoute authentique et un soutien positif
                 inconditionnel.</p>
             <h4>La force de passer à l'action ?</h4>
-            <img src="../assets/" alt="plongeur en extention vers le ciel">
+            <img src="../assets/anais_lancement.webp" alt="plongeur en extention vers le ciel">
             <p>Oser découvrir les peurs qui vous entravent, se reconnecter à ce qui vous inspire et trouver le courage
                 de faire ce qui est important pour vous.</p>
             <div class="cta">
-                <img src="" alt="surfeur s'élançant vers la mer">
+                <p>envie de vous lançer ?</p>
                 <button class="cta-btn">
-                    <a href="contact.html" class="link">un clic pour repartir</a><img src="../assets/chevron.svg"
-                        alt="fleche vers contact">
+                    <a href="contact.html">
+                        <p>un clic pour repartir</p>
+                        <img class="icon" src="../assets/chevron.svg">
+                    </a>
                 </button>
             </div>
         </section>
-        <section id="advise">
+        <section id="advices">
             <h5>Ce que nos clients en disent</h5>
             <div id="carrousel">
-
+                <img class="arrow-crsl arrow-crsl-left" src="../assets/chevron-pink.svg">
+                <div class="comment comment-selected">
+                    <blockquote>“L'écoute patiente et encourageante de Nathalie m'a permis de m'épancher sans gêne. Cela
+                        m'a donné le courage de prendre mes responsabilités et la force de
+                        passer a l'action.”
+                    </blockquote>
+                </div>
+                <div class="comment">
+                    <blockquote>"Grâce à des questions bien ciblées elle m'a aidé à faire des liens entre
+                        des faits passés vécus et des émotions présentes."</blockquote>
+                </div>
+                <div class="comment">
+                    <blockquote>“Avec beaucoup de tact, de respect et de douceur, Nathalie m'a aidée à poser
+                        les mots sur les maux. Je me suis sentie comprise et écoutée.”</blockquote>
+                </div>
+                <img class="arrow-crsl arrow-crsl-right" src="../assets/chevron-pink.svg">
             </div>
-            <select name="selector" id="comment-selector">
-                <option value="1" type="radio"></option>
-            </select>
+            <form id="comment-selector">
+                <label class="pink-radio">
+                    <input name="commment-selection" value="0" type="radio" checked></input>
+                    <span class="radio-mark"></span>
+                </label>
+                <label class="pink-radio">
+                    <input name="commment-selection" value="1" type="radio"></input>
+                    <span class="radio-mark"></span>
+                </label>
+                <label class="pink-radio">
+                    <input name="commment-selection" value="2" type="radio"></input>
+                    <span class="radio-mark"></span>
+                </label>
+            </form>
         </section>
     </main>
     <footer>

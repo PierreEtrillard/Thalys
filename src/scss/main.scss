@@ -2,22 +2,34 @@
 @use "layouts" as layout;
 @use "animations" as animation;
 @use "typos" as *;
-
+@use "buttons" as *;
 html body {
-  font-family: "body", sans-serif;
+  width: 100vw;
   margin: 0;
   padding: 0;
+  font-family: "body", sans-serif;
   background-color: color.$light;
 }
 li {
   list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  object-fit: cover;
+  max-width: 100vw;
+}
+blockquote {
+  font-family: citation, sans-serif;
 }
 header {
   display: flex;
   flex-direction: column;
   border-bottom: solid 0.2rem color.$warn;
 }
-//  ****      BANNIERE TITRE ET BOUTON MENU     ****
+/* _________________________________________________________
+  ****      BANNIERE TITRE ET BOUTON MENU     ****          */
 #top-header {
   font-family: "title", sans-serif;
   display: flex;
@@ -75,7 +87,6 @@ header {
     width: 100vw;
   }
   a {
-    text-decoration: none;
     color: color.$primary;
     font-size: 2rem;
     display: block;
@@ -99,4 +110,81 @@ header {
   @include layout.centralizer;
   flex-direction: column;
   font-size: 1.5rem;
+}
+/* _________________________________________________________
+  ****      SECTIONS ACCUEIL     ****          */
+section {
+  background-color: color.$grey;
+  display: flex;
+  @include layout.centralizer;
+  flex-direction: column;
+  color: white;
+}
+.cta {
+  background-image: url("../../assets/anais_se_lancer.webp");
+  background-size: cover;
+  width: 100%;
+  height: 605px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-top: solid 0.2rem color.$accent;
+  color: color.$warn;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#advices {
+  border-top: solid 0.2rem color.$accent;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem ;
+  h5 {
+    color: color.$accent;
+    font-size: 1.5rem;
+  }
+}
+#carrousel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 170px;
+  position: relative;
+  .arrow-crsl{
+    cursor: pointer;
+    height: 1.2rem;
+    z-index: 1;
+    position: absolute;
+    top: 32%;
+    &-left{
+      right: 45vw;
+      transform: rotateY(180deg);
+    }
+    &-right{
+      left: 45vw;
+    }
+  }
+}
+.comment {
+  position: absolute;
+  top: 0;
+  background-color: color.$grey;
+  border-radius: 15px;
+  width: 80vw;
+  transition: 800ms;
+  transform-origin: right bottom;
+  transform: rotate(90deg) scaleX(0) translateX(50%);
+  blockquote{
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  &-selected {
+    transform: rotate(0) scaleX(1);
+  }
+}
+/*     -------------------   FOOTER  -------------------     */
+footer{
+  background-color: color.$primary;
 }
