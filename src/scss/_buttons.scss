@@ -1,4 +1,6 @@
 @use "colors" as color;
+@use "layouts" as layout;
+@use "animations" as *;
 .cta-btn {    
     background-image: linear-gradient(to right, color.$warn 0%, adjust-hue(color.$warn, 20deg)  51%, color.$warn  100%);
     margin: 10px;
@@ -29,7 +31,27 @@
         }
     }
   }
- // BOUTON RADIO DU CARROUSEL
+  #scrollUp-btn{    
+    position: fixed;
+    right: 2rem;
+    bottom: 5rem;
+    display: flex;
+    @include layout.centralizer;
+    border-radius: 50px;
+    height: 3rem;
+    width: 3rem;
+    background-image: linear-gradient(to top right, color.$accent 0%, adjust-hue(color.$accent, 40deg)  51%, color.$accent 100%);
+    transition: 200ms;
+    &:hover {
+        background-position: left center; /* change the direction of the change here */
+        box-shadow: 0 0 20px #eee;
+    }
+    img{
+        transform: rotate(-90deg)scaleX(0.5);
+        background-image: url("../../assets/chevron-pink.svg");        
+    }
+  }
+ // BOUTONS RADIO DU CARROUSEL
 
  /* cache le bouton radio */
 .pink-radio input[type="radio"] {

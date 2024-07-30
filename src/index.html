@@ -9,10 +9,14 @@
 </head>
 
 <body>
+    <button id="scrollUp-btn" class="hidden" onclick="scrollUp()">
+        <img src="../assets/chevron.svg" alt="icon fleche vers le haut">
+        <!-- <img id="scrollUp-btn-bg"  src="../assets/chevron.svg" alt="icon fleche vers le haut"> -->
+    </button>
     <header>
         <div id="top-header">
             <h1>Nathalie GODIER</h1>
-            <button id="menuTrigger" click="toggleMenu">
+            <button id="menuTrigger" onclick="toggleMenu()">
                 <div class="stripe"></div>
                 <div class="stripe"></div>
                 <div class="stripe"></div>
@@ -43,13 +47,13 @@
     <main>
         <section id="feeling">
             <h3>VOUS SENTEZ-VOUS PARFOIS ENVAHIS PAR...</h3>
-            <h4>La lassitude ?</h4>
+            <h4 class="feelings">La lassitude ?</h4>
             <img src="../assets/anais_perplexe.webp" alt="photo d'une personne pensive devant la mer">
             <p>Comme un vide en vous, une fatigue pesante qui ne passe pas?</p>
-            <h4>La solitude ?</h4>
+            <h4 class="feelings">La solitude ?</h4>
             <img src="../assets/solitude.webp" alt="oiseau isolé">
             <p>L'impression que personne ne mesure ce que vous vivez vraiment?</p>
-            <h4>La confusion ?</h4>
+            <h4 class="feelings">La confusion ?</h4>
             <img src="../assets/brume.webp" alt="homme dans le brouillard">
             <p>Comme du brouillard dans la tête, de la difficulté à prendre des décisions? </p>
 
@@ -126,8 +130,7 @@
         </form>
         <a href="tel:+33 6 69 21 96 95"> 06 69 21 96 95</a>
     </footer>
-    <iframe src="" frameborder="100"></iframe>
+    <!-- <iframe src="" frameborder="100"></iframe> -->
     <script src="js/index.js"></script>
 </body>
-
 </html>

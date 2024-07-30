@@ -3,6 +3,7 @@
 @use "animations" as animation;
 @use "typos" as *;
 @use "buttons" as *;
+
 html body {
   width: 100vw;
   margin: 0;
@@ -15,6 +16,7 @@ li {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 img {
   object-fit: cover;
@@ -23,13 +25,16 @@ img {
 blockquote {
   font-family: citation, sans-serif;
 }
+.hidden{
+  transform: scaleX(0);
+}
+/* _________________________________________________________
+  ****      BANNIERE TITRE ET BOUTON MENU     ****          */
 header {
   display: flex;
   flex-direction: column;
   border-bottom: solid 0.2rem color.$warn;
 }
-/* _________________________________________________________
-  ****      BANNIERE TITRE ET BOUTON MENU     ****          */
 #top-header {
   font-family: "title", sans-serif;
   display: flex;
@@ -96,7 +101,6 @@ header {
     }
   }
 }
-//  ****      -------------------------     ****
 .introduction {
   background-color: color.$primary;
   color: white;
@@ -112,13 +116,19 @@ header {
   font-size: 1.5rem;
 }
 /* _________________________________________________________
-  ****      SECTIONS ACCUEIL     ****          */
+  ****      ------------MAIN-------------     ****
+                      Sections                            */
 section {
   background-color: color.$grey;
   display: flex;
   @include layout.centralizer;
   flex-direction: column;
   color: white;
+  .feelings{
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s;
+  }
 }
 .cta {
   background-image: url("../../assets/anais_se_lancer.webp");
@@ -130,9 +140,14 @@ section {
   align-items: center;
   justify-content: space-around;
   border-top: solid 0.2rem color.$accent;
-  color: color.$warn;
   font-size: 2rem;
   font-weight: bold;
+  p{
+    color: black;
+  }
+  p::after{
+    color: color.$warn;
+  }
 }
 #advices {
   border-top: solid 0.2rem color.$accent;
