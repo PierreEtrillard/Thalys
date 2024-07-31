@@ -47,13 +47,13 @@
     <main>
         <section id="feeling">
             <h3>VOUS SENTEZ-VOUS PARFOIS ENVAHIS PAR...</h3>
-            <h4 class="feelings">La lassitude ?</h4>
+            <h4 class="feelings hidden-smooth">La lassitude ?</h4>
             <img src="../assets/anais_perplexe.webp" alt="photo d'une personne pensive devant la mer">
             <p>Comme un vide en vous, une fatigue pesante qui ne passe pas?</p>
-            <h4 class="feelings">La solitude ?</h4>
+            <h4 class="feelings hidden-smooth">La solitude ?</h4>
             <img src="../assets/solitude.webp" alt="oiseau isolé">
             <p>L'impression que personne ne mesure ce que vous vivez vraiment?</p>
-            <h4 class="feelings">La confusion ?</h4>
+            <h4 class="feelings hidden-smooth">La confusion ?</h4>
             <img src="../assets/brume.webp" alt="homme dans le brouillard">
             <p>Comme du brouillard dans la tête, de la difficulté à prendre des décisions? </p>
 
@@ -64,15 +64,15 @@
         </section>
         <section id="target">
             <h3>ASPIREZ VOUS SINCEREMENT A RETROUVER...</h3>
-            <h4>La joie de vivre ?</h4>
+            <h4 class="targets hidden">La joie de vivre ?</h4>
             <img src="../assets/anais_fuite.webp" alt="enfant jouant avec les vagues de la mer">
             <p>Retrouver de la spontanéité, le plaisir des bonheurs simples, de la liberté, de la créativité et de la
                 légèreté!</p>
-            <h4>La sérénité ?</h4>
+            <h4 class="targets hidden">La sérénité ?</h4>
             <img src="../assets/anais_arc_en_ciel.webp" alt="couple détendu marchant sur la plage">
             <p>Goûter l'apaisement d'un accueil bienveillant, recevoir ​une écoute authentique et un soutien positif
                 inconditionnel.</p>
-            <h4>La force de passer à l'action ?</h4>
+            <h4 class="targets hidden">La force de passer à l'action ?</h4>
             <img src="../assets/anais_lancement.webp" alt="plongeur en extention vers le ciel">
             <p>Oser découvrir les peurs qui vous entravent, se reconnecter à ce qui vous inspire et trouver le courage
                 de faire ce qui est important pour vous.</p>
@@ -95,14 +95,19 @@
                         m'a donné le courage de prendre mes responsabilités et la force de
                         passer a l'action.”
                     </blockquote>
+                    <div class="triangle-down"></div>
                 </div>
                 <div class="comment">
                     <blockquote>"Grâce à des questions bien ciblées elle m'a aidé à faire des liens entre
-                        des faits passés vécus et des émotions présentes."</blockquote>
+                        des faits passés vécus et des émotions présentes."
+                    </blockquote>
+                    <div class="triangle-down"></div>
                 </div>
                 <div class="comment">
                     <blockquote>“Avec beaucoup de tact, de respect et de douceur, Nathalie m'a aidée à poser
-                        les mots sur les maux. Je me suis sentie comprise et écoutée.”</blockquote>
+                        les mots sur les maux. Je me suis sentie comprise et écoutée.”
+                    </blockquote>
+                    <div class="triangle-down"></div>
                 </div>
                 <img class="arrow-crsl arrow-crsl-right" src="../assets/chevron-pink.svg">
             </div>
@@ -123,14 +128,34 @@
         </section>
     </main>
     <footer>
-        <form onSubmit="postToIframe(event)">
+        <form onSubmit="postToMailer(event)">
+            <label for="message">Si vous avez envie qu'on se rencontre, je vous invite à me laisser un message</label>
             <textarea name="message" id="message-box" placeholder="votre message"></textarea>
-            <input type="email">
-            <button type="submit">Envoyer</button>
+            <label for="email">et votre email pour que vous contact dans les plus brefs délais</label>
+            <input type="email" name="email" placeholder="votre@mail.com">
+            <button id="sender-btn" type="submit">Envoyer</button>
         </form>
-        <a href="tel:+33 6 69 21 96 95"> 06 69 21 96 95</a>
+
+        <button id="call-btn">
+            <a  href="tel:+33 6 69 21 96 95">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+             06 69 21 96 95
+            </a>
+        </button>
+        <p>
+            8 rue de Malabry <br>
+            35 780 La Richardais <br>
+            FRANCE <br>
+        </p>
+        <a href="pages/legal.html"></a>
+        <a href="pages/confidentiality.html"></a>
+        <img src="../assets/logo-white.webp" alt="logo de thalys-developpent" aria-describedby="oiseau s'envolant">
+        <p>© 2024 par Thalys Développement.<br>
+            Contenu créé en collaboration avec Marie-Charlotte Etrillard. <br>
+            Développement web par Pierre Etrillard
+        </p>
     </footer>
-    <!-- <iframe src="" frameborder="100"></iframe> -->
     <script src="js/index.js"></script>
 </body>
+
 </html>

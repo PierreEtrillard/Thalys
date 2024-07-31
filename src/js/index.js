@@ -4,6 +4,7 @@ const scrollUpBtn = document.getElementById("scrollUp-btn");
 const menu = document.querySelector(".menu");
 const menuStripes = document.querySelectorAll(".stripe");
 const feelingsTitles = document.querySelectorAll(".feelings");
+const targetsTitles = document.querySelectorAll(".targets");
 const comments = document.querySelectorAll(".comment");
 let currentCommentIndex = 0;
 const commentSelector = document.getElementById("comment-selector");
@@ -18,9 +19,13 @@ let hideScrollUpBtnTimeout;
 // Ajout d'un écouteur d'événement pour le scroll
 window.addEventListener("scroll", () => scrollUpBtnAppeared(0.2));
 
-// Initialisation du DOMContentLoaded
+/* Initialisation du DOMContentLoaded avant le declenchement du listener sur les titre de la 
+section 'feeling' et 'target*/
 document.addEventListener("DOMContentLoaded", () => {
   feelingsTitles.forEach((element) => {
+    viewPortEntranceObserver.observe(element);
+  });
+  targetsTitles.forEach((element) => {
     viewPortEntranceObserver.observe(element);
   });
 });
@@ -50,7 +55,7 @@ nextComment.addEventListener("click", () => {
 commentSwitcherState();
 
 // Démarrage du carrousel de commentaires
-commentDisplayer(6); // Affiche le carrousel toutes les n secondes
+commentDisplayer(8); // Affiche un commentaire dans le carrousel toutes les n secondes
 
 //----------------------------FONCTIONS------------------------------//
 
@@ -93,14 +98,15 @@ function scrollUp() {
 
 // Observeur d'entrée des éléments dans le viewport
 const observerOptions = {
-  threshold: 0.1, // Le seuil de 0.1 signifie que l'observer déclenchera une entrée lorsque 10% de l'élément sera visible dans le viewport.
+  threshold: 1, // Le seuil de 1.4 signifie que l'observer déclenchera une entrée lorsque 100% de l'élément sera visible dans le viewport.
 };
 
 const viewPortEntranceObserver = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("appeared");
+        console.log(entry.target.textContent +"apparait dans le viewPort");
+        entry.target.classList.remove(...["hidden","hidden-smooth"]);
         observer.unobserve(entry.target); // Désabonne pour éviter les fuites de mémoire
       }
     });

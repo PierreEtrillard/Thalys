@@ -25,8 +25,16 @@ img {
 blockquote {
   font-family: citation, sans-serif;
 }
-.hidden{
+.hidden {
   transform: scaleX(0);
+}
+.hidden-smooth {
+  opacity: 0;
+  transform: scale(0);
+}
+.appeared {
+  opacity: 1;
+  transform: none;
 }
 /* _________________________________________________________
   ****      BANNIERE TITRE ET BOUTON MENU     ****          */
@@ -124,10 +132,13 @@ section {
   @include layout.centralizer;
   flex-direction: column;
   color: white;
-  .feelings{
-    opacity: 0;
-    transform: scale(0);
-    transition: all 1s;
+  .feelings {
+    font-size: 2rem;
+    transition: all 2s;
+  }
+  .targets {
+    font-size: 2rem;
+    transition: all 2s;
   }
 }
 .cta {
@@ -142,10 +153,10 @@ section {
   border-top: solid 0.2rem color.$accent;
   font-size: 2rem;
   font-weight: bold;
-  p{
+  p {
     color: black;
   }
-  p::after{
+  p::after {
     color: color.$warn;
   }
 }
@@ -155,29 +166,29 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2rem ;
+  padding-bottom: 2rem;
   h5 {
     color: color.$accent;
     font-size: 1.5rem;
   }
 }
-#carrousel{
+#carrousel {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 170px;
   position: relative;
-  .arrow-crsl{
+  .arrow-crsl {
     cursor: pointer;
     height: 1.2rem;
     z-index: 1;
     position: absolute;
     top: 32%;
-    &-left{
+    &-left {
       right: 45vw;
       transform: rotateY(180deg);
     }
-    &-right{
+    &-right {
       left: 45vw;
     }
   }
@@ -185,21 +196,67 @@ section {
 .comment {
   position: absolute;
   top: 0;
-  background-color: color.$grey;
-  border-radius: 15px;
   width: 80vw;
+  overflow: hidden;
+  padding-bottom: 6rem;
   transition: 800ms;
   transform-origin: right bottom;
-  transform: rotate(90deg) scaleX(0) translateX(50%);
-  blockquote{
+  transform: rotate(90deg) scale(0) translateX(50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  blockquote {
+  width: 100%;
+    background-color: color.$grey;
+    border-radius: 15px;
     padding: 1rem;
     font-size: 1rem;
+    position: relative;
   }
   &-selected {
-    transform: rotate(0) scaleX(1);
+    transform: rotate(0) scale(1);
+  }
+  .triangle-down {
+      border-left: 3rem solid transparent;
+      border-top: 3rem solid #383746;
+      bottom: 30%;
+      height: 0;
+      position: absolute;
+      right: 40%;
+      transform: skewX(120deg);
+      width: 0;
   }
 }
+
 /*     -------------------   FOOTER  -------------------     */
-footer{
+footer {
+  padding: 1rem;
+  margin-bottom: 2rem;
   background-color: color.$primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  text-align: center;
+  img {
+    width: 50%;
+  }
+  form{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid 1px color.$accent ;
+    margin-bottom: 3rem;
+    textarea, input{
+      margin: 1rem;
+      width: 80vw;
+    }
+    button{
+      margin: 1rem;
+      width: 80vw;
+    }
+  }
 }
