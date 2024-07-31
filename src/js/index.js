@@ -157,7 +157,29 @@ async function commentDisplayer(delay){
   }, delay * 1000);
   }
 
-// Fonction de démonstration pour l'envoi du formulaire de contact (ajoute une action réelle ici)
+// Fonction d'envoi vers mail_sender.php
 function postToIframe(event) {
-  alert("Envoi de " + event.target);
+  event.preventDefault();
+  console.log('fetched');
+        
+  const message = document.getElementById('message').value;
+  const email = document.getElementById('client-email').value;
+  fetch('mail_sender.php',{
+    method:'Post',
+    headers:{
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body:new URLSearchParams({
+      'message': message,
+      'email': email
+    })
+  })
+  .then(response => response.text())
+  .then(data => {
+      alert(data);
+  })
+  .catch(error => {
+      console.error('Error:', error);
+      alert('An error occurred while sending the email.');
+  });
 }

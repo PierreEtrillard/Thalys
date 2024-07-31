@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Thalys développement</title>
-  <!-- Open Graph (Facebook and WhatsApp) -->
-  <meta property="og:title" content="Thalys Développement">
-  <meta property="og:description" content="Accompagnement Psychologique Bienveillant par Nathalie GODIER. Découvrez notre offre et contactez-nous pour un soutien empathique.">
-  <meta property="og:image" content="https://thalys-developpement.fr/assets/portrait_nat.webp">
-  <meta property="og:url" content="https://thalys-developpement.fr/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Thalys Développement">
+    <!-- Open Graph (Facebook and WhatsApp) -->
+    <meta property="og:title" content="Thalys Développement">
+    <meta property="og:description"
+        content="Accompagnement Psychologique Bienveillant par Nathalie GODIER. Découvrez notre offre et contactez-nous pour un soutien empathique.">
+    <meta property="og:image" content="https://thalys-developpement.fr/assets/portrait_nat.webp">
+    <meta property="og:url" content="https://thalys-developpement.fr/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Thalys Développement">
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Thalys Développement">
-        <meta name="twitter:description" content="Accompagnement Psychologique Bienveillant par Nathalie GODIER. Découvrez notre offre et contactez-nous pour un soutien empathique.">
-        <meta name="twitter:image" content="https://thalys-developpement.fr/assets/portrait_nat.webp">
-        <!-- <meta name="twitter:site" content="@thalys-developpement"> --><!--si compte twitter existant-->
-    </head>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thalys Développement">
+    <meta name="twitter:description"
+        content="Accompagnement Psychologique Bienveillant par Nathalie GODIER. Découvrez notre offre et contactez-nous pour un soutien empathique.">
+    <meta name="twitter:image" content="https://thalys-developpement.fr/assets/portrait_nat.webp">
+    <!-- <meta name="twitter:site" content="@thalys-developpement"> --><!--si compte twitter existant-->
+</head>
 
 <body>
     <button id="scrollUp-btn" class="hidden" onclick="scrollUp()">
@@ -142,11 +144,11 @@
         </section>
     </main>
     <footer>
-        <form onSubmit="postToMailer(event)">
+        <form id="mail-sender" onSubmit="postToMailer(event)">
             <label for="message">Si vous avez envie qu'on se rencontre, je vous invite à me laisser un message</label>
-            <textarea name="message" id="message-box" placeholder="votre message"></textarea>
-            <label for="email">et votre email pour que vous contact dans les plus brefs délais</label>
-            <input type="email" name="email" placeholder="votre@mail.com">
+            <textarea name="message" id="message" placeholder="votre message"></textarea>
+            <label for="client-email">et votre email pour que vous contact dans les plus brefs délais</label>
+            <input type="email" name="client-email" id="client-email" placeholder="votre@mail.com">
             <button id="sender-btn" type="submit">Envoyer</button>
         </form>
 
