@@ -119,12 +119,12 @@
     color: white;
     font-size: 1rem;
     padding: 0.5rem;
+    cursor: pointer;
     a{
         display: flex;
         @include layout.centralizer;
     }
 
-    cursor: pointer;
     svg {
         fill: white;
         width: 1rem;

@@ -3,13 +3,19 @@
 @use "animations" as animation;
 @use "typos" as *;
 @use "buttons" as *;
-
+$breakpoint: 830px;
+/* _________________________________________________________
+****             REGLES GLOBAL           ****          */
 html body {
   width: 100vw;
   margin: 0;
   padding: 0;
   font-family: "body", sans-serif;
   background-color: color.$light;
+}
+p,
+blockquote {
+  font-size: 1.5rem;
 }
 li {
   list-style: none;
@@ -49,6 +55,11 @@ header {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
+  @media (width > $breakpoint) {
+    color: white;
+    position: absolute;
+    left: 20%;
+  }
 }
 //  bouton d'activation du menu
 #menuTrigger {
@@ -76,36 +87,57 @@ header {
       transform: rotate(35deg) scaleX(1.2);
     }
   }
+  @media (width > $breakpoint) {
+    display: none;
+  }
 }
 //  ****      -------------------------     ****
 .menu {
   color: color.$primary;
-  position: fixed;
-  right: 0;
   background-color: color.$light;
-  height: 100vh;
   width: 100vw;
   transition: 500ms;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  &-hidden {
-    transform-origin: right;
-    transform: translateX(100%);
+  @media (width < $breakpoint) {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    flex-direction: column;
+
+    &-hidden {
+      transform-origin: right;
+      transform: translateX(100%);
+    }
+    li {
+      border-bottom: 1px solid white;
+      width: 100vw;
+    }
   }
-  li {
-    margin: 2rem;
-    border-bottom: 1px solid white;
-    width: 100vw;
+  @media (width > $breakpoint) {
+    ul {
+      display: flex;
+      @include layout.centralizer;
+    }
+    li {
+      margin: 2rem;
+    }
   }
   a {
     color: color.$primary;
     font-size: 2rem;
     display: block;
-    width: 100vw;
     &:hover {
       color: color.$accent;
+    }
+    @media (width > $breakpoint) {
+      padding-top: 1rem;
+      border-top: solid 2px transparent;
+      &:hover,
+      &:focus {
+        border-top: solid 2px color.$accent;
+      }
     }
   }
 }
@@ -114,6 +146,30 @@ header {
   color: white;
   @include layout.centralizer;
   flex-direction: column;
+  @media (width > $breakpoint) {
+    align-items: flex-start;
+    padding-left: 5rem;
+    order: -1;
+    position: relative;
+    height: 18rem;
+    img{
+      position: absolute;
+      top:20%;
+      left: 25%;
+    }
+    h2 {
+      position: absolute;
+      top: 1rem;
+      right: 13%;
+      width: 30%;
+    }
+    blockquote {
+      position: absolute;
+      bottom: 1rem;
+      right: 12%;
+      width: 28%;
+    }
+  }
 }
 //  ****      -------------------------     ****
 .presentation {
@@ -121,7 +177,9 @@ header {
   font-family: "citation", sans-serif;
   @include layout.centralizer;
   flex-direction: column;
-  font-size: 1.5rem;
+  @media (width > $breakpoint) {
+    flex-direction: row-reverse;
+  }
 }
 /* _________________________________________________________
   ****      ------------MAIN-------------     ****
@@ -207,7 +265,7 @@ section {
   align-items: center;
   justify-content: center;
   blockquote {
-  width: 100%;
+    width: 100%;
     background-color: color.$grey;
     border-radius: 15px;
     padding: 1rem;
@@ -218,14 +276,14 @@ section {
     transform: rotate(0) scale(1);
   }
   .triangle-down {
-      border-left: 3rem solid transparent;
-      border-top: 3rem solid #383746;
-      bottom: 30%;
-      height: 0;
-      position: absolute;
-      right: 40%;
-      transform: skewX(120deg);
-      width: 0;
+    border-left: 3rem solid transparent;
+    border-top: 3rem solid #383746;
+    bottom: 30%;
+    height: 0;
+    position: absolute;
+    right: 40%;
+    transform: skewX(120deg);
+    width: 0;
   }
 }
 
@@ -243,18 +301,19 @@ footer {
   img {
     width: 50%;
   }
-  form{
-    display: flex;    
+  form {
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    border-bottom: solid 1px color.$accent ;
+    border-bottom: solid 1px color.$accent;
     margin-bottom: 3rem;
-    textarea, input{
+    textarea,
+    input {
       margin: 1rem;
       width: 80vw;
     }
-    button{
+    button {
       margin: 1rem;
       width: 80vw;
     }
