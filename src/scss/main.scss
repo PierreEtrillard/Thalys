@@ -49,16 +49,23 @@ header {
   flex-direction: column;
   border-bottom: solid 0.2rem color.$warn;
 }
-#top-header {
+.top-header {
   font-family: "title", sans-serif;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  @media (width > $breakpoint) {
-    color: white;
-    position: absolute;
-    left: 20%;
+  @media (width < $breakpoint) {
+    img {
+      display: none;
+    }
+  }
+  &-accueil {
+    @media (width > $breakpoint) {
+      color: white;
+      position: absolute;
+      left: 20%;
+    }
   }
 }
 //  bouton d'activation du menu
@@ -124,16 +131,20 @@ header {
       margin: 2rem;
     }
   }
-  a {
+  .link {
     color: color.$primary;
     font-size: 2rem;
     display: block;
+
     &:hover {
       color: color.$accent;
     }
     @media (width > $breakpoint) {
       padding-top: 1rem;
       border-top: solid 2px transparent;
+      &-selected {
+        border-top: solid 2px color.$primary;
+      }
       &:hover,
       &:focus {
         border-top: solid 2px color.$accent;
@@ -152,10 +163,10 @@ header {
     order: -1;
     position: relative;
     height: 18rem;
-    img{
+    img {
       position: absolute;
-      top:20%;
-      left: 25%;
+      top: 30%;
+      left: 23%;
     }
     h2 {
       position: absolute;
@@ -165,7 +176,7 @@ header {
     }
     blockquote {
       position: absolute;
-      bottom: 1rem;
+      bottom: 3rem;
       right: 12%;
       width: 28%;
     }
@@ -179,6 +190,10 @@ header {
   flex-direction: column;
   @media (width > $breakpoint) {
     flex-direction: row-reverse;
+    justify-content: space-around;
+    p {
+      width: 30%;
+    }
   }
 }
 /* _________________________________________________________
@@ -190,13 +205,24 @@ section {
   @include layout.centralizer;
   flex-direction: column;
   color: white;
-  .feelings {
-    font-size: 2rem;
-    transition: all 2s;
-  }
+  .feelings,
   .targets {
     font-size: 2rem;
     transition: all 2s;
+  }
+  @media (width > $breakpoint) {
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 50%;
+      p {
+        padding: 2rem;
+      }
+      &-reverse {
+        flex-direction: row-reverse;
+      }
+    }
   }
 }
 .cta {
@@ -211,6 +237,11 @@ section {
   border-top: solid 0.2rem color.$accent;
   font-size: 2rem;
   font-weight: bold;
+  @media (width > $breakpoint) {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
   p {
     color: black;
   }
@@ -290,7 +321,6 @@ section {
 /*     -------------------   FOOTER  -------------------     */
 footer {
   padding: 1rem;
-  margin-bottom: 2rem;
   background-color: color.$primary;
   display: flex;
   flex-direction: column;
@@ -298,9 +328,6 @@ footer {
   justify-content: space-evenly;
   color: white;
   text-align: center;
-  img {
-    width: 50%;
-  }
   form {
     display: flex;
     flex-direction: column;
@@ -309,13 +336,16 @@ footer {
     border-bottom: solid 1px color.$accent;
     margin-bottom: 3rem;
     textarea,
-    input {
-      margin: 1rem;
-      width: 80vw;
-    }
+    input,
     button {
       margin: 1rem;
       width: 80vw;
     }
+  }
+  a {
+    margin: 1rem;
+  }
+  img {
+    width: 26%;
   }
 }

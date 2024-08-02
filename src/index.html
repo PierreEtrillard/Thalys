@@ -25,13 +25,13 @@
 </head>
 
 <body>
-    <button id="scrollUp-btn" class="hidden" onclick="scrollUp()">
+    <button id="scrollUp-btn" class="hidden">
         <img src="../assets/chevron.svg" alt="icon fleche vers le haut">
     </button>
     <header>
-        <div id="top-header">
+        <div class="top-header top-header-accueil">
             <h1>Nathalie GODIER</h1>
-            <button id="menuTrigger" onclick="toggleMenu()">
+            <button id="menuTrigger">
                 <div class="stripe"></div>
                 <div class="stripe"></div>
                 <div class="stripe"></div>
@@ -39,22 +39,22 @@
         </div>
         <nav class="menu menu-hidden">
             <ul>
-                <li><a href="" class="link" selected>Accueil</a></li>
-                <li><a href="pages/offre.html" class="link">Mon offre</a></li>
-                <li><a href="pages/about.html" class="link">À propos</a></li>
-                <li><a href="pages/contact.html" class="link">Contact</a></li>
+                <li><a href="" class="link link-selected" selected>Accueil</a></li>
+                <li><a href="pages/pages.html?offre" class="link ">Mon offre</a></li>
+                <li><a href="pages/pages.html?about" class="link">À propos</a></li>
+                <li><a href="pages/pages.html?contact" class="link">Contact</a></li>
             </ul>
         </nav>
         <div class="introduction">
             <h2>Accompagnement Psychologique Bienveillant</h2>
-            <img src="../assets/portrait_nat.webp" alt="photo portrait de Nathalie GODIER">
+            <img src="assets/portrait_nat.webp" alt="photo portrait de Nathalie GODIER">
             <blockquote>
                 Grâce à la visioconference je vous apporte un soutien empathique dans vos
                 difficultés ou que vous soyez.
             </blockquote>
         </div>
         <div class="presentation">
-            <img src="../assets/logo.svg" alt="logo de thalys developpement">
+            <img src="assets/logo.svg" alt="logo de thalys developpement">
             <p>Les oiseaux blessés ou épuisés, ont besoin d’un refuge pour se soigner et récupérer des forces avant de
                 poursuivre leur voyage.</p>
         </div>
@@ -63,14 +63,20 @@
         <section id="feeling">
             <h3>VOUS SENTEZ-VOUS PARFOIS ENVAHIS PAR...</h3>
             <h4 class="feelings hidden-smooth">La lassitude ?</h4>
-            <img src="../assets/anais_perplexe.webp" alt="photo d'une personne pensive devant la mer">
-            <p>Comme un vide en vous, une fatigue pesante qui ne passe pas?</p>
+            <div class="card"> <img src="assets/anais_perplexe.webp" alt="photo d'une personne pensive devant la mer">
+                <p>Comme un vide en vous, une fatigue pesante qui ne passe pas?</p>
+            </div>
+
             <h4 class="feelings hidden-smooth">La solitude ?</h4>
-            <img src="../assets/solitude.webp" alt="oiseau isolé">
-            <p>L'impression que personne ne mesure ce que vous vivez vraiment?</p>
+            <div class="card card-reverse"> <img src="assets/solitude.webp" alt="oiseau isolé">
+                <p>L'impression que personne ne mesure ce que vous vivez vraiment?</p>
+            </div>
+
             <h4 class="feelings hidden-smooth">La confusion ?</h4>
-            <img src="../assets/brume.webp" alt="homme dans le brouillard">
-            <p>Comme du brouillard dans la tête, de la difficulté à prendre des décisions? </p>
+            <div class="card"> <img src="assets/brume.webp" alt="homme dans le brouillard">
+                <p>Comme du brouillard dans la tête, de la difficulté à prendre des décisions? </p>
+            </div>
+
 
             <button class="cta-btn">
                 <a href="contact.html" class="link">Me contacter</a>
@@ -80,17 +86,25 @@
         <section id="target">
             <h3>ASPIREZ VOUS SINCEREMENT A RETROUVER...</h3>
             <h4 class="targets hidden">La joie de vivre ?</h4>
-            <img src="../assets/anais_fuite.webp" alt="enfant jouant avec les vagues de la mer">
-            <p>Retrouver de la spontanéité, le plaisir des bonheurs simples, de la liberté, de la créativité et de la
-                légèreté!</p>
+            <div class="card card-reverse"> <img src="assets/anais_fuite.webp" alt="enfant jouant avec les vagues de la mer">
+                <p>Retrouver de la spontanéité, le plaisir des bonheurs simples, de la liberté, de la créativité et de
+                    la
+                    légèreté!</p>
+            </div>
+
             <h4 class="targets hidden">La sérénité ?</h4>
-            <img src="../assets/anais_arc_en_ciel.webp" alt="couple détendu marchant sur la plage">
-            <p>Goûter l'apaisement d'un accueil bienveillant, recevoir ​une écoute authentique et un soutien positif
-                inconditionnel.</p>
+            <div class="card"> <img src="assets/anais_arc_en_ciel.webp" alt="couple détendu marchant sur la plage">
+                <p>Goûter l'apaisement d'un accueil bienveillant, recevoir ​une écoute authentique et un soutien positif
+                    inconditionnel.</p>
+            </div>
+
             <h4 class="targets hidden">La force de passer à l'action ?</h4>
-            <img src="../assets/anais_lancement.webp" alt="plongeur en extention vers le ciel">
-            <p>Oser découvrir les peurs qui vous entravent, se reconnecter à ce qui vous inspire et trouver le courage
-                de faire ce qui est important pour vous.</p>
+            <div class="card card-reverse"> <img src="assets/anais_lancement.webp" alt="plongeur en extention vers le ciel">
+                <p>Oser découvrir les peurs qui vous entravent, se reconnecter à ce qui vous inspire et trouver le
+                    courage
+                    de faire ce qui est important pour vous.</p>
+            </div>
+
             <div class="cta">
                 <p>envie de vous lançer ?</p>
                 <button class="cta-btn">
@@ -166,15 +180,16 @@
             35 780 La Richardais <br>
             FRANCE <br>
         </p>
-        <a href="pages/legal.html"></a>
-        <a href="pages/confidentiality.html"></a>
+        <a href="pages/pages.html?legal">Mention légales</a>
+        <a href="pages/pages.html?confidentiality">Politique de confidentialée</a>
         <img src="../assets/logo-white.webp" alt="logo de thalys-developpent" aria-describedby="oiseau s'envolant">
         <p>© 2024 par Thalys Développement.<br>
             Contenu créé en collaboration avec Marie-Charlotte Etrillard. <br>
             Développement web par Pierre Etrillard
         </p>
     </footer>
-    <script src="js/index.js"></script>
+    <script type="module" src="js/accueil.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 
 </html>
