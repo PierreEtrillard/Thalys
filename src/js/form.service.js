@@ -1,5 +1,7 @@
 export function sendMessage(message, from){
+  alert(message);
   fetch('mail_sender.php',{
+    
     method:'Post',
     headers:{
       'Content-Type': 'application/x-www-form-urlencoded',

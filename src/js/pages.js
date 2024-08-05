@@ -1,3 +1,4 @@
+import { sendMessage } from "./form.service";
 // Déclarations des variables
 let selectedPage = window.location.search.slice(1); // slice(1) extrait tout la string après le premier caractère (débarrase le ? du parmas)
 const menulinks = document.querySelectorAll('nav.menu>ul>li>a')
@@ -43,4 +44,7 @@ function injectHTML(htmlFileUrl) {
         .catch(error => {
             console.error('Erreur lors du chargement du fichier HTML:', error);
         });
+}
+function postToMailer(event){
+  sendMessage()
 }

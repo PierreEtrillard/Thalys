@@ -205,13 +205,15 @@ section {
   @include layout.centralizer;
   flex-direction: column;
   color: white;
+  // titres des section
   .feelings,
   .targets {
     font-size: 2rem;
     transition: all 2s;
   }
-  @media (width > $breakpoint) {
-    .card {
+  // tablette et pc
+  .card {
+      @media (width > $breakpoint) {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -222,6 +224,41 @@ section {
       &-reverse {
         flex-direction: row-reverse;
       }
+    }
+    &-light{
+      background-color: whitesmoke;
+      color: color.$primary;
+      flex-direction: column;
+      box-shadow: 5px 4px 0px grey;
+      margin: 1rem;
+      width: 80vw;
+    }
+  }
+  .offre {
+    border-bottom: solid 0.2rem color.$accent;
+    @media (width > $breakpoint) {
+    position: relative;
+      height: 600px;
+      &-text{
+        width: 50%;
+        position: relative;
+        background-color: color.$grey;
+        box-shadow: 5px 4px 0px grey;
+        z-index: 1;
+        transform: translateX(-6rem);
+      }
+      >img {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .about{
+    iframe{
+      width: 90%;
     }
   }
 }
@@ -249,19 +286,20 @@ section {
     color: color.$warn;
   }
 }
-#advices {
+.advices {
   border-top: solid 0.2rem color.$accent;
   background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 2rem;
+  h2,
   h5 {
     color: color.$accent;
     font-size: 1.5rem;
   }
 }
-#carrousel {
+.carrousel {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -300,7 +338,6 @@ section {
     background-color: color.$grey;
     border-radius: 15px;
     padding: 1rem;
-    font-size: 1rem;
     position: relative;
   }
   &-selected {

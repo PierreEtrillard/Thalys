@@ -1,3 +1,4 @@
+import {sendMessage}from "./form.service.js";
 // Déclarations des variables
 const feelingsTitles = document.querySelectorAll(".feelings");
 const targetsTitles = document.querySelectorAll(".targets");
@@ -7,7 +8,6 @@ const commentSelector = document.getElementById("comment-selector");
 const commentSelectorBtns = document.querySelectorAll('#comment-selector input[name="commment-selection"]');
 const previewComment = document.querySelector(".arrow-crsl-left");
 const nextComment = document.querySelector(".arrow-crsl-right");
-// import * as mailService from "./form.service.js";
 //--------------------------INITIALISATION--------------------------------//
 /* Initialisation du DOMContentLoaded avant le declenchement du listener sur les titre de la 
 section 'feeling' et 'target*/
@@ -103,7 +103,7 @@ async function commentDisplayer(delay){
 function postToMailer(event) {
   event.preventDefault();
   console.log('sended');        
-  // const message = document.getElementById('message').value;
-  // const email = document.getElementById('client-email').value;
-  // mailService.sendMessage(message,email)
+  const message = document.getElementById('message').value;
+  const email = document.getElementById('client-email').value;
+  sendMessage(message,email)
 }
