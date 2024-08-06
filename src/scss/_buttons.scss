@@ -2,136 +2,157 @@
 @use "layouts" as layout;
 @use "animations" as *;
 
-#scrollUp-btn{    
+.command-btn {
   position: fixed;
   z-index: 10;
   right: 1rem;
-  bottom: 3rem;
+  bottom: 6rem;
   display: flex;
   @include layout.centralizer;
   border-radius: 50px;
   height: 3rem;
   width: 3rem;
-  background-image: linear-gradient(to top right, color.$accent 0%, adjust-hue(color.$accent, 40deg)  51%, color.$accent 100%);
+  background-image: linear-gradient(
+    to top right,
+    color.$accent 0%,
+    adjust-hue(color.$accent, 40deg) 51%,
+    color.$accent 100%
+  );
   transition: 200ms;
-  &:hover {
-      background-position: left center; /* change the direction of the change here */
-      box-shadow: 0 0 20px #eee;
+  &-bottom {
+    bottom: 2rem;
   }
-  img{
-      transform: rotate(-90deg)scaleX(0.5);
-      background-image: url("../../assets/chevron-pink.svg");        
+  &:hover {
+    background-position: left center; /* change the direction of the change here */
+    box-shadow: 0 0 20px #eee;
+  }
+  img {
+    transform: rotate(-90deg) scaleX(0.5);
+    background-image: url("../../assets/chevron-pink.svg");
+  }
+  a>svg {
+    height: 1.5rem;
   }
 }
-.cta-btn {    
-    background-image: linear-gradient(to right, color.$warn 0%, adjust-hue(color.$warn, 20deg)  51%, color.$warn  100%);
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 250ms;
-    background-size: 200% auto;
-    color: color.$grey;            
-    border-radius: 10px;
-    display: block;
-    cursor: pointer;
-    &:hover {
-        background-position: right center; /* change the direction of the change here */
-        box-shadow: 0 0 20px #eee;
-    }
-    a{
-        color:color.$grey;
-        text-decoration: none;
-        font-size: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .icon{
-            fill: color.$grey;
-            width: 1rem;
-            margin: 0.5rem;
-        }
+.cta-btn {
+  background-image: linear-gradient(
+    to right,
+    color.$warn 0%,
+    adjust-hue(color.$warn, 20deg) 51%,
+    color.$warn 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 250ms;
+  background-size: 200% auto;
+  color: color.$grey;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+  &:hover {
+    background-position: right center; /* change the direction of the change here */
+    box-shadow: 0 0 20px #eee;
+  }
+  a {
+    color: color.$grey;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .icon {
+      fill: color.$grey;
+      width: 1rem;
+      margin: 0.5rem;
     }
   }
+}
 
- // BOUTONS RADIO DU CARROUSEL
+// BOUTONS RADIO DU CARROUSEL
 
- /* cache le bouton radio */
+/* cache le bouton radio */
 .pink-radio input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 /* applique des regles au nvx boutton radio */
 .radio-mark {
-    position: relative;
-    height: 20px;
-    width: 20px;
-    background-color: #ccc;
-    border-radius: 50%;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    transition: background-color 0.3s;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  transition: background-color 0.3s;
 }
 
 /* Style des boutons radio "checked" */
 .pink-radio input[type="radio"]:checked + .radio-mark {
-    background-color: color.$accent;
+  background-color: color.$accent;
 }
 
 /* ecrase les regles native pour l'interieur du boutton */
 .radio-mark::after {
-    content: "";
-    position: absolute;
-    display: none;
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 /* affiche l'indicateur (dot/mark) au check du boutton */
 .pink-radio input[type="radio"]:checked + .radio-mark::after {
-    display: block;
+  display: block;
 }
 
 /* Style de l'indicateur (dot/mark) customisé*/
 .pink-radio .radio-mark::after {
-    top: 50%;
-    left: 50%;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: white;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: white;
+  transform: translate(-50%, -50%);
 }
 // BOUTONS DU FOOTER
-#sender-btn{
-    border-radius: 10px;
-    padding: 0.5rem;
-    cursor: pointer;
-     transition: 200ms;
-    &:hover {
-       box-shadow: 0 0 20px #eee;
-    }
+#sender-btn {
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 200ms;
+  &:hover {
+    box-shadow: 0 0 20px #eee;
+  }
 }
-#call-btn{
-    border-radius: 10px;
-    background-image: linear-gradient(to top right, color.$primary 0%, adjust-hue(color.$primary, 40deg)  51%, color.$primary 100%);
-    color: white;
-    font-size: 1rem;
-    padding: 0.5rem;
-    cursor: pointer;
-    a{
-        display: flex;
-        @include layout.centralizer;
-    }
+#call-btn {
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to top right,
+    color.$primary 0%,
+    adjust-hue(color.$primary, 40deg) 51%,
+    color.$primary 100%
+  );
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  a {
+    display: flex;
+    @include layout.centralizer;
+  }
 
-    svg {
-        fill: white;
-        width: 1rem;
-        margin: 0.5rem;
-    };
-    &:hover{
-        background-position: left center; /* change the direction of the change here */
-        box-shadow: 0 0 20px #eee;
-    }
+  svg {
+    fill: white;
+    width: 1rem;
+    margin: 0.5rem;
+  }
+  &:hover {
+    background-position: left center; /* change the direction of the change here */
+    box-shadow: 0 0 20px #eee;
+  }
 }

@@ -236,6 +236,9 @@ section {
   }
   .offre {
     border-bottom: solid 0.2rem color.$accent;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     @media (width > $breakpoint) {
     position: relative;
       height: 600px;
@@ -259,6 +262,18 @@ section {
   .about{
     iframe{
       width: 90%;
+    }
+  }
+  #contact{
+    display: flex;
+    flex-direction: column;
+    &-form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      textarea, input{
+        width: 75vw;
+      }
     }
   }
 }

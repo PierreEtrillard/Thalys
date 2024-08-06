@@ -1,11 +1,13 @@
-import {sendMessage}from "./form.service.js";
+import sendMessage from "./form.service.js";
 // Déclarations des variables
 const feelingsTitles = document.querySelectorAll(".feelings");
 const targetsTitles = document.querySelectorAll(".targets");
 const comments = document.querySelectorAll(".comment");
 let currentCommentIndex = 0;
 const commentSelector = document.getElementById("comment-selector");
-const commentSelectorBtns = document.querySelectorAll('#comment-selector input[name="commment-selection"]');
+const commentSelectorBtns = document.querySelectorAll(
+  '#comment-selector input[name="commment-selection"]'
+);
 const previewComment = document.querySelector(".arrow-crsl-left");
 const nextComment = document.querySelector(".arrow-crsl-right");
 //--------------------------INITIALISATION--------------------------------//
@@ -56,8 +58,8 @@ const viewPortEntranceObserver = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log(entry.target.textContent +"apparait dans le viewPort");
-        entry.target.classList.remove(...["hidden","hidden-smooth"]);
+        console.log(entry.target.textContent + "apparait dans le viewPort");
+        entry.target.classList.remove(...["hidden", "hidden-smooth"]);
         observer.unobserve(entry.target); // Désabonne pour éviter les fuites de mémoire
       }
     });
@@ -90,20 +92,20 @@ function switchComment(index) {
 }
 
 // Fonction pour faire défiler les commentaires automatiquement
-async function commentDisplayer(delay){
+async function commentDisplayer(delay) {
   setInterval(() => {
-    (currentCommentIndex < comments.length -1)?
-     currentCommentIndex += 1 :
-     currentCommentIndex = 0;
-    switchComment(currentCommentIndex)
+    currentCommentIndex < comments.length - 1
+      ? (currentCommentIndex += 1)
+      : (currentCommentIndex = 0);
+    switchComment(currentCommentIndex);
   }, delay * 1000);
-  }
+}
 
 // Fonction d'envoi vers mail_sender.php
 function postToMailer(event) {
   event.preventDefault();
-  console.log('sended');        
-  const message = document.getElementById('message').value;
-  const email = document.getElementById('client-email').value;
-  sendMessage(message,email)
+  console.log("sended");
+  const message = document.getElementById("message").value;
+  const email = document.getElementById("client-email").value;
+  sendMessage(message, email);
 }

@@ -1,9 +1,11 @@
-<section>
-    <form id="mail-sender" onSubmit="postToMailer(event)">
+<section id="contact">
+    <h1>J'ai encore des disponibilités dans mon emploi du temps pour de nouveaux clients.
+        N'hésitez pas à prendre contact!</h1>
+    <form id="contact-form" >
         <label for="message">Si vous avez envie qu'on se rencontre, je vous invite à me laisser un message</label>
         <textarea name="message" id="message" placeholder="votre message"></textarea>
         <label for="client-email">et votre email pour que vous contact dans les plus brefs délais</label>
         <input type="email" name="client-email" id="client-email" placeholder="votre@mail.com">
-        <button id="sender-btn" type="submit">Envoyer</button>
     </form>
+    <button class="cta-btn" click="formSubmit()">Envoyer</button>
 </section>
