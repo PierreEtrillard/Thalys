@@ -23,7 +23,7 @@ L'ensemble de ces dépendances ainsi que sass est **installable en une seul comm
 ## Maintenance 
 ### Architecture
 
-le projet est construit comme un site purement static avec la page d'accueil en index.html afin de favoriser le SEO.
+Le projet est construit comme un site purement static avec la page d'accueil en index.html afin de favoriser le SEO.
 
 Afin d'eviter la répetition des headers et footers des autres pages, à la maniére d'une Single Page App, **un generateur de contenu en JavaScript est implémenté dans le fichier pages.js**.
 Celui-ci est **rattaché pages.html** et *y injecte le contenu des fichiers html placés dans le repertoire pages/*
@@ -34,7 +34,7 @@ Le fichier **scss/main.scss centralise toutes les régles** et dépend des parti
 
 main.scss est structué ainsi : 
 - les variables global en premier
-- puis les régles sont écrite dans le déroulé du DOM.
+- puis les régles sont écritent dans le déroulé du DOM.
 - les **régles spécifiques aux pages** about, contact, offre, legal, confidentiality sont **dans les class du même nom** wrappées dans **la régle 'section'** (ainsi cela suit toujours l'ordre de lecture du html). 
 
 Le **changement de typo ou de couleurs** ce fait dans les partials **scss/_typos.scss** et **scss/_colors.scss**
