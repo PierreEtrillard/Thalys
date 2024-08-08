@@ -205,7 +205,7 @@ section {
   @include layout.centralizer;
   flex-direction: column;
   color: white;
-  //________________________ACCUEIL__________________________ 
+  //________________________ACCUEIL__________________________
   .feelings,
   .targets {
     font-size: 2rem;
@@ -237,7 +237,7 @@ section {
   }
   .card {
     // tablette et pc
-      @media (width > $breakpoint) {
+    @media (width > $breakpoint) {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -249,7 +249,7 @@ section {
         flex-direction: row-reverse;
       }
     }
-    &-light{
+    &-light {
       background-color: whitesmoke;
       color: color.$primary;
       flex-direction: column;
@@ -258,16 +258,16 @@ section {
       width: 80vw;
     }
   }
-   //________________________PAGE OFFRE__________________________ 
+  //________________________PAGE OFFRE__________________________
   #offre {
     border-bottom: solid 0.2rem color.$accent;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     @media (width > $breakpoint) {
-    position: relative;
+      position: relative;
       height: 600px;
-      &-text{
+      &-text {
         width: 50%;
         position: relative;
         background-color: color.$grey;
@@ -275,7 +275,7 @@ section {
         z-index: 1;
         transform: translateX(-6rem);
       }
-      >img {
+      > img {
         display: block;
         position: absolute;
         top: 0;
@@ -284,29 +284,40 @@ section {
       }
     }
   }
-   //________________________PAGE A PROPOS__________________________ 
-  &#about{
-    iframe{
+  //________________________PAGE A PROPOS__________________________
+  &#about {
+    iframe {
       width: 90%;
     }
   }
-   //________________________PAGE CONTACT__________________________ 
-  &#contact{
+  //________________________PAGE CONTACT__________________________
+  &#contact {
     display: flex;
     flex-direction: column;
-    #contact-form{
+    #contact-form {
       display: flex;
       flex-direction: column;
       align-items: center;
-      textarea, input{
+      textarea,
+      input {
         width: 75vw;
       }
     }
   }
-  //________________________PAGE MENTIONS LEGAL_____________________ 
-  &#legal{
-    &>ol>li{
+  //________________________PAGE MENTIONS LEGAL_____________________
+  &#legal {
+    & > ol > li {
       list-style: decimal;
+    }
+  }
+  //________________________PAGE MENTIONS LEGAL_____________________
+  &#confidentiality {
+    & > p > a {
+      font-size: bolder;
+      color: color.$warn;
+      &:visited {
+        color: darkgray;
+      }
     }
   }
 }

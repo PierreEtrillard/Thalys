@@ -1,9 +1,10 @@
 import sendMessage from "./form.service.js";
-import commentSwitcher from "./carroussel.service.js";
+import commentSwitcher from "./carousel.service.js";
 // Déclarations des variables
 let selectedPage = window.location.search.slice(1); // slice(1) extrait tout la string après le premier caractère (débarrase le ? du parmas)
 const menulinks = document.querySelectorAll("nav.menu>ul>li>a");
 const mainContenair = document.getElementById("content-eager");
+let CommentIndex = 0;
 //--------------------------INITIALISATION--------------------------------//
 // Initialisation du DOMContentLoaded avant l'injection du main
 document.addEventListener("DOMContentLoaded", async () => {
@@ -11,7 +12,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     case "offre":
       await injectHTML("/pages/offre.html").then(()=>{
         const comments = document.querySelectorAll(".comment");
-        let currentCommentIndex = 0;
         const commentSelector = document.getElementById("comment-selector");
         const commentSelectorBtns = document.querySelectorAll(
           '#comment-selector input[name="commment-selection"]'
