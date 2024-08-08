@@ -1,7 +1,7 @@
-# Thalys
-Site vitrine de Thalys développement ![alt logo](assets/logo-white.webp)
-## Maintenance 
+# Thalys ![alt logo](assets/logo-white.webp)
+<center>Site vitrine de Thalys développement</center>
 
+## Introducation
 *Sur demande du client **aucun framework n'est utilisé pour le développement du projet** et celui-ci ne dépend d'aucune librairie tiers pour la phase de développement ormis sass.*
 
 Les dépendances suivante sont toutefois **necessaires pour la mise en production**:
@@ -13,7 +13,7 @@ Les dépendances suivante sont toutefois **necessaires pour la mise en productio
 
 L'ensemble de ces dépendances ainsi que sass est **installable en une seul commande** à executer dans le dossier 'Thalys':
 `npm install --save`
-*node necessaire pour utiliser npm (node package manager)* il est facilement installable sur tous les OS en suivant [ce lien](https://nodejs.org/fr/download/).
+*node est necessaire pour utiliser npm (node package manager)* il est facilement installable sur tous les OS en suivant [ce lien](https://nodejs.org/fr/download/).
 
 ## Déploiement
 
@@ -21,14 +21,15 @@ L'ensemble de ces dépendances ainsi que sass est **installable en une seul comm
 
 - [] Pour la **mise en production** il suffit d'**envoyer** les repertoires **dist/**, **asset/**, **fonts/** et les fichiers '**favicon**' et '**license**' sur le serveur.
 
-## Architecture
+## Maintenance 
+### Architecture
 
 le projet est construit comme un site purement static avec la page d'accueil en index.html afin de favoriser le SEO.
 
 Afin d'eviter la répetition des headers et footers des autres pages, à la maniére d'une Single Page App, **un generateur de contenu en JavaScript est implémenté dans le fichier pages.js**.
 Celui-ci est **rattaché pages.html** et *y injecte le contenu des fichiers html placés dans le repertoire pages/*
 
-## CSS
+### CSS
 
 Le fichier **scss/main.scss centralise toutes les régles** et dépend des partials annotées d'un underscore dans le même repertoire.
 
