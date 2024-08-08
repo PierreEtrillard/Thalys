@@ -10,9 +10,10 @@ const commentSelectorBtns = document.querySelectorAll(
 );
 const previewComment = document.querySelector(".arrow-crsl-left");
 const nextComment = document.querySelector(".arrow-crsl-right");
+const mailSender = document.getElementById('mail-sender')
 //--------------------------INITIALISATION--------------------------------//
-/* Initialisation du DOMContentLoaded avant le declenchement du listener sur les titre de la 
-section 'feeling' et 'target*/
+/* DOMContentLoaded garanti le chargement complet du DOM avant le declenchement des listener 
+evite ainsi d'écouter des elements vide*/
 document.addEventListener("DOMContentLoaded", () => {
   feelingsTitles.forEach((element) => {
     viewPortEntranceObserver.observe(element);
@@ -20,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
   targetsTitles.forEach((element) => {
     viewPortEntranceObserver.observe(element);
   });
-});
 
 // Gestion des événements pour les boutons de sélection de commentaire
 commentSelector.addEventListener("change", (event) => {
@@ -42,13 +42,15 @@ nextComment.addEventListener("click", () => {
     switchComment(currentCommentIndex);
   }
 });
-
 // Initialisation des états du commutateur de commentaire
 commentSwitcherState();
 
 // Démarrage du carrousel de commentaires
 commentDisplayer(8); // Affiche un commentaire dans le carrousel toutes les n secondes
 
+// Envoi du formulaire de contact au back-end
+mailSender.addEventListener('submit', (event)=>{postToMailer(event)})
+});
 //----------------------------FONCTIONS------------------------------//
 // Observeur d'entrée des éléments dans le viewport
 const observerOptions = {
@@ -58,7 +60,6 @@ const viewPortEntranceObserver = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log(entry.target.textContent + "apparait dans le viewPort");
         entry.target.classList.remove(...["hidden", "hidden-smooth"]);
         observer.unobserve(entry.target); // Désabonne pour éviter les fuites de mémoire
       }
@@ -104,7 +105,6 @@ async function commentDisplayer(delay) {
 // Fonction d'envoi vers mail_sender.php
 function postToMailer(event) {
   event.preventDefault();
-  console.log("sended");
   const message = document.getElementById("message").value;
   const email = document.getElementById("client-email").value;
   sendMessage(message, email);

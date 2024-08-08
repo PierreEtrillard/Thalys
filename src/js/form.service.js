@@ -1,5 +1,5 @@
 export default function sendMessage(message, from){
-  console.log("form.sservice envoi: "+ message);
+  console.log("form.sservice envoi: "+ message + " en provenance de: "+ from);
   // fetch('/mail_sender.php',{
     
   //   method:'Post',

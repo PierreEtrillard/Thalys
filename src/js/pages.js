@@ -18,10 +18,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     case "contact":
       await injectHTML("/pages/contact.html").then(() => {
         const contactForm = document.getElementById("contact-form");
-        contactForm.addEventListener("submit", (event)=>formSubmit(event));
+        contactForm.addEventListener("submit", (event) => formSubmit(event));
       });
       menulinks[3].classList.toggle("link-selected");
-
       break;
     case "legal":
       injectHTML("/pages/legal.html");
@@ -40,12 +39,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 function formSubmit(event) {
   event.preventDefault();
   const message = document.getElementById("message").value;
-  const clientEmail = document.getElementById("client-email").value;
-
-  console.log("Message:", message);
-  console.log("Client Email:", clientEmail);
-
-  // sendMessage(message, clientEmail);
+  const clientEmail = document.getElementById("client-email").value
+sendMessage(message, clientEmail);
 }
 function injectHTML(htmlFileUrl) {
   return fetch(htmlFileUrl)
@@ -60,5 +55,6 @@ function injectHTML(htmlFileUrl) {
     })
     .catch((error) => {
       console.error("Erreur lors du chargement du fichier HTML:", error);
+      return "<section><h1>Désolé, une erreur s'est produite, si le problême persiste, merci de m'en informer</h1><p>Nathalie.</p></section>";
     });
 }
