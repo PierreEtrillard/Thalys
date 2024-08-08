@@ -1,5 +1,4 @@
-# Thalys ![alt logo](assets/logo-white.webp)
-<center>Site vitrine de Thalys développement</center>
+# ![alt logo](assets/logo-white.webp) Site vitrine de Thalys développement
 
 ## Introducation
 *Sur demande du client **aucun framework n'est utilisé pour le développement du projet** et celui-ci ne dépend d'aucune librairie tiers pour la phase de développement ormis sass.*
@@ -17,9 +16,9 @@ L'ensemble de ces dépendances ainsi que sass est **installable en une seul comm
 
 ## Déploiement
 
-- [] **une seul commande** est nécesaire à la mise en production: `npm run build` *celle ci générera des fichiers minifiés des fichiers html,css et js au sein du dossier **dist/**.*
+- [ ] **une seul commande** est nécesaire à la mise en production: `npm run build` *celle ci générera des fichiers minifiés des fichiers html,css et js au sein du dossier **dist/**.*
 
-- [] Pour la **mise en production** il suffit d'**envoyer** les repertoires **dist/**, **asset/**, **fonts/** et les fichiers '**favicon**' et '**license**' sur le serveur.
+- [ ] Pour la **mise en production** il suffit d'**envoyer** les repertoires **dist/**, **asset/**, **fonts/** et les fichiers '**favicon**' et '**license**' sur le serveur.
 
 ## Maintenance 
 ### Architecture
