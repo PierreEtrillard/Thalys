@@ -197,22 +197,46 @@ header {
   }
 }
 /* _________________________________________________________
-  ****      ------------MAIN-------------     ****
-                      Sections                            */
+  ****           ------------MAIN-------------         ****
+                            Sections                                 */
 section {
   background-color: color.$grey;
   display: flex;
   @include layout.centralizer;
   flex-direction: column;
   color: white;
-  // titres des section
+  //________________________ACCUEIL__________________________ 
   .feelings,
   .targets {
     font-size: 2rem;
     transition: all 2s;
   }
-  // tablette et pc
+  .cta {
+    background-image: url("../../assets/anais_se_lancer.webp");
+    background-size: cover;
+    width: 100%;
+    height: 605px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: solid 0.2rem color.$accent;
+    font-size: 2rem;
+    font-weight: bold;
+    @media (width > $breakpoint) {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+    }
+    p {
+      color: black;
+    }
+    p::after {
+      color: color.$warn;
+    }
+  }
   .card {
+    // tablette et pc
       @media (width > $breakpoint) {
       display: flex;
       align-items: center;
@@ -234,7 +258,8 @@ section {
       width: 80vw;
     }
   }
-  .offre {
+   //________________________PAGE OFFRE__________________________ 
+  #offre {
     border-bottom: solid 0.2rem color.$accent;
     display:flex;
     flex-direction: column;
@@ -259,15 +284,17 @@ section {
       }
     }
   }
-  .about{
+   //________________________PAGE A PROPOS__________________________ 
+  &#about{
     iframe{
       width: 90%;
     }
   }
-  #contact{
+   //________________________PAGE CONTACT__________________________ 
+  &#contact{
     display: flex;
     flex-direction: column;
-    &-form{
+    #contact-form{
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -276,31 +303,14 @@ section {
       }
     }
   }
-}
-.cta {
-  background-image: url("../../assets/anais_se_lancer.webp");
-  background-size: cover;
-  width: 100%;
-  height: 605px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border-top: solid 0.2rem color.$accent;
-  font-size: 2rem;
-  font-weight: bold;
-  @media (width > $breakpoint) {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-  }
-  p {
-    color: black;
-  }
-  p::after {
-    color: color.$warn;
+  //________________________PAGE MENTIONS LEGAL_____________________ 
+  &#legal{
+    &>ol>li{
+      list-style: decimal;
+    }
   }
 }
+
 .advices {
   border-top: solid 0.2rem color.$accent;
   background-color: transparent;

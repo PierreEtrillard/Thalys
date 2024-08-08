@@ -1,4 +1,5 @@
 import sendMessage from "./form.service.js";
+import commentSwitcher from "./carroussel.service.js";
 // Déclarations des variables
 let selectedPage = window.location.search.slice(1); // slice(1) extrait tout la string après le premier caractère (débarrase le ? du parmas)
 const menulinks = document.querySelectorAll("nav.menu>ul>li>a");
@@ -8,8 +9,17 @@ const mainContenair = document.getElementById("content-eager");
 document.addEventListener("DOMContentLoaded", async () => {
   switch (selectedPage) {
     case "offre":
-      injectHTML("/pages/offre.html");
-      menulinks[1].classList.toggle("link-selected");
+      await injectHTML("/pages/offre.html").then(()=>{
+        const comments = document.querySelectorAll(".comment");
+        let currentCommentIndex = 0;
+        const commentSelector = document.getElementById("comment-selector");
+        const commentSelectorBtns = document.querySelectorAll(
+          '#comment-selector input[name="commment-selection"]'
+        );
+        const previewComment = document.querySelector(".arrow-crsl-left");
+        const nextComment = document.querySelector(".arrow-crsl-right");
+        menulinks[1].classList.toggle("link-selected");
+      });
       break;
     case "about":
       injectHTML("/pages/about.html");
