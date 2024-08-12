@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", async () => {
           shortSupportComments.querySelector(".arrow-crsl-right");
         const selectorBtn1 =
           shortSupportComments.querySelector(".comment-selector");
+          // init
+          commentSwitcher(0, shortSupportComments, comment1Selected);
         previewComment1.addEventListener("click", () => {
           commentSwitcher(-1, shortSupportComments, comment1Selected);
           comment1Selected = selectedComment;
@@ -48,7 +50,9 @@ document.addEventListener("DOMContentLoaded", async () => {
           individualSupportComments.querySelector(".arrow-crsl-right");
         const selectorBtn2 =
           individualSupportComments.querySelector(".comment-selector");
-        previewComment2.addEventListener("click", () => {
+          // init
+          commentSwitcher(0, individualSupportComments, comment2Selected);
+          previewComment2.addEventListener("click", () => {
           commentSwitcher(-1, individualSupportComments, comment2Selected);
           comment2Selected = selectedComment;
         });

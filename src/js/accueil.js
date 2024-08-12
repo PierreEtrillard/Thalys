@@ -48,7 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Démarrage du carrousel de commentaires
-  commentRunner(); // Démarre l'afficheur de commentaires dès le chargement
+  commentSwitcher(0, carrousel, commentSelected);// Démarre l'afficheur de commentaires dès le chargement
+  commentRunner(); // puis démarre le minuteur pour switcher l'affichage tous les n secondes (cf: const delay)
   // Envoi du formulaire de contact au back-end
   mailSender.addEventListener("submit", (event) => {
     postToMailer(event);

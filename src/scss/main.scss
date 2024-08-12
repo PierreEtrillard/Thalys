@@ -3,11 +3,11 @@
 @use "animations" as animation;
 @use "typos" as *;
 @use "buttons" as *;
+@use "carousel" as *;
 $breakpoint: 830px;
 /* _________________________________________________________
 ****             REGLES GLOBAL           ****          */
 html body {
-  width: 100vw;
   margin: 0;
   padding: 0;
   font-family: "body", sans-serif;
@@ -102,7 +102,6 @@ header {
 .menu {
   color: color.$primary;
   background-color: color.$light;
-  width: 100vw;
   transition: 500ms;
   display: flex;
   align-items: center;
@@ -321,76 +320,6 @@ section {
     }
   }
 }
-
-.advices {
-  border-top: solid 0.2rem color.$accent;
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 2rem;
-  h2,
-  h5 {
-    color: color.$accent;
-    font-size: 1.5rem;
-  }
-}
-.carrousel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 170px;
-  position: relative;
-  .arrow-crsl {
-    cursor: pointer;
-    height: 1.2rem;
-    z-index: 1;
-    position: absolute;
-    top: 32%;
-    &-left {
-      right: 45vw;
-      transform: rotateY(180deg);
-    }
-    &-right {
-      left: 45vw;
-    }
-  }
-}
-.comment {
-  position: absolute;
-  top: 0;
-  width: 80vw;
-  overflow: hidden;
-  padding-bottom: 6rem;
-  transition: 800ms;
-  transform-origin: right bottom;
-  transform: rotate(90deg) scale(0) translateX(50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  blockquote {
-    width: 100%;
-    background-color: color.$grey;
-    border-radius: 15px;
-    padding: 1rem;
-    position: relative;
-  }
-  &-selected {
-    transform: rotate(0) scale(1);
-  }
-  .triangle-down {
-    border-left: 3rem solid transparent;
-    border-top: 3rem solid #383746;
-    bottom: 30%;
-    height: 0;
-    position: absolute;
-    right: 40%;
-    transform: skewX(120deg);
-    width: 0;
-  }
-}
-
 /*     -------------------   FOOTER  -------------------     */
 footer {
   padding: 1rem;

@@ -1,6 +1,6 @@
 // Déclarations des variables
-const scrollUpBtn = document.querySelector("button.command-btn");
-const messageBtn = document.querySelector("button.command-btn-bottom");
+const scrollUpBtn = document.querySelector("a.command-btn");
+const messageBtn = document.querySelector("a.command-btn-bottom");
 const menuTrigger = document.getElementById("menuTrigger");
 let hideScrollUpBtnTimeout;
 const menu = document.querySelector(".menu");

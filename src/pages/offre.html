@@ -10,17 +10,15 @@
         </p>
     </div>
     <img src="../assets/anais_jetée.webp" alt="photo d'un phare ensoleilé">
-    <button class="cta-btn">
-        <a href="tel:+33669219695">
-            <!-- icon svg telephone -->
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path
-                    d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-            </svg>
-            Je fait l'essai !
-        </a>
-    </button>
+    <a class="cta-btn" href="tel:+33669219695">
+        <!-- icon svg telephone -->
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+        </svg>
+        Je fait l'essai !
+    </a>
 </section>
 <section>
     <h2>
@@ -45,7 +43,22 @@
 <section class="advices">
     <h2>Ce qu'en pensent ceux qui ont bénéficié de cette offre</h2>
     <div id="short-support" class="carrousel">
-        <img class="arrow-crsl arrow-crsl-left" src="../assets/chevron-pink.svg">
+        <form class="comment-selector">
+            <label class="pink-radio">
+                <input name="commment-selection" value="0" type="radio" checked></input>
+                <span class="radio-mark"></span>
+            </label>
+            <label class="pink-radio">
+                <input name="commment-selection" value="1" type="radio"></input>
+                <span class="radio-mark"></span>
+            </label>
+            <label class="pink-radio">
+                <input name="commment-selection" value="2" type="radio"></input>
+                <span class="radio-mark"></span>
+            </label>
+        </form>
+        <img class="arrow-crsl arrow-crsl-left" src="../assets/chevron-pink.svg"
+            alt="flêche gauche pour commentaire précédent">
         <div class="comment comment-selected">
             <blockquote>“1 L'écoute patiente et encourageante de Nathalie m'a permis de m'épancher sans gêne. Cela
                 m'a donné le courage de prendre mes responsabilités et la force de
@@ -65,21 +78,8 @@
             </blockquote>
             <div class="triangle-down"></div>
         </div>
-        <img class="arrow-crsl arrow-crsl-right" src="../assets/chevron-pink.svg">
-        <form class="comment-selector">
-            <label class="pink-radio">
-                <input name="commment-selection" value="0" type="radio" checked></input>
-                <span class="radio-mark"></span>
-            </label>
-            <label class="pink-radio">
-                <input name="commment-selection" value="1" type="radio"></input>
-                <span class="radio-mark"></span>
-            </label>
-            <label class="pink-radio">
-                <input name="commment-selection" value="2" type="radio"></input>
-                <span class="radio-mark"></span>
-            </label>
-        </form>
+        <img class="arrow-crsl arrow-crsl-right" src="../assets/chevron-pink.svg"
+            alt="flêche droite pour commentaire suivant">
     </div>
 </section>
 <section>
@@ -93,7 +93,8 @@
     <h2>
         Ce qu'en pensent ceux qui ont bénéficié du suivi individuel</h2>
     <div id="individual-support" class="carrousel">
-        <img class="arrow-crsl arrow-crsl-left" src="../assets/chevron-pink.svg">
+        <img class="arrow-crsl arrow-crsl-left" src="../assets/chevron-pink.svg"
+            alt="flêche gauche pour commentaire précédent">
         <div class="comment comment-selected">
             <blockquote>1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae fuga cumque eius molestiae aut
                 veritatis, velit placeat obcaecati, numquam dicta omnis voluptas atque libero. Laboriosam mollitia alias
@@ -102,7 +103,8 @@
             <div class="triangle-down"></div>
         </div>
         <div class="comment">
-            <blockquote>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim error quaerat placeat quae maiores
+            <blockquote>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim error quaerat placeat quae
+                maiores
                 esse ratione suscipit sequi. Aliquid commodi dignissimos necessitatibus pariatur quia voluptate aperiam
                 quisquam distinctio hic praesentium!
             </blockquote>
@@ -115,7 +117,8 @@
             </blockquote>
             <div class="triangle-down"></div>
         </div>
-        <img class="arrow-crsl arrow-crsl-right" src="../assets/chevron-pink.svg">
+        <img class="arrow-crsl arrow-crsl-right" src="../assets/chevron-pink.svg"
+            alt="flêche droite pour commentaire suivant">
         <form class="comment-selector">
             <label class="pink-radio">
                 <input name="commment-selection" value="0" type="radio" checked></input>
