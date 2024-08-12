@@ -122,9 +122,23 @@
                 </button>
             </div>
         </section>
-        <section class="advices">
+        <section  class="advices">
             <h5>Ce que nos clients en disent</h5>
-            <div class="carrousel">
+            <div id="accueil-carousel" class="carrousel">
+                <form class="comment-selector">
+                    <label class="pink-radio">
+                        <input name="commment-selection" value="0" type="radio" checked></input>
+                        <span class="radio-mark"></span>
+                    </label>
+                    <label class="pink-radio">
+                        <input name="commment-selection" value="1" type="radio"></input>
+                        <span class="radio-mark"></span>
+                    </label>
+                    <label class="pink-radio">
+                        <input name="commment-selection" value="2" type="radio"></input>
+                        <span class="radio-mark"></span>
+                    </label>
+                </form>
                 <img class="arrow-crsl arrow-crsl-left" src="../assets/chevron-pink.svg">
                 <div class="comment comment-selected">
                     <blockquote>“L'écoute patiente et encourageante de Nathalie m'a permis de m'épancher sans gêne. Cela
@@ -147,20 +161,6 @@
                 </div>
                 <img class="arrow-crsl arrow-crsl-right" src="../assets/chevron-pink.svg">
             </div>
-            <form id="comment-selector">
-                <label class="pink-radio">
-                    <input name="commment-selection" value="0" type="radio" checked></input>
-                    <span class="radio-mark"></span>
-                </label>
-                <label class="pink-radio">
-                    <input name="commment-selection" value="1" type="radio"></input>
-                    <span class="radio-mark"></span>
-                </label>
-                <label class="pink-radio">
-                    <input name="commment-selection" value="2" type="radio"></input>
-                    <span class="radio-mark"></span>
-                </label>
-            </form>
         </section>
     </main>
     <footer>
