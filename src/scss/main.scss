@@ -309,10 +309,9 @@ section {
       list-style: decimal;
     }
   }
-  //________________________PAGE MENTIONS LEGAL_____________________
+  //________________________PAGE CONFIDENTIALITEE_____________________
   &#confidentiality {
     & > p > a {
-      font-size: bolder;
       color: color.$warn;
       &:visited {
         color: darkgray;

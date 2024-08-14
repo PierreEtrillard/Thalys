@@ -11,6 +11,7 @@
   display: flex;
   @include layout.centralizer;
   border-radius: 50px;
+  border: solid 1px black;
   height: 3rem;
   width: 3rem;
   background-image: linear-gradient(
@@ -24,6 +25,7 @@
     bottom: 2rem;
   }
   &:hover {
+    border: none;
     background-position: left center; /* change the direction of the change here */
     box-shadow: 0 0 20px #eee;
   }
@@ -31,7 +33,7 @@
     transform: rotate(-90deg) scaleX(0.5);
     background-image: url("../../assets/chevron-pink.svg");
   }
-  &>svg {
+  & > svg {
     height: 1.5rem;
   }
 }
@@ -43,31 +45,25 @@
     adjust-hue(color.$warn, 20deg) 51%,
     color.$warn 100%
   );
+  background-size: 200% auto;
   margin: 10px;
   padding: 15px 45px;
-  text-align: center;
   text-transform: uppercase;
   transition: 250ms;
-  background-size: 200% auto;
   color: color.$grey;
   border-radius: 10px;
-  display: block;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   &:hover {
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center; /* change la direction du fondu au survol */
     box-shadow: 0 0 20px #eee;
   }
-  a {
-    color: color.$grey;
-    text-decoration: none;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .icon {
-      fill: color.$grey;
-      width: 1rem;
-      margin: 0.5rem;
-    }
+  .icon {
+    fill: color.$grey;
+    width: 1rem;
+    margin: 0.5rem;
   }
 }
 
@@ -144,11 +140,8 @@
   font-size: 1rem;
   padding: 0.5rem;
   cursor: pointer;
-  a {
-    display: flex;
-    @include layout.centralizer;
-  }
-
+  display: flex;
+  @include layout.centralizer;
   svg {
     fill: white;
     width: 1rem;
