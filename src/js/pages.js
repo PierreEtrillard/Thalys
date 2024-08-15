@@ -22,8 +22,10 @@ document.addEventListener("DOMContentLoaded", async () => {
           shortSupportComments.querySelector(".arrow-crsl-right");
         const selectorBtn1 =
           shortSupportComments.querySelector(".comment-selector");
-          // init
-          commentSwitcher(0, shortSupportComments, comment1Selected);
+        let touchStartX1 = 0;
+        let touchEndX1 = 0;
+        // init
+        commentSwitcher(0, shortSupportComments, comment1Selected);
         previewComment1.addEventListener("click", () => {
           commentSwitcher(-1, shortSupportComments, comment1Selected);
           comment1Selected = selectedComment;
@@ -41,6 +43,16 @@ document.addEventListener("DOMContentLoaded", async () => {
           );
           comment1Selected = selectedComment;
         });
+        //glissement tactile sur le carrousel
+        shortSupportComments.addEventListener("touchstart", (event) => {
+          touchStartX1 = event.changedTouches[0].screenX; // capture le premier point de contact
+        });
+
+        shortSupportComments.addEventListener("touchend", (event) => {
+          touchEndX1 = event.changedTouches[0].screenX; // capture le dernier point de contact
+          handleSwipe(touchStartX1, touchEndX1,shortSupportComments, comment1Selected);
+          comment1Selected = selectedComment;
+        });
         //carrousel 2
         const individualSupportComments =
           document.getElementById("individual-support");
@@ -50,9 +62,11 @@ document.addEventListener("DOMContentLoaded", async () => {
           individualSupportComments.querySelector(".arrow-crsl-right");
         const selectorBtn2 =
           individualSupportComments.querySelector(".comment-selector");
+          let touchStartX2 = 0;
+          let touchEndX2 = 0;
           // init
-          commentSwitcher(0, individualSupportComments, comment2Selected);
-          previewComment2.addEventListener("click", () => {
+        commentSwitcher(0, individualSupportComments, comment2Selected);
+        previewComment2.addEventListener("click", () => {
           commentSwitcher(-1, individualSupportComments, comment2Selected);
           comment2Selected = selectedComment;
         });
@@ -68,6 +82,16 @@ document.addEventListener("DOMContentLoaded", async () => {
             comment2Selected
           );
           comment2Selected = selectedComment;
+        });
+         //glissement tactile sur le carrousel
+         individualSupportComments.addEventListener("touchstart", (event) => {
+          touchStartX2 = event.changedTouches[0].screenX; // capture le premier point de contact
+        });
+
+        individualSupportComments.addEventListener("touchend", (event) => {
+          touchEndX2 = event.changedTouches[0].screenX; // capture le dernier point de contact
+          handleSwipe(touchStartX2, touchEndX2,shortSupportComments, comment2Selected);
+          comment1Selected = selectedComment;
         });
       });
       break;
@@ -98,14 +122,26 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 //----------------------------FONCTIONS------------------------------//
-// Fonction pour injecter le contenu HTML
-// Fonction d'envoi du formulaire
-function formSubmit(event) {
-  event.preventDefault();
-  const message = document.getElementById("message").value;
-  const clientEmail = document.getElementById("client-email").value;
-  sendMessage(message, clientEmail);
+// Fonstion pour changer les commentaires au balayage tactile du carrousel
+function handleSwipe(
+  touchStart,
+  touchEnd,
+  carrouselRef,
+  currentCommentselected
+) {
+  if (touchStart > touchEnd ) {
+    console.log("Swipe gauche détecté!");
+    // Action pour un swipe vers la gauche
+    commentSwitcher(-1, carrouselRef, currentCommentselected);
+  }
+  if (touchStart < touchEnd) {
+    console.log("Swipe droite détecté!");
+    // Action pour un swipe vers la droite
+    commentSwitcher(+1, carrouselRef, currentCommentselected);
+  }
 }
+
+// Fonction pour injecter le contenu HTML
 function injectHTML(htmlFileUrl) {
   return fetch(htmlFileUrl)
     .then((response) => {
@@ -121,4 +157,11 @@ function injectHTML(htmlFileUrl) {
       console.error("Erreur lors du chargement du fichier HTML:", error);
       return "<section><h1>Désolé, une erreur s'est produite, si le problême persiste, merci de m'en informer</h1><p>Nathalie.</p></section>";
     });
+}
+// Fonction d'envoi du formulaire
+function formSubmit(event) {
+  event.preventDefault();
+  const message = document.getElementById("message").value;
+  const clientEmail = document.getElementById("client-email").value;
+  sendMessage(message, clientEmail);
 }

@@ -134,12 +134,13 @@ header {
     color: color.$primary;
     font-size: 2rem;
     display: block;
-
+    margin: 2rem 1rem 1rem 1rem;
     &:hover {
       color: color.$accent;
     }
     @media (width > $breakpoint) {
       padding-top: 1rem;
+      margin: 0;
       border-top: solid 2px transparent;
       &-selected {
         border-top: solid 2px color.$primary;

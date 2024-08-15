@@ -1,4 +1,5 @@
 let selectedComment = 0;
+
 function commentSwitcher(move, carrousel, currentSelection) {
   const comments = carrousel.querySelectorAll(".comment");
   const arrowLeft = carrousel.querySelector(".arrow-crsl-left");

@@ -13,7 +13,8 @@ const nextComment = carrousel.querySelector(".arrow-crsl-right");
 let commentSelected = 0;
 const delay = 8; // Temps en seconde entre chaque affichage de commentaire
 let commentDisplayer; // Cible l'afficheur pour le démarrer ou le réinitialiser
-
+let touchStartX = 0;
+let touchEndX = 0;
 // Formulaire de contact
 const mailSender = document.getElementById("mail-sender");
 
@@ -29,7 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Gestion des événements pour les boutons de sélection de commentaire
   commentSelector.addEventListener("change", (event) => {
     event.preventDefault();
-    commentSwitcher(event.target.value - commentSelected, carrousel, commentSelected);
+    commentSwitcher(
+      event.target.value - commentSelected,
+      carrousel,
+      commentSelected
+    );
     commentSelected = selectedComment;
     commentRunner();
   });
@@ -46,10 +51,21 @@ document.addEventListener("DOMContentLoaded", () => {
     commentSelected = selectedComment;
     commentRunner();
   });
+  //glissement tactile sur le carrousel
+  carrousel.addEventListener("touchstart", (event) => {
+    touchStartX = event.changedTouches[0].screenX; // capture le premier point de contact
+  });
 
+  carrousel.addEventListener("touchend", (event) => {
+    touchEndX = event.changedTouches[0].screenX; // capture le dernier point de contact
+    handleSwipe(touchStartX, touchEndX, carrousel, commentSelected);
+    commentSelected = selectedComment;
+    commentRunner();
+  });
   // Démarrage du carrousel de commentaires
-  commentSwitcher(0, carrousel, commentSelected);// Démarre l'afficheur de commentaires dès le chargement
+  commentSwitcher(0, carrousel, commentSelected); // Démarre l'afficheur de commentaires dès le chargement
   commentRunner(); // puis démarre le minuteur pour switcher l'affichage tous les n secondes (cf: const delay)
+ 
   // Envoi du formulaire de contact au back-end
   mailSender.addEventListener("submit", (event) => {
     postToMailer(event);
@@ -63,14 +79,35 @@ const observerOptions = {
   threshold: 1, // Le seuil de 1 signifie que l'observer déclenchera une entrée lorsque 100% de l'élément sera visible dans le viewport.
 };
 
-const viewPortEntranceObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.remove(...["hidden", "hidden-smooth"]);
-      observer.unobserve(entry.target); // Désabonne pour éviter les fuites de mémoire
-    }
-  });
-}, observerOptions);
+const viewPortEntranceObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove(...["hidden", "hidden-smooth"]);
+        observer.unobserve(entry.target); // Désabonne pour éviter les fuites de mémoire
+      }
+    });
+  },
+  observerOptions
+);
+// Fonstion pour changer les commentaires au balayage tactile du carrousel
+function handleSwipe(
+  touchStart,
+  touchEnd,
+  carrouselRef,
+  currentCommentselected
+) {
+  if (touchStart > touchEnd ) {
+    console.log("Swipe gauche détecté!");
+    // Action pour un swipe vers la gauche
+    commentSwitcher(-1, carrouselRef, currentCommentselected);
+  }
+  if (touchStart < touchEnd) {
+    console.log("Swipe droite détecté!");
+    // Action pour un swipe vers la droite
+    commentSwitcher(+1, carrouselRef, currentCommentselected);
+  }
+}
 
 // Fonction pour faire défiler les commentaires automatiquement
 function commentRunner() {

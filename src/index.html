@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="accompagnement psychologique bienveillant par Nathalie GODIER. Découvrez mon offre et contactez moi pour un soutien empathique.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Thalys développement</title>
     <!-- Open Graph (Facebook and WhatsApp) -->
     <meta property="og:title" content="Thalys Développement">
-    <meta property="og:description"
-        content="Accompagnement Psychologique Bienveillant par Nathalie GODIER. Découvrez notre offre et contactez-nous pour un soutien empathique.">
+    <meta property="og:description" content="accompagnement psychologique bienveillant par Nathalie GODIER. Découvrez mon offre et contactez moi pour un soutien empathique.">
     <meta property="og:image" content="https://thalys-developpement.fr/assets/portrait_nat.webp">
     <meta property="og:url" content="https://thalys-developpement.fr/">
     <meta property="og:type" content="website">
@@ -18,8 +18,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Thalys Développement">
-    <meta name="twitter:description"
-        content="Accompagnement Psychologique Bienveillant par Nathalie GODIER. Découvrez notre offre et contactez-nous pour un soutien empathique.">
+    <meta name="twitter:description" content="accompagnement psychologique bienveillant par Nathalie GODIER. Découvrez mon offre et contactez moi pour un soutien empathique.">
     <meta name="twitter:image" content="https://thalys-developpement.fr/assets/portrait_nat.webp">
     <!-- <meta name="twitter:site" content="@thalys-developpement"> --><!--si compte twitter existant-->
 
@@ -47,7 +46,7 @@
     <header>
         <div class="top-header top-header-accueil">
             <h1>Nathalie GODIER</h1>
-            <div id="menuTrigger" role="button">
+            <div id="menuTrigger" role="button" aria-label="ouvre ou ferme le menu">
                 <div class="stripe"></div>
                 <div class="stripe"></div>
                 <div class="stripe"></div>
@@ -123,12 +122,10 @@
 
             <div class="cta">
                 <p>envie de vous lançer ?</p>
-                <div class="cta-btn">
-                    <a href="contact.html">
+                    <a class="cta-btn" href="contact.html" aria-label="Aller au formulaire de contact">
                         un clic pour repartir
                         <img class="icon" src="../assets/chevron.svg" alt="icon du bouton contact">
                     </a>
-                </div>
             </div>
         </section>
         <section class="advices">
@@ -136,15 +133,15 @@
             <div id="accueil-carousel" class="carrousel">
                 <form class="comment-selector">
                     <label class="pink-radio">
-                        <input name="commment-selection" value="0" type="radio" checked></input>
+                        <input name="commment-selection" value="0" type="radio" checked aria-label="selectionne le commentaire numero 1"></input>
                         <span class="radio-mark"></span>
                     </label>
                     <label class="pink-radio">
-                        <input name="commment-selection" value="1" type="radio"></input>
+                        <input name="commment-selection" value="1" type="radio" aria-label="selectionne le commentaire numero 2"></input>
                         <span class="radio-mark"></span>
                     </label>
                     <label class="pink-radio">
-                        <input name="commment-selection" value="2" type="radio"></input>
+                        <input name="commment-selection" value="2" type="radio" aria-label="selectionne le commentaire numero 3"></input>
                         <span class="radio-mark"></span>
                     </label>
                 </form>
