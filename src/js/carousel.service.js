@@ -38,7 +38,7 @@ function commentSwitcher(move, carrousel, currentSelection) {
     arrowLeft.style.filter = "";
   }
 
-  if (selectedComment >= comments.length) {
+  if (selectedComment >= comments.length-1) {
     arrowRight.style.filter = "grayscale(1)";
   } else {
     arrowRight.style.filter = "";

@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         individualSupportComments.addEventListener("touchend", (event) => {
           touchEndX2 = event.changedTouches[0].screenX; // capture le dernier point de contact
-          handleSwipe(touchStartX2, touchEndX2,shortSupportComments, comment2Selected);
-          comment1Selected = selectedComment;
+          handleSwipe(touchStartX2, touchEndX2,individualSupportComments, comment2Selected);
+          comment2Selected = selectedComment;
         });
       });
       break;
@@ -130,12 +130,10 @@ function handleSwipe(
   currentCommentselected
 ) {
   if (touchStart > touchEnd ) {
-    console.log("Swipe gauche détecté!");
     // Action pour un swipe vers la gauche
     commentSwitcher(-1, carrouselRef, currentCommentselected);
   }
   if (touchStart < touchEnd) {
-    console.log("Swipe droite détecté!");
     // Action pour un swipe vers la droite
     commentSwitcher(+1, carrouselRef, currentCommentselected);
   }

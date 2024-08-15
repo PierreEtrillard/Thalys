@@ -1,6 +1,7 @@
 @use "colors" as color;
 .advices {
     border-top: solid 0.2rem color.$accent;
+    border-bottom: solid 0.2rem color.$accent;
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -8,8 +9,11 @@
     padding-bottom: 2rem;
     h2,
     h5 {
-      color: color.$accent;
       font-size: 1.5rem;
+      background-color: color.$grey;
+      width: 83%;
+      padding: 2rem;
+      margin: 0;
     }
   }
   .carrousel {
