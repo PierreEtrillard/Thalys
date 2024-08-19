@@ -1,20 +1,11 @@
-@keyframes slideFromBottom {
-  from {
-    transform: translateY(200%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.hidden {
+  transform: scaleX(0);
 }
-
-@keyframes gradualAppearance{
-  from{opacity: 0;}
-  to{opacity: 1;}
+.hidden-smooth {
+  opacity: 0;
+  transform: scale(0);
 }
-
-@keyframes moveUp {
-  from{transform: translateY(0);}
-  to{transform: translateY(6px)}
+.appeared {
+  opacity: 1;
+  transform: none;
 }

@@ -9,6 +9,7 @@ Les dépendances suivante sont toutefois **necessaires pour la mise en productio
 - html-minifier-terser
 - postcss
 - postcss-cli
+*ces bibliothèques minify les fichiers en sortie et ajoute les prefix css necessaires aux différent navigateurs* 
 
 L'ensemble de ces dépendances ainsi que sass est **installable en une seul commande** à executer dans le dossier 'Thalys':
 `npm install --save`
@@ -27,6 +28,18 @@ Le projet est construit comme un site purement static avec la page d'accueil en 
 
 Afin d'eviter la répetition des headers et footers des autres pages, à la maniére d'une Single Page App, **un generateur de contenu en JavaScript est implémenté dans le fichier pages.js**.
 Celui-ci est **rattaché pages.html** et *y injecte le contenu des fichiers html placés dans le repertoire pages/*
+
+#### *ajout de nouvelles pages*
+l'ajout de nouvelles pages necessitera les 3 étapes suivante:
+1. coder le html dans un nouveau fichier du repertoire "pages/" :
+  le fichier contiendra uniquement les sections à injecter dans le main
+
+2. mettre a jour le switch statement de pages.js[¹] et les liens dans les fichiers .html ainsi : href="?new_page_name"
+[¹]: il suffit d'ajouter un `case "new_page_name" : injectHtml("pages/new_page_name.html");
+break;`
+
+3. ajouter un script  `"build:new_page_name:html" : "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/new_page_name.html -o dist/new_page_name.html",` au package.json
+et mettre à jour build:html en ajoutant `&& npm run build:new_page_name:html` a la fin
 
 ### CSS
 

@@ -1,7 +1,7 @@
+@use "typos" as *;
 @use "colors" as color;
 @use "layouts" as layout;
-@use "animations" as animation;
-@use "typos" as *;
+@use "animations" as *;
 @use "buttons" as *;
 @use "carousel" as *;
 $breakpoint: 830px;
@@ -12,6 +12,12 @@ html body {
   padding: 0;
   font-family: "body", sans-serif;
   background-color: color.$light;
+}
+h1{
+  font-family: "title", sans-serif;
+}
+blockquote {
+  font-family: "citation", sans-serif;
 }
 p,
 blockquote {
@@ -30,20 +36,6 @@ img {
   width: fit-content;
   height: fit-content;
 }
-blockquote {
-  font-family: citation, sans-serif;
-}
-.hidden {
-  transform: scaleX(0);
-}
-.hidden-smooth {
-  opacity: 0;
-  transform: scale(0);
-}
-.appeared {
-  opacity: 1;
-  transform: none;
-}
 /* _________________________________________________________
   ****      BANNIERE TITRE ET BOUTON MENU     ****          */
 header {
@@ -52,7 +44,6 @@ header {
   border-bottom: solid 0.2rem color.$warn;
 }
 .top-header {
-  font-family: "title", sans-serif;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;

@@ -1,4 +1,4 @@
-import sendMessage from "./form.service.js";
+import sendMessage from "./message.service.js";
 import { commentSwitcher, selectedComment } from "./carousel.service.js";
 // Déclarations des variables
 let selectedPage = window.location.search.slice(1); // slice(1) extrait tout la string après le premier caractère (débarrase le ? du parmas)

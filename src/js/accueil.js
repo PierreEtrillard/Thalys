@@ -1,5 +1,5 @@
 import { commentSwitcher, selectedComment } from "./carousel.service.js";
-import sendMessage from "./form.service.js";
+import sendMessage from "./message.service.js";
 
 //-------------------------DECLARATIONS DES VARIABLES--------------------------------//
 const feelingsTitles = document.querySelectorAll(".feelings");
