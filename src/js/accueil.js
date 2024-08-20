@@ -4,7 +4,8 @@ import sendMessage from "./message.service.js";
 //-------------------------DECLARATIONS DES VARIABLES--------------------------------//
 const feelingsTitles = document.querySelectorAll(".feelings");
 const targetsTitles = document.querySelectorAll(".targets");
-
+const customersAlertWrapper = document.querySelector("#customers-alert-wrapper");
+const customersAlert = document.querySelector("#customers-alert-wrapper>p");
 // Carrousel:
 const carrousel = document.getElementById("accueil-carousel");
 const commentSelector = carrousel.querySelector(".comment-selector");
@@ -17,6 +18,9 @@ let touchStartX = 0;
 let touchEndX = 0;
 // Formulaire de contact
 const mailSender = document.getElementById("mail-sender");
+const messageField = document.getElementById("message");
+const emailField = document.getElementById("client-email");
+const senderBtn = document.querySelector(".sender-btn");
 
 //--------------------------INITIALISATION DES LISTENERS--------------------------------//
 document.addEventListener("DOMContentLoaded", () => {
@@ -65,10 +69,19 @@ document.addEventListener("DOMContentLoaded", () => {
   // Démarrage du carrousel de commentaires
   commentSwitcher(0, carrousel, commentSelected); // Démarre l'afficheur de commentaires dès le chargement
   commentRunner(); // puis démarre le minuteur pour switcher l'affichage tous les n secondes (cf: const delay)
- 
+
+  mailSender.addEventListener("change", () => {
+    messageField.validity.valid && emailField.validity.valid
+      ? senderBtn.classList.remove("sender-btn-disabled")
+      : senderBtn.classList.add("sender-btn-disabled");
+  });
   // Envoi du formulaire de contact au back-end
-  mailSender.addEventListener("submit", (event) => {
-    postToMailer(event);
+  mailSender.addEventListener("submit", async (event) => {
+    {
+      await postToMailer(event);
+      mailSender.reset();
+      senderBtn.classList.add(sender-btn-disabled)
+    }
   });
 });
 
@@ -97,13 +110,11 @@ function handleSwipe(
   carrouselRef,
   currentCommentselected
 ) {
-  if (touchStart > touchEnd ) {
-    console.log("Swipe gauche détecté!");
+  if (touchStart > touchEnd) {
     // Action pour un swipe vers la gauche
     commentSwitcher(-1, carrouselRef, currentCommentselected);
   }
   if (touchStart < touchEnd) {
-    console.log("Swipe droite détecté!");
     // Action pour un swipe vers la droite
     commentSwitcher(+1, carrouselRef, currentCommentselected);
   }
@@ -124,9 +135,16 @@ function commentRunner() {
 }
 
 // Fonction d'envoi vers mail_sender.php
-function postToMailer(event) {
+async function postToMailer(event) {
   event.preventDefault();
-  const message = document.getElementById("message").value;
-  const email = document.getElementById("client-email").value;
-  sendMessage(message, email);
+
+  sendMessage(messageField.value, emailField.value).then((res) => {
+    customersAlert.textContent = res;
+    customersAlertWrapper.classList.remove("hidden");
+    customersAlert.classList.remove("hidden");
+    setTimeout(() => {
+      customersAlert.classList.add("hidden");
+      customersAlertWrapper.classList.add("hidden");
+    }, 5000);
+  });
 }

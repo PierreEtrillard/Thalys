@@ -4,6 +4,10 @@ import { commentSwitcher, selectedComment } from "./carousel.service.js";
 let selectedPage = window.location.search.slice(1); // slice(1) extrait tout la string après le premier caractère (débarrase le ? du parmas)
 const menulinks = document.querySelectorAll("nav.menu>ul>li>a");
 const mainContenair = document.getElementById("content-eager");
+const customersAlertWrapper = document.querySelector(
+  "#customers-alert-wrapper"
+);
+const customersAlert = document.querySelector("#customers-alert-wrapper>p");
 let comment1Selected = 0;
 let comment2Selected = 0;
 //--------------------------INITIALISATION--------------------------------//
@@ -50,7 +54,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         shortSupportComments.addEventListener("touchend", (event) => {
           touchEndX1 = event.changedTouches[0].screenX; // capture le dernier point de contact
-          handleSwipe(touchStartX1, touchEndX1,shortSupportComments, comment1Selected);
+          handleSwipe(
+            touchStartX1,
+            touchEndX1,
+            shortSupportComments,
+            comment1Selected
+          );
           comment1Selected = selectedComment;
         });
         //carrousel 2
@@ -62,9 +71,9 @@ document.addEventListener("DOMContentLoaded", async () => {
           individualSupportComments.querySelector(".arrow-crsl-right");
         const selectorBtn2 =
           individualSupportComments.querySelector(".comment-selector");
-          let touchStartX2 = 0;
-          let touchEndX2 = 0;
-          // init
+        let touchStartX2 = 0;
+        let touchEndX2 = 0;
+        // init
         commentSwitcher(0, individualSupportComments, comment2Selected);
         previewComment2.addEventListener("click", () => {
           commentSwitcher(-1, individualSupportComments, comment2Selected);
@@ -83,14 +92,19 @@ document.addEventListener("DOMContentLoaded", async () => {
           );
           comment2Selected = selectedComment;
         });
-         //glissement tactile sur le carrousel
-         individualSupportComments.addEventListener("touchstart", (event) => {
+        //glissement tactile sur le carrousel
+        individualSupportComments.addEventListener("touchstart", (event) => {
           touchStartX2 = event.changedTouches[0].screenX; // capture le premier point de contact
         });
 
         individualSupportComments.addEventListener("touchend", (event) => {
           touchEndX2 = event.changedTouches[0].screenX; // capture le dernier point de contact
-          handleSwipe(touchStartX2, touchEndX2,individualSupportComments, comment2Selected);
+          handleSwipe(
+            touchStartX2,
+            touchEndX2,
+            individualSupportComments,
+            comment2Selected
+          );
           comment2Selected = selectedComment;
         });
       });
@@ -104,7 +118,20 @@ document.addEventListener("DOMContentLoaded", async () => {
       //          ***INJECTION DE LA PAGE CONTACT***
       await injectHTML("/pages/contact.html").then(() => {
         const contactForm = document.getElementById("contact-form");
-        contactForm.addEventListener("submit", (event) => formSubmit(event));
+        const messageField = document.getElementById("message");
+        const emailField = document.getElementById("client-email");
+        const senderBtn = document.getElementById("sender-btn");
+
+        contactForm.addEventListener("change", () => {
+          messageField.validity.valid && emailField.validity.valid
+            ? senderBtn.classList.remove("sender-btn-disabled")
+            : senderBtn.classList.add("sender-btn-disabled");
+        });
+        contactForm.addEventListener("submit", (event) => {
+          formSubmit(event);
+          contactForm.reset();
+          senderBtn.classList.add("sender-btn-disabled");
+        });
       });
       menulinks[3].classList.toggle("link-selected");
       break;
@@ -129,7 +156,7 @@ function handleSwipe(
   carrouselRef,
   currentCommentselected
 ) {
-  if (touchStart > touchEnd ) {
+  if (touchStart > touchEnd) {
     // Action pour un swipe vers la gauche
     commentSwitcher(-1, carrouselRef, currentCommentselected);
   }
@@ -161,5 +188,13 @@ function formSubmit(event) {
   event.preventDefault();
   const message = document.getElementById("message").value;
   const clientEmail = document.getElementById("client-email").value;
-  sendMessage(message, clientEmail);
+  sendMessage(message, clientEmail).then((res) => {
+    customersAlert.textContent = res;
+    customersAlertWrapper.classList.remove("hidden");
+    customersAlert.classList.remove("hidden");
+    setTimeout(() => {
+      customersAlert.classList.add("hidden");
+      customersAlertWrapper.classList.add("hidden");
+    }, 5000);
+  });
 }

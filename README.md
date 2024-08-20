@@ -9,6 +9,7 @@ Les dépendances suivante sont toutefois **necessaires pour la mise en productio
 - html-minifier-terser
 - postcss
 - postcss-cli
+
 *ces bibliothèques minify les fichiers en sortie et ajoute les prefix css necessaires aux différent navigateurs* 
 
 L'ensemble de ces dépendances ainsi que sass est **installable en une seul commande** à executer dans le dossier 'Thalys':

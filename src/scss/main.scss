@@ -13,7 +13,7 @@ html body {
   font-family: "body", sans-serif;
   background-color: color.$light;
 }
-h1{
+h1 {
   font-family: "title", sans-serif;
 }
 blockquote {
@@ -35,6 +35,16 @@ img {
   max-width: 100vw;
   width: fit-content;
   height: fit-content;
+}
+#customers-alert-wrapper{
+  position: fixed;
+  top: 1rem;
+  width: 100%;
+  @include layout.centralizer;
+  z-index: 100;
+  p{
+    color: black;
+  }
 }
 /* _________________________________________________________
   ****      BANNIERE TITRE ET BOUTON MENU     ****          */
@@ -99,6 +109,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 1;
   @media (width < $breakpoint) {
     position: fixed;
     right: 0;
