@@ -36,13 +36,13 @@ img {
   width: fit-content;
   height: fit-content;
 }
-#customers-alert-wrapper{
+#customers-alert-wrapper {
   position: fixed;
   top: 1rem;
   width: 100%;
   @include layout.centralizer;
   z-index: 100;
-  p{
+  p {
     color: black;
   }
 }

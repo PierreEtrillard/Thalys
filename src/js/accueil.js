@@ -4,7 +4,9 @@ import sendMessage from "./message.service.js";
 //-------------------------DECLARATIONS DES VARIABLES--------------------------------//
 const feelingsTitles = document.querySelectorAll(".feelings");
 const targetsTitles = document.querySelectorAll(".targets");
-const customersAlertWrapper = document.querySelector("#customers-alert-wrapper");
+const customersAlertWrapper = document.querySelector(
+  "#customers-alert-wrapper"
+);
 const customersAlert = document.querySelector("#customers-alert-wrapper>p");
 // Carrousel:
 const carrousel = document.getElementById("accueil-carousel");
@@ -80,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       await postToMailer(event);
       mailSender.reset();
-      senderBtn.classList.add(sender-btn-disabled)
+      senderBtn.classList.add(sender - btn - disabled);
     }
   });
 });
