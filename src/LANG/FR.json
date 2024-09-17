@@ -1,22 +1,27 @@
-HEAD_name="Nathalie GODIER";
-HEAD_HOME_title="Accompagnement Psychologique Bienveillant";
-HEAD_alto_photo="photo portrait de Nathalie GODIER";
-HEAD_HOME_description="Grâce à la visioconference je vous apporte un soutien empathique dans vos difficultés ou que vous soyez.";
-
+{
+  "HEAD": {
+    "name": "Nathalie GODIER",
+    "HOME_title": "Accompagnement Psychologique Bienveillant",
+    "alt_photo": "photo portrait de Nathalie GODIER"
+  }
+}
+_commentaire :
 HEAD_OFFER_title="Offre d'Accompagnement Psychologique Bienveillant";
-HEAD_OFFER_description="Grâce à la visioconference je vous apporte un soutien empathique dans vos difficultés ou que vous soyez.";
-
-HEAD_ABOUT_title="A Propos de Nathalie GODIER: qui je suis et mon parcours Accompagnement Psychologique Bienveillant";
-HEAD_ABOUT_description="Je suis heureuse de me présenter en vidéo pour vous expliquer qui je suis et mon parcours pour devenir accompagante.";
-
-HEAD_CONTACT_title="Contacter Nathalie GODIER pour un Accompagnement Psychologique Bienveillant";
-HEAD_CONTACT_description="Je serai heureuse de vous lire ou de vous écouter si vous me laissez un message!";
-
-HEAD_LEGAL_title="Mentions légales de Nathalie GODIER";
-HEAD_LEGAL_description="L'entreprise qui me sert de structure pour exercer ainsi que les mentions légales de mon site.";
-
-HEAD_CONFIDENT_title="Confidentialité pour un Accompagnement Psychologique Bienveillant";
-HEAD_CONFIDENT_description="La confidentialité, essentielle pour se sentir en sécurité lors d'un accompagnement psychologique.";
+  HEAD_HOME_description="Grâce à la visioconference je vous apporte un soutien empathique dans vos difficultés ou que vous soyez.";
+  
+  HEAD_OFFER_description="Grâce à la visioconference je vous apporte un soutien empathique dans vos difficultés ou que vous soyez.";
+  
+  HEAD_ABOUT_title="A Propos de Nathalie GODIER: qui je suis et mon parcours Accompagnement Psychologique Bienveillant";
+  HEAD_ABOUT_description="Je suis heureuse de me présenter en vidéo pour vous expliquer qui je suis et mon parcours pour devenir accompagante.";
+  
+  HEAD_CONTACT_description="Je serai heureuse de vous lire ou de vous écouter si vous me laissez un message!";
+  
+  HEAD_LEGAL_title="Mentions légales de Nathalie GODIER";
+  HEAD_LEGAL_description="L'entreprise qui me sert de structure pour exercer ainsi que les mentions légales de mon site.";
+  
+  HEAD_CONFIDENT_title="Confidentialité pour un Accompagnement Psychologique Bienveillant";
+  HEAD_CONTACT_title="Contacter Nathalie GODIER pour un Accompagnement Psychologique Bienveillant";
+  HEAD_CONFIDENT_description="La confidentialité, essentielle pour se sentir en sécurité lors d'un accompagnement psychologique.";
 
 NAV_HOME="Accueil";
 NAV_OFFER="Mon offre";
@@ -119,4 +124,4 @@ OFFER_quote_2.1="“Je vivais une rupture sentimentale très douloureuse. Un vra
 OFFER_title_4="ACCOMPAGNEMENT DE GROUPES";
 OFFER_text_4.1="Mon projet est de développer l'accompagnement de groupe.";
 OFFER_text_4.2="Cette activité sera mise à disposition de mes clients dès qu'elle sera finalisée.";
-
+*/
