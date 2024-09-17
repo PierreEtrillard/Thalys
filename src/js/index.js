@@ -5,11 +5,10 @@ const menuTrigger = document.getElementById("menuTrigger");
 let hideScrollUpBtnTimeout;
 const menu = document.querySelector(".menu");
 const menuStripes = document.querySelectorAll(".stripe");
-// TEXTES CIBLES
+// ciblage des éléments à traduire 
 const title = document.getElementById("full-name");
 //--------------------------INITIALISATION--------------------------------//
-//  text injection
-// 1 chercher le texte ds Lang/**.json
+//  injection du texte ds LANG/**.json
 fetch("../LANG/text.json")
   .then((res) => res.json())
   .then((textObject) => {

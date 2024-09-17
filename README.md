@@ -18,9 +18,9 @@ L'ensemble de ces dépendances ainsi que sass est **installable en une seul comm
 
 ## Déploiement
 
-- [ ] **une seul commande** est nécesaire à la mise en production: `npm run build` *celle ci générera des fichiers minifiés des fichiers html,css et js au sein du dossier **dist/**.*
+- [ ] **une seul commande** est nécesaire à la mise en production: `npm run build_fr` ou `npm run build_en` *celle ci générera des fichiers minifiés des fichiers html,css,js et json dans la langue spécifiée au sein du dossier **dist/**.*
 
-- [ ] Pour la **mise en production** il suffit d'**envoyer** les repertoires **dist/**, **asset/**, **fonts/** et les fichiers '**favicon**' et '**license**' sur le serveur.
+- [ ] Pour la **mise en production** il suffit d'**envoyer** les repertoires **dist/**, **asset/**, **fonts/** **LANG/** et les fichiers '**favicon**' et '**license**' sur le serveur.
 
 ## Maintenance 
 ### Architecture
@@ -33,7 +33,8 @@ Celui-ci est **rattaché pages.html** et *y injecte le contenu des fichiers html
 #### *ajout de nouvelles pages*
 l'ajout de nouvelles pages necessitera les 3 étapes suivante:
 1. coder le html dans un nouveau fichier du repertoire "pages/" :
-  le fichier contiendra uniquement les sections à injecter dans le main
+  le fichier contiendra uniquement les sections à injecter dans le main;
+  mettre à jour les fichier de LANG/**.json
 
 2. mettre a jour le switch statement de pages.js[¹] et les liens dans les fichiers .html ainsi : href="?new_page_name"
 [¹]: il suffit d'ajouter un `case "new_page_name" : injectHtml("pages/new_page_name.html");
