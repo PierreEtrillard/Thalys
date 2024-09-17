@@ -5,8 +5,17 @@ const menuTrigger = document.getElementById("menuTrigger");
 let hideScrollUpBtnTimeout;
 const menu = document.querySelector(".menu");
 const menuStripes = document.querySelectorAll(".stripe");
-
+// TEXTES CIBLES
+const title = document.getElementById("full-name");
 //--------------------------INITIALISATION--------------------------------//
+//  text injection
+// 1 chercher le texte ds Lang/**.json
+fetch("../LANG/text.json")
+  .then((res) => res.json())
+  .then((textObject) => {
+    console.table(textObject);
+    title.textContent = textObject.HEAD.name;
+  });
 document.addEventListener("DOMContentLoaded", () => {
   // Ajout d'un écouteur d'événement pour le scroll
   window.addEventListener("scroll", () => btnAppeared(0.2));

@@ -26,7 +26,10 @@
     "build:html:404": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/pages/404.html -o dist/pages/404.html",
     "build:html": "npm run build:html:index && npm run build:html:pages && npm run build:html:contact && npm run build:html:about && npm run build:html:offre && npm run build:html:legal && npm run build:html:confidentiality && npm run build:html:404",
 
-    "build": "npm run build:css && npm run minify:css && npm run build:js && npm run build:html"
+    "build": "npm run build:css && npm run minify:css && npm run build:js && npm run build:html",
+    "build_fr":  "npm run build:css && npm run minify:css && npm run build:js && npm run build:html && json-minify src/LANG/FR.json > dist/LANG/text.json",
+    "build_en":  "npm run build:css && npm run minify:css && npm run build:js && npm run build:html && json-minify src/LANG/EN.json > dist/LANG/text.json"
+
   },
   "keywords": [],
   "author": "",
