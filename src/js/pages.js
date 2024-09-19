@@ -4,6 +4,10 @@ import { commentSwitcher, selectedComment } from "./carousel.service.js";
 let selectedPage = window.location.search.slice(1); // slice(1) extrait tout la string après le premier caractère (débarrase le ? du parmas)
 const menulinks = document.querySelectorAll("nav.menu>ul>li>a");
 const mainContenair = document.getElementById("content-eager");
+//Ajout NG: aller chercher les éléments du header pour en changer les valeurs
+
+//const HEAD_title = document.getElementById("HEAD_title");
+
 const customersAlertWrapper = document.querySelector(
   "#customers-alert-wrapper"
 );
@@ -18,6 +22,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       //          ***INJECTION DE LA PAGE OFFRE***
       await injectHTML("/pages/offre.html").then(() => {
         menulinks[1].classList.toggle("link-selected");
+        //injecter les valeurs des div introduction et presentation
+
         //carrousel 1
         const shortSupportComments = document.getElementById("short-support");
         const previewComment1 =
