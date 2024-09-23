@@ -8,14 +8,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "sass src/scss/main.scss dist/css/raw-styles.css",
     "minify:css": "postcss dist/css/raw-styles.css --use autoprefixer --use cssnano --output dist/css/styles.css",
-
     "build:js:index": "terser src/js/index.js --compress --mangle --output dist/js/index.js",
     "build:js:accueil": "terser src/js/accueil.js --compress --mangle --output dist/js/accueil.js",
     "build:js:pages": "terser src/js/pages.js --compress --mangle --output dist/js/pages.js",
     "build:js:carousel.service": "terser src/js/carousel.service.js --compress --mangle --output dist/js/carousel.service.js",
     "build:js:message.service": "terser src/js/message.service.js --compress --mangle --output dist/js/message.service.js",
     "build:js": "npm run build:js:index && npm run build:js:accueil && npm run build:js:pages && npm run build:js:carousel.service && npm run build:js:message.service",
-
     "build:html:index": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/index.html -o dist/index.html",
     "build:html:pages": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/pages/pages.html -o dist/pages/pages.html",
     "build:html:contact": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/pages/contact.html -o dist/pages/contact.html",
@@ -25,11 +23,9 @@
     "build:html:confidentiality": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/pages/confidentiality.html -o dist/pages/confidentiality.html",
     "build:html:404": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/pages/404.html -o dist/pages/404.html",
     "build:html": "npm run build:html:index && npm run build:html:pages && npm run build:html:contact && npm run build:html:about && npm run build:html:offre && npm run build:html:legal && npm run build:html:confidentiality && npm run build:html:404",
-
     "build": "npm run build:css && npm run minify:css && npm run build:js && npm run build:html",
-    "build_fr":  "npm run build && json-minify src/LANG/FR.json > dist/LANG/text.json",
-    "build_en":  "npm run build && json-minify src/LANG/EN.json > dist/LANG/text.json"
-
+    "build_fr": "npm run build && json-minify src/LANG/FR.json > dist/LANG/text.json",
+    "build_en": "npm run build && json-minify src/LANG/EN.json > dist/LANG/text.json"
   },
   "keywords": [],
   "author": "",

@@ -9,6 +9,7 @@ Les dépendances suivante sont toutefois **necessaires pour la mise en productio
 - html-minifier-terser
 - postcss
 - postcss-cli
+- json-minify
 
 *ces bibliothèques minify les fichiers en sortie et ajoute les prefix css necessaires aux différent navigateurs* 
 
@@ -20,7 +21,7 @@ L'ensemble de ces dépendances ainsi que sass est **installable en une seul comm
 
 - [ ] **une seul commande** est nécesaire à la mise en production: `npm run build_fr` ou `npm run build_en` *celle ci générera des fichiers minifiés des fichiers html,css,js et json dans la langue spécifiée au sein du dossier **dist/**.*
 
-- [ ] Pour la **mise en production** il suffit d'**envoyer** les repertoires **dist/**, **asset/**, **fonts/** **LANG/** et les fichiers '**favicon**' et '**license**' sur le serveur.
+- [ ] Pour la **mise en production** il suffit d'**envoyer** les repertoires **dist/**, **asset/**, **fonts/**, **LANG/**, **api/** et mettre le fichier **assets\favicon_alt\favicon.ico** à la racine ainsi que les fichiers '**license**' sur le serveur.
 
 ## Maintenance 
 ### Architecture

@@ -1,30 +1,31 @@
 {
   "head": {
     "title": "Nathalie GODIER - Thalys Développement",
+    "title_social_media": "Nathalie GODIER - Thalys Développement",
     "description": "Découvrez l'accompagnement psychologique bienveillant que je vous propose. Vous pourrez également me contacter si vous êtes à la recherche d'un soutien empathique.",
     "description_social_media": "Accompagnement psychologique bienveillant par Nathalie GODIER."
-  }
+  },
   "chevron": {
-    "label-up": "Remonter au début de la page",
-    "alt-img": "fleche vers le haut",
+    "label_up": "Remonter au début de la page",
+    "alt_img": "fleche vers le haut",
     "label_contact": "Aller au formulaire de contact"
-  }
+  },
   "header": {
-    "full-name": "Nathalie GODIER",
+    "full_name": "Nathalie GODIER",
     "alt_photo" : "photo portrait de Nathalie GODIER",
-    "label-href-home": "Aller à la page Accueil",
-    "label-href-offer": "Aller à la page Mon offre",
-    "label-href-about": "Aller à la page A propos",
-    "label-href-contact": "Aller à la page Contact"
-  }
+    "label_href_home": "Aller à la page Accueil",
+    "label_href_offer": "Aller à la page Mon offre",
+    "label_href_about": "Aller à la page A propos",
+    "label_href_contact": "Aller à la page Contact"
+  },
   "footer": {
-    "label-call-btn": "Appeler Nathalie Godier",
-    "label-href-legal": "Aller à la page Mention légales",
+    "label_call_btn": "Appeler Nathalie Godier",
+    "label_href_legal": "Aller à la page Mention légales",
     "legal": "Mentions légales",
-    "label-href-about": "Aller à la page Politique de confidentialité",
+    "label_href_about": "Aller à la page Politique de confidentialité",
     "confidentiality": "Politique de confidentialité",
     "copyrights": "© 2024 Thalys Développement",
     "credits": "Développement web par Pierre Etrillard",
-    "label-href-credits": "Visiter le site de Pierre Etrillard, développeur freelance",
+    "label_href_credits": "Visiter le site de Pierre Etrillard, développeur freelance"
   }
-}
+}   
