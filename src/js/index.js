@@ -7,9 +7,11 @@ const menu = document.querySelector(".menu");
 const menuStripes = document.querySelectorAll(".stripe");
 // ciblage des éléments à traduire HEAD
 const head_title = document.getElementById("head_title");
-const head_title_social_media = document.querySelectorAll("head_title_social_media"); //plusieurs éléments de cette classe
+const head_title_social_media1 = document.getElementById("head_title_social_media1"); //plusieurs éléments de cette classe
+const head_title_social_media2 = document.getElementById("head_title_social_media2"); //plusieurs éléments de cette classe
 const head_description = document.getElementById("head_description");
-const head_description_social_media = document.querySelectorAll("head_description_social_media");
+const head_description_social_media1 = document.getElementById("head_description_social_media1");
+const head_description_social_media2 = document.getElementById("head_description_social_media2");
 //CHEVRON
 const chevron_label_up = document.getElementById("chevron_label_up");
 const chevron_alt_img = document.getElementById("chevron_alt_img");
@@ -21,6 +23,10 @@ const header_label_href_home = document.getElementById("header_label_href_home")
 const header_label_href_offer = document.getElementById("header_label_href_offer");
 const header_label_href_about = document.getElementById("header_label_href_about");
 const header_label_href_contact = document.getElementById("header_label_href_contact");
+const intro_title = document.getElementById("intro_title");
+const intro_quote = document.getElementById("intro_quote");
+const presentation_text = document.getElementById("presentation_text");
+const presentation_picture = document.getElementById("presentation_picture");
 //FOOTER
 const footer_label_call_btn = document.getElementById("footer_label_call_btn");
 const footer_label_href_legal = document.getElementById("footer_label_href_legal");
@@ -32,23 +38,24 @@ const footer_credits = document.getElementById("footer_credits");
 const footer_label_href_credits = document.getElementById("footer_label_href_credits");
 //--------------------------INITIALISATION--------------------------------//
 //  injection du texte ds LANG/**.json
-fetch("../LANG/text.json")
+fetch("/LANG/text.json")
   .then((res) => res.json())
   .then((textObject) => {
     console.table(textObject);
-    head_title.textContent = textObject.head.title; // premier essai Nath
-    head_title_social_media.forEach((translated_item) => {
-      translated_item.setAttribute("content", textObject.head.title_social_media) ;
-    }); //troisième essai: ne fonctionne pas...
-    head_description.setAttribute("content", textObject.head.description);// deuxième essai Nath
-    head_description_social_media.forEach((translated_item) => {
-      translated_item.setAttribute("content", textObject.head.description_social_media) ;
-    }); //4eme essai: ne fonctionne pas non plus...
-    
-    //head_description.textContent = textObject.head.description; // deuxième essai Nath RATE
-    //head_title.setAttribute("content", "blague"); tests Nath pour changer un attribut
-    //head_title.setAttribute("content", textObject.head.title);
-    // title.textContent = textObject.header.full_name; code Pierre 
+    head_title.textContent = textObject.head.title; 
+    head_title_social_media1.setAttribute("content", textObject.head.title_social_media1);
+    head_title_social_media2.setAttribute("content", textObject.head.title_social_media2);
+    head_description.setAttribute("content", textObject.head.description);
+    head_description_social_media1.setAttribute("content", textObject.head.description_social_media1);
+    head_description_social_media2.setAttribute("content", textObject.head.description_social_media2);
+    chevron_label_up.setAttribute("aria-label", textObject.chevron.label_up);
+    chevron_alt_img.setAttribute("alt", textObject.chevron.alt_img);
+    chevron_label_contact.setAttribute("aria-label", textObject.chevron.label_contact);
+    header_full_name.textContent = textObject.header.full_name; 
+    intro_title.textContent = textObject.header.home.intro_title;
+    intro_quote.textContent = textObject.header.home.intro_quote;
+    presentation_text.textContent = textObject.header.home.presentation_text;
+    presentation_picture.textContent = textObject.header.home.presentation_picture;
   });
 document.addEventListener("DOMContentLoaded", () => {
   // Ajout d'un écouteur d'événement pour le scroll

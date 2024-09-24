@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <title id="head_title">Nathalie GODIER - Thalys Développement</title>
     <!-- Open Graph (Facebook and WhatsApp) -->
-    <meta property="og:title" class="head_title_social_media" content="Nathalie GODIER - Thalys Développement">
-    <meta property="og:description" class="head_description_social_media" content="Accompagnement psychologique bienveillant par Nathalie GODIER.">
+    <meta property="og:title" id="head_title_social_media1" content="Nathalie GODIER - Thalys Développement">
+    <meta property="og:description" id="head_description_social_media1" content="Accompagnement psychologique bienveillant par Nathalie GODIER.">
     <meta property="og:image" content="https://thalys-developpement.fr/assets/portrait_nat.webp">
     <meta property="og:url" content="https://thalys-developpement.fr/">
     <meta property="og:type" content="website">
@@ -17,8 +17,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" class="head_title_social_media" content="Thalys Développement">
-    <meta name="twitter:description" class="head_description_social_media" content="Accompagnement psychologique bienveillant par Nathalie GODIER.">
+    <meta name="twitter:title" id="head_title_social_media2" content="Thalys Développement">
+    <meta name="twitter:description" id="head_description_social_media2" content="Accompagnement psychologique bienveillant par Nathalie GODIER.">
     <meta name="twitter:image" content="https://thalys-developpement.fr/assets/portrait_nat.webp">
     <!-- <meta name="twitter:site" content="@thalys-developpement"> --><!--si compte twitter existant-->
 
@@ -34,11 +34,11 @@
     <div id="customers-alert-wrapper" class="hidden">
         <p class="cta-btn hidden"></p>
     </div>
-    <button class="command-btn hidden" aria-label="Remonter au début de la page">
-        <img src="../assets/chevron.svg" alt="icon fleche vers le haut">
+    <button id ="chevron_label_up" class="command-btn hidden" aria-label="Remonter au début de la page">
+        <img id ="chevron_alt_img" src="../assets/chevron.svg" alt="flèche vers le haut">
     </button>
 
-    <a class="command-btn command-btn-bottom hidden" aria-label="Aller au formulaire de contact"
+    <a id ="chevron_label_contact" class="command-btn command-btn-bottom hidden" aria-label="Aller au formulaire de contact"
         href="pages/pages.html?contact">
         <svg xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -68,16 +68,16 @@
             </ul>
         </nav>
         <div class="introduction">
-            <h2>Accompagnement Psychologique Bienveillant</h2>
+            <h2 id ="intro_title">Accompagnement Psychologique Bienveillant</h2>
             <img src="assets/portrait_nat.webp" alt="photo portrait de Nathalie GODIER">
-            <blockquote>
+            <blockquote id ="intro_quote">
                 Grâce à la visioconference je vous apporte un soutien empathique dans vos
                 difficultés ou que vous soyez.
             </blockquote>
         </div>
         <div class="presentation">
-            <img src="assets/logo.webp" alt="logo de thalys developpement">
-            <p>Les oiseaux blessés ou épuisés, ont besoin d’un refuge pour se soigner et récupérer des forces avant de
+            <img id="presentation_picture" src="assets/logo.webp" alt="logo de thalys developpement">
+            <p id ="presentation_text">Les oiseaux blessés ou épuisés, ont besoin d’un refuge pour se soigner et récupérer des forces avant de
                 poursuivre leur voyage.</p>
         </div>
     </header>

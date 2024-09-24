@@ -8,15 +8,35 @@ const customersAlertWrapper = document.querySelector(
   "#customers-alert-wrapper"
 );
 const customersAlert = document.querySelector("#customers-alert-wrapper>p");
+// ciblage des éléments à traduire spécifiques à chaque page
+//HEAD
+const head_title = document.getElementById("head_title");
+//HEADER
+const intro_title = document.getElementById("intro_title");
+const intro_quote = document.getElementById("intro_quote");
+const presentation_text = document.getElementById("presentation_text");
+const presentation_picture = document.getElementById("presentation_picture");
+
 let comment1Selected = 0;
 let comment2Selected = 0;
 //--------------------------INITIALISATION--------------------------------//
 // Initialisation du DOMContentLoaded avant l'injection du main
 document.addEventListener("DOMContentLoaded", async () => {
   switch (selectedPage) {
+
     case "offre":
       //          ***INJECTION DE LA PAGE OFFRE***
       await injectHTML("/pages/offre.html").then(() => {
+        fetch("/LANG/text.json")
+        .then((res) => res.json())
+        .then((textObject) => {
+          head_title.textContent = textObject.head.title_offer; 
+          intro_title.textContent = textObject.header.offer.intro_title;
+          intro_quote.textContent = textObject.header.offer.intro_quote;
+          presentation_text.textContent = textObject.header.offer.presentation_text;
+          presentation_picture.setAttribute("src", textObject.header.offer.presentation_picture_src);
+          presentation_picture.setAttribute("alt", textObject.header.offer.presentation_picture_alt);
+        });
         menulinks[1].classList.toggle("link-selected");
         //carrousel 1
         const shortSupportComments = document.getElementById("short-support");
@@ -111,12 +131,33 @@ document.addEventListener("DOMContentLoaded", async () => {
       break;
     case "about":
       //          ***INJECTION DE LA PAGE PROPOS***
-      injectHTML("/pages/about.html");
+      await injectHTML("/pages/about.html").then(() => {
+        fetch("/LANG/text.json")
+        .then((res) => res.json())
+        .then((textObject) => {
+          head_title.textContent = textObject.head.title_about; 
+          intro_title.textContent = textObject.header.about.intro_title;
+          intro_quote.textContent = textObject.header.about.intro_quote;
+          presentation_text.textContent = textObject.header.about.presentation_text;
+          presentation_picture.setAttribute("src", textObject.header.about.presentation_picture_src);
+          presentation_picture.setAttribute("alt", textObject.header.about.presentation_picture_alt);
+        });
+      });
       menulinks[2].classList.toggle("link-selected");
       break;
     case "contact":
       //          ***INJECTION DE LA PAGE CONTACT***
       await injectHTML("/pages/contact.html").then(() => {
+        fetch("/LANG/text.json")
+        .then((res) => res.json())
+        .then((textObject) => {
+          head_title.textContent = textObject.head.title_contact; 
+          intro_title.textContent = textObject.header.contact.intro_title;
+          intro_quote.textContent = textObject.header.contact.intro_quote;
+          presentation_text.textContent = textObject.header.contact.presentation_text;
+          presentation_picture.setAttribute("src", textObject.header.contact.presentation_picture_src);
+          presentation_picture.setAttribute("alt", textObject.header.contact.presentation_picture_alt);
+        });
         const contactForm = document.getElementById("contact-form");
         const messageField = document.getElementById("message");
         const emailField = document.getElementById("client-email");
@@ -136,12 +177,36 @@ document.addEventListener("DOMContentLoaded", async () => {
       menulinks[3].classList.toggle("link-selected");
       break;
     case "legal":
-      //          ***INJECTION DE LA PAGE MENTIONS LEGAL***
-      injectHTML("/pages/legal.html");
+      //          ***INJECTION DE LA PAGE MENTIONS LEGALES***
+      await injectHTML("/pages/legal.html").then(() => {
+        fetch("/LANG/text.json")
+        .then((res) => res.json())
+        .then((textObject) => {
+          head_title.textContent = textObject.head.title_legal; 
+          intro_title.textContent = textObject.header.legal.intro_title;
+          intro_quote.textContent = textObject.header.legal.intro_quote;
+          presentation_text.textContent = textObject.header.legal.presentation_text;
+          presentation_picture.setAttribute("src", textObject.header.legal.presentation_picture_src);
+          presentation_picture.setAttribute("alt", textObject.header.legal.presentation_picture_alt);
+        });
+      });
       break;
     case "confidentiality":
-      //          ***INJECTION DE LA PAGE DECLARATION DE CONFIDENTIALITEE***
-      injectHTML("/pages/confidentiality.html");
+      //          ***INJECTION DE LA PAGE DECLARATION DE CONFIDENTIALITE***
+      await injectHTML("/pages/confidentiality.html").then(() => {
+        fetch("/LANG/text.json")
+        .then((res) => res.json())
+        .then((textObject) => {
+          
+    console.table(textObject);
+          head_title.textContent = textObject.head.title_confidentiality; 
+          intro_title.textContent = textObject.header.confidentiality.intro_title;
+          intro_quote.textContent = textObject.header.confidentiality.intro_quote;
+          presentation_text.textContent = textObject.header.confidentiality.presentation_text;
+          presentation_picture.setAttribute("src", textObject.header.confidentiality.presentation_picture_src);
+          presentation_picture.setAttribute("alt", textObject.header.confidentiality.presentation_picture_alt);
+        });
+      });
       break;
     default:
       injectHTML("/pages/404.html");

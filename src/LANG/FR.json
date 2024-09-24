@@ -1,13 +1,20 @@
 {
   "head": {
     "title": "Nathalie GODIER - Thalys Développement",
-    "title_social_media": "Nathalie GODIER - Thalys Développement",
+    "title_offer": "Offre d'Accompagnement",
+    "title_about": "A propos de Nathalie GODIER",
+    "title_contact": "Contacter Nathalie GODIER - Thalys Développement",
+    "title_legal": "Mentions légales ",
+    "title_confidentiality": "Confidentialité",
+    "title_social_media1": "Nathalie GODIER - Thalys Développement",
+    "title_social_media2": "Nathalie GODIER - Thalys Développement",
     "description": "Découvrez l'accompagnement psychologique bienveillant que je vous propose. Vous pourrez également me contacter si vous êtes à la recherche d'un soutien empathique.",
-    "description_social_media": "Accompagnement psychologique bienveillant par Nathalie GODIER."
+    "description_social_media1": "Accompagnement psychologique bienveillant par Nathalie GODIER.",
+    "description_social_media2": "Accompagnement psychologique bienveillant par Nathalie GODIER."
   },
   "chevron": {
     "label_up": "Remonter au début de la page",
-    "alt_img": "fleche vers le haut",
+    "alt_img": "Flèche vers le haut",
     "label_contact": "Aller au formulaire de contact"
   },
   "header": {
@@ -16,7 +23,49 @@
     "label_href_home": "Aller à la page Accueil",
     "label_href_offer": "Aller à la page Mon offre",
     "label_href_about": "Aller à la page A propos",
-    "label_href_contact": "Aller à la page Contact"
+    "label_href_contact": "Aller à la page Contact",
+    "home":  {
+        "intro_title":"Accompagnement Psychologique Bienveillant",
+        "intro_quote": "Grâce à la visioconference je vous apporte un soutien empathique dans vos difficultés ou que vous soyez.",
+        "presentation_text": "Les oiseaux blessés ou épuisés, ont besoin d’un refuge pour se soigner et récupérer des forces avant de poursuivre leur voyage.",
+        "presentation_picture_src": "assets/logo.webp",
+        "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir"
+    },
+    "offer": {
+      "intro_title":"Offres d'Accompagnement et de Soutien",
+      "intro_quote": "Différentes propositions pour répondre au plus près à vos besoins.",
+      "presentation_text": "Pour améliorer leur guérison, les oiseaux blessés ont besoin d'une présence régulière et adaptée.",
+      "presentation_picture_src": "assets/logo.webp",
+      "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir"
+    },
+    "about": {
+      "intro_title":"Mon parcours de vie",
+      "intro_quote": "Découvrez ce qui m'a amené à me réorienter vers ce métier passionnant!",
+      "presentation_text": "Dans cette courte vidéo, je vous présente mon parcours, mes formations et l'accompagnement que je vous propose. Bon visionnage!",
+      "presentation_picture_src": "https://www.youtube.com/embed/LWKWCWu7Zfo",
+      "presentation_picture_alt": "Vignette portrait de la vidéo de Nathalie GODIER"
+    }, 
+    "contact": {
+      "intro_title":"Se lancer et prendre Contact",
+      "intro_quote": "Choisissez le moyen qui vous convient pour me contacter.",
+      "presentation_text": "Félicitations! Ce premier pas, pour trouver la force de repartir, est peut-être celui qui demande le plus de courage.  ",
+      "presentation_picture_src": "../assets/anais_jetée.webp",
+      "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir"
+    },
+    "legal": {
+      "intro_title":"Informations légales",
+      "intro_quote": "Ci dessous toutes les informations concernant mon entreprise et mon site.",
+      "presentation_text": "Nathalie GODIER - 8 rue de Malabry, 35 780 La Richardais - FRANCE ",
+      "presentation_picture_src": "../assets/logo.webp",
+      "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir"
+    },
+    "confidentiality": {
+      "intro_title":"La confidentialité: ",
+      "intro_quote": "Composante essentielle à la sécurité relationelle",
+      "presentation_text": "Pour s'ouvrir et se confier, il est indispensable de se sentir protégé et en sécurité",
+      "presentation_picture_src": "../assets/logo.webp",
+      "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir"
+    }
   },
   "footer": {
     "label_call_btn": "Appeler Nathalie Godier",
