@@ -26,7 +26,7 @@
     "build:html": "npm run build:html:index && npm run build:html:pages && npm run build:html:contact && npm run build:html:about && npm run build:html:offre && npm run build:html:legal && npm run build:html:confidentiality && npm run build:html:404",
     "build": "npm run build:css && npm run minify:css && npm run build:js && npm run build:html",
     "build_fr": "npm run build && json-minify src/LANG/FR.json > dist/LANG/text.json",
-    "build_en": "npm run build && json-minify src/LANG/EN.json > dist/LANG/text.json",
+    "build_en": "npm run build && json-minify src/LANG/EN.json > dist/LANG/text.json"
   },
   "keywords": [],
   "author": "",

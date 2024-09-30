@@ -58,19 +58,12 @@ header {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  @media (width < $breakpoint) {
-    img {
-      display: none;
-    }
-  }
-  &-accueil {
     @media (width > $breakpoint) {
       color: white;
       position: absolute;
       left: 20%;
     }
   }
-}
 //  bouton d'activation du menu
 #menuTrigger {
   border: none;
