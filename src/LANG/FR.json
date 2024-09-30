@@ -1,6 +1,6 @@
 {
   "head": {
-    "title": "Nathalie GODIER - Thalys Développement",
+    "title": "Moi Nathalie GODIER - Thalys Développement",
     "title_offer": "Offre d'Accompagnement",
     "title_about": "A propos de Nathalie GODIER",
     "title_contact": "Contacter Nathalie GODIER - Thalys Développement",
@@ -26,7 +26,7 @@
     "label_href_contact": "Aller à la page Contact",
     "home":  {
         "intro_title":"Accompagnement Psychologique Bienveillant",
-        "intro_quote": "Grâce à la visioconference je vous apporte un soutien empathique dans vos difficultés ou que vous soyez.",
+        "intro_quote": "Grâce à la visioconférence je vous apporte un soutien empathique dans vos difficultés ou que vous soyez.",
         "presentation_text": "Les oiseaux blessés ou épuisés, ont besoin d’un refuge pour se soigner et récupérer des forces avant de poursuivre leur voyage.",
         "presentation_picture_src": "assets/logo.webp",
         "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir"
@@ -40,7 +40,7 @@
     },
     "about": {
       "intro_title":"Mon parcours de vie",
-      "intro_quote": "Découvrez ce qui m'a amené à me réorienter vers ce métier passionnant!",
+      "intro_quote": "Découvrez ce qui m'a amené à me ré-orienter vers ce métier passionnant!",
       "presentation_text": "Dans cette courte vidéo, je vous présente mon parcours, mes formations et l'accompagnement que je vous propose. Bon visionnage!",
       "presentation_picture_src": "https://www.youtube.com/embed/LWKWCWu7Zfo",
       "presentation_picture_alt": "Vignette portrait de la vidéo de Nathalie GODIER"

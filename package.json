@@ -4,6 +4,7 @@
   "description": "Site vitrine de Thalys développement",
   "main": "index.js",
   "type": "module",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "sass src/scss/main.scss dist/css/raw-styles.css",
@@ -25,12 +26,13 @@
     "build:html": "npm run build:html:index && npm run build:html:pages && npm run build:html:contact && npm run build:html:about && npm run build:html:offre && npm run build:html:legal && npm run build:html:confidentiality && npm run build:html:404",
     "build": "npm run build:css && npm run minify:css && npm run build:js && npm run build:html",
     "build_fr": "npm run build && json-minify src/LANG/FR.json > dist/LANG/text.json",
-    "build_en": "npm run build && json-minify src/LANG/EN.json > dist/LANG/text.json"
+    "build_en": "npm run build && json-minify src/LANG/EN.json > dist/LANG/text.json",
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "live-server": "^1.2.0",
     "sass": "^1.77.8",
     "terser": "^5.31.3"
   },
@@ -38,6 +40,7 @@
     "autoprefixer": "^10.4.19",
     "cssnano": "^7.0.4",
     "html-minifier-terser": "^5.1.1",
+    "npm-watch": "^0.13.0",
     "postcss": "^8.4.40",
     "postcss-cli": "^11.0.0"
   }
