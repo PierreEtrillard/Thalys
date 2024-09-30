@@ -5,7 +5,10 @@ const menuTrigger = document.getElementById("menuTrigger");
 let hideScrollUpBtnTimeout;
 const menu = document.querySelector(".menu");
 const menuStripes = document.querySelectorAll(".stripe");
-// ciblage des éléments à traduire HEAD
+// ciblage des éléments à traduire 
+//HTML
+const html_language = document.getElementById("html_language");
+//HEAD
 const head_title = document.getElementById("head_title");
 const head_title_social_media1 = document.getElementById("head_title_social_media1"); //plusieurs éléments de cette classe
 const head_title_social_media2 = document.getElementById("head_title_social_media2"); //plusieurs éléments de cette classe
@@ -42,6 +45,7 @@ fetch("/LANG/text.json")
   .then((res) => res.json())
   .then((textObject) => {
     console.table(textObject);
+    html_language.setAttribute("lang", textObject.html.langue);
     head_title.textContent = textObject.head.title; 
     head_title_social_media1.setAttribute("content", textObject.head.title_social_media1);
     head_title_social_media2.setAttribute("content", textObject.head.title_social_media2);

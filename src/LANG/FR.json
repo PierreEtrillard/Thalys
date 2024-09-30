@@ -1,6 +1,9 @@
 {
+  "html" :{
+    "langue" : "fr"
+  },
   "head": {
-    "title": "Moi Nathalie GODIER - Thalys Développement",
+    "title": "Nathalie GODIER - Thalys Développement",
     "title_offer": "Offre d'Accompagnement",
     "title_about": "A propos de Nathalie GODIER",
     "title_contact": "Contacter Nathalie GODIER - Thalys Développement",
@@ -19,7 +22,7 @@
   },
   "header": {
     "full_name": "Nathalie GODIER",
-    "alt_photo" : "photo portrait de Nathalie GODIER",
+    "alt_photo" : "photo portrait de Nathalie GODIER. Clicker pour accéder à mon parcours de vie.",
     "label_href_home": "Aller à la page Accueil",
     "label_href_offer": "Aller à la page Mon offre",
     "label_href_about": "Aller à la page A propos",
