@@ -19,10 +19,11 @@ let commentDisplayer; // Cible l'afficheur pour le démarrer ou le réinitialise
 let touchStartX = 0;
 let touchEndX = 0;
 // Formulaire de contact
+/*Formulaire enlevé par NG le 01/10/2024
 const mailSender = document.getElementById("mail-sender");
 const messageField = document.getElementById("message");
 const emailField = document.getElementById("client-email");
-const senderBtn = document.querySelector(".sender-btn");
+const senderBtn = document.querySelector(".sender-btn");*/
 
 //--------------------------INITIALISATION DES LISTENERS--------------------------------//
 document.addEventListener("DOMContentLoaded", () => {
@@ -72,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
   commentSwitcher(0, carrousel, commentSelected); // Démarre l'afficheur de commentaires dès le chargement
   commentRunner(); // puis démarre le minuteur pour switcher l'affichage tous les n secondes (cf: const delay)
 
+  /*Formulaire enlevé par NG le 01/10/2024
   mailSender.addEventListener("change", () => {
     messageField.validity.valid && emailField.validity.valid
       ? senderBtn.classList.remove("sender-btn-disabled")
@@ -84,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mailSender.reset();
       senderBtn.classList.add(sender - btn - disabled);
     }
-  });
+  });*/
 });
 
 //----------------------------FONCTIONS------------------------------//

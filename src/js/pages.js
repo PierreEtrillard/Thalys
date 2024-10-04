@@ -11,11 +11,16 @@ const customersAlert = document.querySelector("#customers-alert-wrapper>p");
 // ciblage des éléments à traduire spécifiques à chaque page
 //HEAD
 const head_title = document.getElementById("head_title");
-//HEADER
+//HEADER 
+/*UTIL?? semble redondant avec index.js*/
 const intro_title = document.getElementById("intro_title");
 const intro_quote = document.getElementById("intro_quote");
 const presentation_text = document.getElementById("presentation_text");
 const presentation_picture = document.getElementById("presentation_picture");
+
+//OFFER
+const title_Listening = document.getElementById("title_Listening");
+const text_Listening = document.getElementById("text_Listening");
 
 let comment1Selected = 0;
 let comment2Selected = 0;
@@ -31,11 +36,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         .then((res) => res.json())
         .then((textObject) => {
           head_title.textContent = textObject.head.title_offer; 
-          intro_title.textContent = textObject.header.offer.intro_title;
-          intro_quote.textContent = textObject.header.offer.intro_quote;
-          presentation_text.textContent = textObject.header.offer.presentation_text;
-          presentation_picture.setAttribute("src", textObject.header.offer.presentation_picture_src);
-          presentation_picture.setAttribute("alt", textObject.header.offer.presentation_picture_alt);
+          intro_title.textContent = textObject.offer.intro_title;
+          intro_quote.textContent = textObject.offer.intro_quote;
+          presentation_text.textContent = textObject.offer.presentation_text;
+          presentation_picture.setAttribute("src", textObject.offer.presentation_picture_src);
+          presentation_picture.setAttribute("alt", textObject.offer.presentation_picture_alt);
+          title_Listening.textContent = textObject.offer.title_Listening; 
+          text_Listening.textContent = textObject.offer.text_Listening; 
         });
         menulinks[1].classList.toggle("link-selected");
         //carrousel 1

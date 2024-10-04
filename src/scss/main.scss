@@ -16,6 +16,9 @@ html body {
 h2 {
   font-family: "title", sans-serif;
 }
+h3{
+  font-family: "title", sans-serif;
+}
 blockquote {
   font-family: "citation", sans-serif;
 }
@@ -51,7 +54,7 @@ img {
 header {
   display: flex;
   flex-direction: column;
-  border-bottom: solid 0.2rem color.$warn;
+  //border-bottom: solid 0.2rem color.$warn;
 }
 .top-header {
   display: flex;
@@ -134,13 +137,17 @@ header {
     margin: 2rem 1rem 1rem 1rem;
     &:hover {
       color: color.$accent;
+    }    
+    &:focus {
+      font-weight: bold;
     }
     @media (width > $breakpoint) {
       padding-top: 1rem;
       margin: 0;
       border-top: solid 2px transparent;
       &-selected {
-        border-top: solid 2px color.$primary;
+        border-top: solid 2px color.$warn;
+        color: color.$warn;
       }
       &:hover,
       &:focus {
@@ -193,6 +200,7 @@ header {
     }
   }
 }
+
 /* _________________________________________________________
   ****           ------------MAIN-------------         ****
                             Sections                                 */
@@ -203,6 +211,20 @@ section {
   flex-direction: column;
   color: white;
   //________________________ACCUEIL__________________________
+  .feeling {
+    p {
+      //NG ajouter un espace autour des textes qui sont trop collés au bord
+      padding-right: 5px;
+      padding-left: 50px;
+    }
+    h2 {
+      //NG Ecrire en violet, smallcaps et aligner au centre
+      background-color:color.$light;
+      color: color.$primary;
+      font-variant: small-caps;
+      text-align: center;
+    }
+  }
   .feelings,
   .targets {
     font-size: 2rem;
@@ -261,6 +283,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     @media (width > $breakpoint) {
       position: relative;
       height: 600px;
