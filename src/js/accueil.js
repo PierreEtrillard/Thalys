@@ -8,6 +8,40 @@ const customersAlertWrapper = document.querySelector(
   "#customers-alert-wrapper"
 );
 const customersAlert = document.querySelector("#customers-alert-wrapper>p");
+// ciblage des éléments à traduire 
+//HOME
+const presentation_text = document.getElementById("presentation_text");
+const presentation_picture = document.getElementById("presentation_picture");
+const title_1 = document.getElementById("title_1");
+const title_1_1 = document.getElementById("title_1_1");
+const alt_1_1 = document.getElementById("alt_1_1");
+const text_1_1 = document.getElementById("text_1_1");
+
+const title_1_2 = document.getElementById("title_1_2");
+const alt_1_2 = document.getElementById("alt_1_2");
+const text_1_2 = document.getElementById("text_1_2");
+const title_1_3 = document.getElementById("title_1_3");
+const alt_1_3 = document.getElementById("alt_1_3");
+const text_1_3 = document.getElementById("text_1_3");
+const call_to_action_1 = document.getElementById("call_to_action_1");
+
+const title_2 = document.getElementById("title_2");
+const title_2_1 = document.getElementById("title_2_1");
+const alt_2_1 = document.getElementById("alt_2_1");
+const text_2_1 = document.getElementById("text_2_1");
+const title_2_2 = document.getElementById("title_2_2");
+const alt_2_2 = document.getElementById("alt_2_2");
+const text_2_2 = document.getElementById("text_2_2");
+const title_2_3 = document.getElementById("title_2_3");
+const alt_2_3 = document.getElementById("alt_2_3");
+const text_2_3 = document.getElementById("text_2_3");
+const title_3 = document.getElementById("title_3");
+const call_to_action_2 = document.getElementById("call_to_action_2");
+const title_3_3 = document.getElementById("title_3_3");
+const quote_1 = document.getElementById("quote_1");
+const quote_2 = document.getElementById("quote_2");
+const quote_3 = document.getElementById("quote_3");
+
 // Carrousel:
 const carrousel = document.getElementById("accueil-carousel");
 const commentSelector = carrousel.querySelector(".comment-selector");
@@ -24,6 +58,46 @@ const mailSender = document.getElementById("mail-sender");
 const messageField = document.getElementById("message");
 const emailField = document.getElementById("client-email");
 const senderBtn = document.querySelector(".sender-btn");*/
+
+//--------------------------INITIALISATION--------------------------------//
+//  injection du texte ds LANG/**.json
+fetch("/LANG/text.json")
+  .then((res) => res.json())
+  .then((textObject) => {
+    //HOME 
+    intro_title.textContent = textObject.home.intro_title;
+    intro_quote.textContent = textObject.home.intro_quote;
+    presentation_text.textContent = textObject.home.presentation_text;
+    presentation_picture.textContent = textObject.home.presentation_picture;
+    title_1.textContent = textObject.home.title_1; 
+    title_1_1.textContent = textObject.home.title_1_1; 
+    alt_1_1.setAttribute("alt", textObject.home.alt_1_1);
+    text_1_1.textContent = textObject.home.text_1_1; 
+    title_1_2.textContent = textObject.home.title_1_2; 
+    alt_1_2.setAttribute("alt", textObject.home.alt_1_2);
+    text_1_2.textContent = textObject.home.text_1_2; 
+    title_1_3.textContent = textObject.home.title_1_3; 
+    alt_1_3.setAttribute("alt", textObject.home.alt_1_3);
+    text_1_3.textContent = textObject.home.text_1_3; 
+    call_to_action_1.textContent = textObject.home.call_to_action_1; 
+    title_2.textContent = textObject.home.title_2;
+    title_2_1.textContent = textObject.home.title_2_1;  
+    alt_2_1.setAttribute("alt", textObject.home.alt_2_1);
+    text_2_1.textContent = textObject.home.text_2_1; 
+    title_2_2.textContent = textObject.home.title_2_2; 
+    alt_2_2.setAttribute("alt", textObject.home.alt_2_2);
+    title_2_3.textContent = textObject.home.title_2_3; 
+    alt_2_3.setAttribute("alt", textObject.home.alt_2_3);
+    text_2_3.textContent = textObject.home.text_2_3; 
+    title_3.textContent = textObject.home.title_3; 
+    call_to_action_2.textContent = textObject.home.call_to_action_2; 
+    call_to_action_2.setAttribute("alt", textObject.home.alt_cta2);
+    title_3_3.textContent = textObject.home.title_3_3; 
+    quote_1.textContent = textObject.home.quote_1; 
+    quote_2.textContent = textObject.home.quote_2; 
+    quote_3.textContent = textObject.home.quote_3; 
+   });
+
 
 //--------------------------INITIALISATION DES LISTENERS--------------------------------//
 document.addEventListener("DOMContentLoaded", () => {

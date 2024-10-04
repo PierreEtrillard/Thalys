@@ -11,16 +11,6 @@ const customersAlert = document.querySelector("#customers-alert-wrapper>p");
 // ciblage des éléments à traduire spécifiques à chaque page
 //HEAD
 const head_title = document.getElementById("head_title");
-//HEADER 
-/*UTIL?? semble redondant avec index.js*/
-const intro_title = document.getElementById("intro_title");
-const intro_quote = document.getElementById("intro_quote");
-const presentation_text = document.getElementById("presentation_text");
-const presentation_picture = document.getElementById("presentation_picture");
-
-//OFFER
-const title_Listening = document.getElementById("title_Listening");
-const text_Listening = document.getElementById("text_Listening");
 
 let comment1Selected = 0;
 let comment2Selected = 0;
@@ -32,6 +22,34 @@ document.addEventListener("DOMContentLoaded", async () => {
     case "offre":
       //          ***INJECTION DE LA PAGE OFFRE***
       await injectHTML("/pages/offre.html").then(() => {
+       //Le elements de la page ne sont accessibles que lorsque la page est injectée dans le html 
+        //HEADER 
+        const presentation_text = document.getElementById("presentation_text");
+        const presentation_picture = document.getElementById("presentation_picture");
+        //OFFER
+        const title_Listening = document.getElementById("title_Listening");
+        const text_Listening = document.getElementById("text_Listening");
+        const call_to_action_2 = document.getElementById("call_to_action_2");
+        const title_special = document.getElementById("title_special");
+        const title_special_1 = document.getElementById("title_special_1");
+        const text_special_1 = document.getElementById("text_special_1");
+        const title_special_2 = document.getElementById("title_special_2");
+        const text_special_2 = document.getElementById("text_special_2");
+        const title_special_3 = document.getElementById("title_special_3");
+        const text_special_3 = document.getElementById("text_special_3");
+        const title_special_quote = document.getElementById("title_special_quote");
+        const special_quote_1 = document.getElementById("special_quote_1");
+        const special_quote_2 = document.getElementById("special_quote_2");
+        const special_quote_3 = document.getElementById("special_quote_3");
+        const title_individual = document.getElementById("title_individual");
+        const text_individual = document.getElementById("text_individual");
+        const title_individual_quote = document.getElementById("title_individual_quote");
+        const alt_individual_quote = document.getElementById("alt_individual_quote");
+        const individual_quote_1 = document.getElementById("individual_quote_1");
+        const individual_quote_2 = document.getElementById("individual_quote_2");
+        const individual_quote_3 = document.getElementById("individual_quote_3");
+        const title_group = document.getElementById("title_group");
+        const text_group = document.getElementById("text_group");
         fetch("/LANG/text.json")
         .then((res) => res.json())
         .then((textObject) => {
@@ -43,6 +61,27 @@ document.addEventListener("DOMContentLoaded", async () => {
           presentation_picture.setAttribute("alt", textObject.offer.presentation_picture_alt);
           title_Listening.textContent = textObject.offer.title_Listening; 
           text_Listening.textContent = textObject.offer.text_Listening; 
+          call_to_action_2.textContent = textObject.offer.call_to_action_2;
+          title_special.textContent = textObject.offer.title_special;
+          title_special_1.textContent = textObject.offer.title_special_1;
+          text_special_1.textContent = textObject.offer.text_special_1;
+          title_special_2.textContent = textObject.offer.title_special_2;
+          text_special_2.textContent = textObject.offer.text_special_2;
+          title_special_3.textContent = textObject.offer.title_special_3;
+          text_special_3.textContent = textObject.offer.text_special_3;
+          title_special_quote.textContent = textObject.offer.title_special_quote;
+          special_quote_1.textContent = textObject.offer.special_quote_1; 
+          special_quote_2.textContent = textObject.offer.special_quote_2;
+          special_quote_3.textContent = textObject.offer.special_quote_3;
+          title_individual.textContent = textObject.offer.title_individual;
+          text_individual.textContent = textObject.offer.text_individual;
+          title_individual_quote.textContent = textObject.offer.title_individual_quote;
+          individual_quote_1.textContent = textObject.offer.individual_quote_1;
+          individual_quote_2.textContent = textObject.offer.individual_quote_2;
+          individual_quote_3.textContent = textObject.offer.individual_quote_3;
+          title_group.textContent = textObject.offer.title_group;
+          text_group.textContent = textObject.offer.text_group;
+
         });
         menulinks[1].classList.toggle("link-selected");
         //carrousel 1
@@ -139,15 +178,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     case "about":
       //          ***INJECTION DE LA PAGE PROPOS***
       await injectHTML("/pages/about.html").then(() => {
+        //HEADER
+        const presentation_video = document.getElementById("presentation_video");
+        const presentation_text = document.getElementById("presentation_text");
+        //ABOUT
         fetch("/LANG/text.json")
         .then((res) => res.json())
         .then((textObject) => {
           head_title.textContent = textObject.head.title_about; 
-          intro_title.textContent = textObject.header.about.intro_title;
-          intro_quote.textContent = textObject.header.about.intro_quote;
-          presentation_text.textContent = textObject.header.about.presentation_text;
-          presentation_picture.setAttribute("src", textObject.header.about.presentation_picture_src);
-          presentation_picture.setAttribute("alt", textObject.header.about.presentation_picture_alt);
+          intro_title.textContent = textObject.about.intro_title;
+          intro_quote.textContent = textObject.about.intro_quote;
+          presentation_text.textContent = textObject.about.presentation_text;
+          presentation_video.setAttribute("src", textObject.about.presentation_video_src);
+          presentation_video.setAttribute("title", textObject.about.presentation_video_title);
         });
       });
       menulinks[2].classList.toggle("link-selected");
@@ -155,15 +198,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     case "contact":
       //          ***INJECTION DE LA PAGE CONTACT***
       await injectHTML("/pages/contact.html").then(() => {
+        const presentation_text = document.getElementById("presentation_text");
+        const presentation_picture = document.getElementById("presentation_picture");
+        const contact_text = document.getElementById("contact_text");        
         fetch("/LANG/text.json")
         .then((res) => res.json())
         .then((textObject) => {
+          //HEADER
           head_title.textContent = textObject.head.title_contact; 
-          intro_title.textContent = textObject.header.contact.intro_title;
-          intro_quote.textContent = textObject.header.contact.intro_quote;
-          presentation_text.textContent = textObject.header.contact.presentation_text;
-          presentation_picture.setAttribute("src", textObject.header.contact.presentation_picture_src);
-          presentation_picture.setAttribute("alt", textObject.header.contact.presentation_picture_alt);
+          intro_title.textContent = textObject.contact.intro_title;
+          intro_quote.textContent = textObject.contact.intro_quote;
+          //CONTACT
+          presentation_text.textContent = textObject.contact.presentation_text;
+          presentation_picture.setAttribute("src", textObject.contact.presentation_picture_src);
+          presentation_picture.setAttribute("alt", textObject.contact.presentation_picture_alt);
+          contact_text.textContent = textObject.contact.contact_text;
         });
         const contactForm = document.getElementById("contact-form");
         const messageField = document.getElementById("message");

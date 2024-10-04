@@ -82,67 +82,58 @@
     "offer": {
       "intro_title":"Offres d'Accompagnement et de Soutien",
       "intro_quote": "Différentes propositions pour répondre au plus près à vos besoins.",
-      "presentation_text": "Pour améliorer leur guérison, les oiseaux blessés ou épuisés ont besoin d'une présence régulière et adaptée.",
+      "presentation_text": "Pour se remettre vraiment avant de repartir, les oiseaux blessés ou épuisés ont besoin d'une présence régulière et adaptée.",
       "presentation_picture_src": "../assets/logo.webp",
       "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir",
 
       "title_Listening": "Un horizon dans les difficultés",
-      "text_Listening":"ESSAI: Avez-vous déjà vraiment été écouté ? <br>Avec bienveillance, compassion et sans jugement ?<br>Une écoute qui permet de se sentir compris et de se décharger de ce qui vous pèse.<br>Goutez l'apaisement de faire une pause dans un quotidien parfois lourd et douloureux.",      
-      "text_Listening_1":"Avez-vous déjà vraiment été écouté ?",
-      "text_Listening_2":"Avec bienveillance, compassion et sans jugement ?",
-      "text_Listening_3":"Une écoute qui permet de se sentir compris et de se décharger de ce qui vous pèse.",
-      "text_Listening_4":"Goutez l'apaisement de faire une pause dans un quotidien parfois lourd et douloureux.",
+      "text_Listening":"Avez-vous déjà été vraiment écouté? Avec bienveillance, compassion et sans jugement? Une écoute qui permet de se sentir compris et de se décharger de ce qui vous pèse.\nGoutez l'apaisement de faire une pause dans un quotidien parfois lourd et douloureux.",      
       "alt_Listening_1":"Un phare au bout d'une jetée qui s'élance dans la mer à marée basse. Le soleil perce au travers d'un ciel chargé après le passage d'un orage",
       
       "call_to_action_2": "Je fait l'essai !",
       
       "title_special": "OFFRE SPECIALE: Accompagnement court",
       "title_special_1": "Première séance offerte.",
-      "text_special_1_1": "Pour faire connaissance et voir si nous choisissons de faire un bout de chemin ensemble.",
-      "text_special_1_2": "Si mon approche vous convient vous pouvez bénéficier du Pack 4 séances.",
+      "text_special_1": "Pour faire connaissance et voir si nous choisissons de faire un bout de chemin ensemble.\nSi mon approche vous convient vous pouvez bénéficier du Pack 4 séances.",
       
       "title_special_2": "Pack 4 séances “Coup de pouce pour se lancer”",
-      "text_special_2_1": "Entretiens individuels hebdomadaires de 45 minutes en visio au tarif préférentiel de 180€",
-      "text_special_2_2": "Par virement en une fois au départ ou en 4 fois 45€ le jour de la séance.",
+      "text_special_2": "Entretiens individuels hebdomadaires de 45 minutes en visio au tarif préférentiel de 180€.\nPar virement en une fois au départ ou en 4 fois 45€ le jour de la séance.",
       
       "title_special_3": "Et Après?",
-      "text_special_3_1": "Si vous souhaitez poursuivre avec un accompagnement individuel,",
-      "text_special_3_2": "Nous conviendrons ensemble de la fréquence et de la durée souhaitée.",
+      "text_special_3": "Si vous souhaitez poursuivre avec un accompagnement individuel,\nNous conviendrons ensemble de la fréquence et de la durée souhaitée.",
       
       "title_special_quote": "Ce qu'en pensent ceux qui ont bénéficié de cette offre",
-      "alt_special_quote": "flêche gauche pour commentaire précédent",
       "special_quote_1": "“L'écoute patiente et encourageante de Nathalie m'a permis de m'épancher sans gêne. Cela m'a donné le courage de prendre mes responsabilités et la force de passer a l'action.”",
       "special_quote_2": "“Grâce à des questions bien ciblées elle m'a aidé à faire des liens entre des faits passés vécus et des émotions présentes.”",
       "special_quote_3": "“Avec beaucoup de tact, de respect et de douceur, Nathalie m'a aidée à poser les mots sur les maux. Je me suis sentie comprise et écoutée.”",
       
       "title_individual": "ACCOMPAGNEMENT INDIVIDUEL",
-      "text_individual_1": "Certains de mes clients ont profité d'un accompagnement individuel pendant plusieurs mois.",
-      "text_individual_2": "Nous avons adapté le rythme des séances aux besoins individuels.",
+      "text_individual": "Certains de mes clients ont profité d'un accompagnement individuel pendant plusieurs mois.\nNous avons adapté le rythme des séances aux besoins individuels.",
       
       "title_individual_quote": "Ce qu'en pensent ceux qui ont bénéficié du suivi individuel",
-      "alt_individual_quote": "flêche gauche pour commentaire précédent",
       "individual_quote_1": "“Nathalie m'a encouragé a m'exprimer, qu'importe alors l'ordre de mes idées, des mots, des phrases prononcées.”",
       "individual_quote_2": "“Nathalie m'a donné à une occasion toute particulière le courage de prendre mes responsabilités en dévoilant une situation à qui de droit, situation que je subissais alors et dont je ne parvenais à m'en sortir seule.”",
       "individual_quote_3": "“Je vivais une rupture sentimentale très douloureuse. Un vrai brouillard dans ma tête, dans mon cœur, dans ma vie. Grâce a elle, mon sentiment de culpabilité est devenu plus équilibré.”",
       
       "title_group": "ACCOMPAGNEMENT DE GROUPES",
-      "text_group_1":"Mon projet est de développer l'accompagnement de groupes.",
-      "text_group_2":"Cette activité sera mise à disposition de mes clients dès qu'elle sera finalisée."
+      "text_group":"Mon projet est de développer l'accompagnement de groupes.\nCette activité sera mise à disposition de mes clients dès qu'elle sera finalisée."
     },
 
     "about": {
       "intro_title":"Mon parcours de vie",
       "intro_quote": "Découvrez ce qui m'a amené à me ré-orienter vers ce métier passionnant!",
       "presentation_text": "Dans cette courte vidéo, je vous présente mon parcours, mes formations et l'accompagnement que je vous propose. Bon visionnage!",
-      "presentation_picture_src": "https://www.youtube.com/embed/LWKWCWu7Zfo",
-      "presentation_picture_alt": "Vignette portrait de la vidéo de Nathalie GODIER"
+      "presentation_video_src0": "https://www.youtube.com/embed/LWKWCWu7Zfo",
+      "presentation_video_src": "https://www.youtube.com/embed/sVkzdPbudKU",
+      "presentation_video_title": "Vignette portrait de la vidéo de Nathalie GODIER"
     }, 
     "contact": {
       "intro_title":"Se lancer et prendre Contact",
       "intro_quote": "Choisissez le moyen qui vous convient pour me contacter.",
-      "presentation_text": "Félicitations! Ce premier pas, pour trouver la force de repartir, est peut-être celui qui demande le plus de courage.  ",
-      "presentation_picture_src": "../assets/anais_jetée.webp",
-      "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir"
+      "presentation_text": "Félicitations! Ce premier pas, pour trouver la force de repartir, est peut-être celui qui demande le plus de courage.",
+      "presentation_picture_src": "../assets/anais_confidentialite.jpg", 
+      "presentation_picture_alt": "Un homme d'âge mur avec un chapeau envoie un message depuis son téléphone portable",
+      "contact_text" : "J'ai encore des disponibilités dans mon emploi du temps pour de nouveaux clients. N'hésitez pas à me contacter!"
     },
     "legal": {
       "intro_title":"Informations légales",
