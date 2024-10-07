@@ -30,8 +30,8 @@ const intro_title = document.getElementById("intro_title");
 const intro_quote = document.getElementById("intro_quote");
 //FOOTER
 const call_btn = document.getElementById("call_btn");
-const href_legal = document.getElementById("href_legal");
-const href_confidentiality = document.getElementById("href_confidentiality");
+const legal = document.getElementById("href_legal");
+const confidentiality = document.getElementById("href_confidentiality");
 const copyrights = document.getElementById("copyrights");
 const credits = document.getElementById("credits");
 //--------------------------INITIALISATION--------------------------------//
@@ -56,14 +56,15 @@ fetch("/LANG/text.json")
     intro_quote.textContent = textObject.home.intro_quote;
     //FOOTER
     call_btn.setAttribute("aria-label", textObject.footer.label_call_btn);
-    href_legal.setAttribute("aria-label", textObject.footer.label_href_legal);
-    href_legal.textContent = textObject.footer.text_href_legal;
-    href_confidentiality.setAttribute("aria-label", textObject.footer.label_href_confidentiality);
-    href_confidentiality.textContent = textObject.footer.text_href_confidentiality;
+    legal.setAttribute("aria-label", textObject.footer.label_legal);
+    legal.textContent = textObject.footer.text_legal;
+    confidentiality.setAttribute("aria-label", textObject.footer.label_confidentiality);
+    confidentiality.textContent = textObject.footer.text_confidentiality;
     copyrights.setAttribute("aria-label", textObject.footer.label_copyrights);
     copyrights.textContent = textObject.footer.text_copyrights;
-    credits.setAttribute("aria-label", textObject.footer.label_href_credits);
-    credits.textContent = textObject.footer.text_href_credits;
+    credits.setAttribute("aria-label", textObject.footer.label_credits);
+    credits.setAttribute("href", textObject.footer.href_credits);
+    credits.textContent = textObject.footer.text_credits;
   });
 document.addEventListener("DOMContentLoaded", () => {
   // Ajout d'un écouteur d'événement pour le scroll

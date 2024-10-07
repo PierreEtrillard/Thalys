@@ -23,6 +23,10 @@ const text_1_2 = document.getElementById("text_1_2");
 const title_1_3 = document.getElementById("title_1_3");
 const alt_1_3 = document.getElementById("alt_1_3");
 const text_1_3 = document.getElementById("text_1_3");
+
+const title_Listening = document.getElementById("title_Listening");
+const text_Listening = document.getElementById("text_Listening");
+
 const call_to_action_1 = document.getElementById("call_to_action_1");
 
 const title_2 = document.getElementById("title_2");
@@ -79,13 +83,16 @@ fetch("/LANG/text.json")
     title_1_3.textContent = textObject.home.title_1_3; 
     alt_1_3.setAttribute("alt", textObject.home.alt_1_3);
     text_1_3.textContent = textObject.home.text_1_3; 
-    call_to_action_1.textContent = textObject.home.call_to_action_1; 
+    call_to_action_1.textContent = textObject.home.call_to_action_1;
+    title_Listening.textContent = textObject.home.title_Listening; 
+    text_Listening.textContent = textObject.home.text_Listening; 
     title_2.textContent = textObject.home.title_2;
     title_2_1.textContent = textObject.home.title_2_1;  
     alt_2_1.setAttribute("alt", textObject.home.alt_2_1);
     text_2_1.textContent = textObject.home.text_2_1; 
     title_2_2.textContent = textObject.home.title_2_2; 
     alt_2_2.setAttribute("alt", textObject.home.alt_2_2);
+    text_2_2.textContent = textObject.home.text_2_2; 
     title_2_3.textContent = textObject.home.title_2_3; 
     alt_2_3.setAttribute("alt", textObject.home.alt_2_3);
     text_2_3.textContent = textObject.home.text_2_3; 

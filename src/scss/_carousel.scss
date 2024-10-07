@@ -1,8 +1,8 @@
 @use "colors" as color;
 .quotes {
-  border-top: solid 0.2rem color.$accent;
-  border-bottom: solid 0.2rem color.$accent;
-  background-color: transparent;
+  //border-top: solid 0.2rem color.$accent;
+  //border-bottom: solid 0.2rem color.$accent;
+  //background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,10 +56,11 @@
   justify-content: center;
   blockquote {
     margin-bottom: 0;
-    width: 100%;
+    //width: 100%;
     background-color: color.$grey;
     border-radius: 15px;
     padding: 1rem;
+    color:color.$light;
   }
   .triangle-down {
     border-left: 3rem solid transparent;

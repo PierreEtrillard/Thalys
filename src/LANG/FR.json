@@ -48,7 +48,10 @@
     "alt_1_3": "Un homme pensif devant un port et ses bateaux perdus dans le brouillard",
     "text_1_3": "Comme du brouillard dans la tête, de la difficulté à prendre des décisions?",
     "call_to_action_1":"Me contacter",
-    
+
+    "title_Listening": "Avez-vous déjà été VRAIMENT ÉCOUTÉ?",
+    "text_Listening":"Avec bienveillance, compassion et sans jugement? Une écoute qui permet de se sentir compris et de se décharger de ce qui vous pèse.\nGoutez l'apaisement de faire une pause dans un quotidien parfois lourd et douloureux.",      
+
     "title_2":"ASPIREZ VOUS SINCEREMENT A RETROUVER...",
     "title_2_1": "La joie de vivre ?",
     "alt_2_1": "Jeune garçon qui saute en jouant avec les vagues de la mer",
@@ -66,8 +69,7 @@
     "call_to_action_2": "Un clic pour repartir",
     "alt_cta2": "Aller au formulaire de contact",
     
-
-    "title_3_3": "Ce que nos clients en disent",
+    "title_3_3": "QUELQUES RETOURS...",
     "quote_1": "“L'écoute patiente et encourageante de Nathalie m'a permis de m'épancher sans gêne. Cela m'a donné le courage de prendre mes responsabilités et la force de passer a l'action.”",
     "quote_2": "“Grâce à des questions bien ciblées elle m'a aidé à faire des liens entre des faits passés vécus et des émotions présentes.”",
     "quote_3": "“Avec beaucoup de tact, de respect et de douceur, Nathalie m'a aidée à poser les mots sur les maux. Je me suis sentie comprise et écoutée.”",
@@ -77,30 +79,25 @@
     "contact_mail": "et votre email pour que je puisse vous recontacter",
     "contact_mail_prompt": "votre @ mail",
     "contact_send_btn": "Envoyer"
-    },
-
-    "offer": {
+  },
+  "offer": {
       "intro_title":"Offres d'Accompagnement et de Soutien",
       "intro_quote": "Différentes propositions pour répondre au plus près à vos besoins.",
-      "presentation_text": "Pour se remettre vraiment avant de repartir, les oiseaux blessés ou épuisés ont besoin d'une présence régulière et adaptée.",
-      "presentation_picture_src": "../assets/logo.webp",
-      "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir",
-
-      "title_Listening": "Un horizon dans les difficultés",
-      "text_Listening":"Avez-vous déjà été vraiment écouté? Avec bienveillance, compassion et sans jugement? Une écoute qui permet de se sentir compris et de se décharger de ce qui vous pèse.\nGoutez l'apaisement de faire une pause dans un quotidien parfois lourd et douloureux.",      
-      "alt_Listening_1":"Un phare au bout d'une jetée qui s'élance dans la mer à marée basse. Le soleil perce au travers d'un ciel chargé après le passage d'un orage",
-      
+      "presentation_text": "Pour repartir après la tempête, les oiseaux recueillis ont besoin d'une présence régulière et adaptée.",
+      "presentation_picture_src": "../assets/anais_jetée.webp",
+      "presentation_picture_alt": "Un phare au bout d'une jetée qui s'élance dans la mer à marée basse. Le soleil perce au travers d'un ciel chargé après le passage d'un orage",
+     
       "call_to_action_2": "Je fait l'essai !",
       
       "title_special": "OFFRE SPECIALE: Accompagnement court",
       "title_special_1": "Première séance offerte.",
-      "text_special_1": "Pour faire connaissance et voir si nous choisissons de faire un bout de chemin ensemble.\nSi mon approche vous convient vous pouvez bénéficier du Pack 4 séances.",
+      "text_special_1": "Pour faire connaissance et voir si nous choisissons de faire un bout de chemin ensemble. Si mon approche vous convient vous pouvez bénéficier du Pack 4 séances.",
       
       "title_special_2": "Pack 4 séances “Coup de pouce pour se lancer”",
-      "text_special_2": "Entretiens individuels hebdomadaires de 45 minutes en visio au tarif préférentiel de 180€.\nPar virement en une fois au départ ou en 4 fois 45€ le jour de la séance.",
+      "text_special_2": "Entretiens individuels hebdomadaires de 45 minutes en visio au tarif préférentiel de 180€. Par virement en une fois au départ ou en 4 fois 45€ le jour de la séance.",
       
       "title_special_3": "Et Après?",
-      "text_special_3": "Si vous souhaitez poursuivre avec un accompagnement individuel,\nNous conviendrons ensemble de la fréquence et de la durée souhaitée.",
+      "text_special_3": "Si vous souhaitez poursuivre avec un accompagnement individuel,Nous conviendrons ensemble de la fréquence et de la durée souhaitée.",
       
       "title_special_quote": "Ce qu'en pensent ceux qui ont bénéficié de cette offre",
       "special_quote_1": "“L'écoute patiente et encourageante de Nathalie m'a permis de m'épancher sans gêne. Cela m'a donné le courage de prendre mes responsabilités et la force de passer a l'action.”",
@@ -108,7 +105,7 @@
       "special_quote_3": "“Avec beaucoup de tact, de respect et de douceur, Nathalie m'a aidée à poser les mots sur les maux. Je me suis sentie comprise et écoutée.”",
       
       "title_individual": "ACCOMPAGNEMENT INDIVIDUEL",
-      "text_individual": "Certains de mes clients ont profité d'un accompagnement individuel pendant plusieurs mois.\nNous avons adapté le rythme des séances aux besoins individuels.",
+      "text_individual": "Certains de mes clients ont profité d'un accompagnement individuel pendant plusieurs mois. Nous avons adapté le rythme des séances aux besoins individuels.",
       
       "title_individual_quote": "Ce qu'en pensent ceux qui ont bénéficié du suivi individuel",
       "individual_quote_1": "“Nathalie m'a encouragé a m'exprimer, qu'importe alors l'ordre de mes idées, des mots, des phrases prononcées.”",
@@ -116,48 +113,48 @@
       "individual_quote_3": "“Je vivais une rupture sentimentale très douloureuse. Un vrai brouillard dans ma tête, dans mon cœur, dans ma vie. Grâce a elle, mon sentiment de culpabilité est devenu plus équilibré.”",
       
       "title_group": "ACCOMPAGNEMENT DE GROUPES",
-      "text_group":"Mon projet est de développer l'accompagnement de groupes.\nCette activité sera mise à disposition de mes clients dès qu'elle sera finalisée."
-    },
-
-    "about": {
+      "text_group":"Mon projet est de développer l'accompagnement de groupes. Cette activité sera mise à disposition de mes clients dès qu'elle sera finalisée."
+  },
+  "about": {
       "intro_title":"Mon parcours de vie",
       "intro_quote": "Découvrez ce qui m'a amené à me ré-orienter vers ce métier passionnant!",
       "presentation_text": "Dans cette courte vidéo, je vous présente mon parcours, mes formations et l'accompagnement que je vous propose. Bon visionnage!",
       "presentation_video_src0": "https://www.youtube.com/embed/LWKWCWu7Zfo",
       "presentation_video_src": "https://www.youtube.com/embed/sVkzdPbudKU",
       "presentation_video_title": "Vignette portrait de la vidéo de Nathalie GODIER"
-    }, 
-    "contact": {
+  }, 
+  "contact": {
       "intro_title":"Se lancer et prendre Contact",
       "intro_quote": "Choisissez le moyen qui vous convient pour me contacter.",
       "presentation_text": "Félicitations! Ce premier pas, pour trouver la force de repartir, est peut-être celui qui demande le plus de courage.",
       "presentation_picture_src": "../assets/anais_confidentialite.jpg", 
       "presentation_picture_alt": "Un homme d'âge mur avec un chapeau envoie un message depuis son téléphone portable",
       "contact_text" : "J'ai encore des disponibilités dans mon emploi du temps pour de nouveaux clients. N'hésitez pas à me contacter!"
-    },
-    "legal": {
+  },
+  "legal": {
       "intro_title":"Informations légales",
       "intro_quote": "Ci dessous toutes les informations concernant mon entreprise et mon site.",
       "presentation_text": "Nathalie GODIER - 8 rue de Malabry, 35 780 La Richardais - FRANCE ",
       "presentation_picture_src": "../assets/logo.webp",
       "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir"
-    },
-    "confidentiality": {
+  },
+  "confidentiality": {
       "intro_title":"La confidentialité: ",
       "intro_quote": "Composante essentielle à la sécurité relationelle",
       "presentation_text": "Pour s'ouvrir et se confier, il est indispensable de se sentir protégé et en sécurité",
       "presentation_picture_src": "../assets/logo.webp",
       "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir"
-    },
+  },
   "footer": {
     "label_call_btn": "Appeler Nathalie Godier",
-    "label_href_legal": "Aller à la page Mention légales",
-    "text_href_legal": "Mentions légales",
-    "label_href_confidentiality": "Aller à la page Politique de confidentialité",
-    "text_href_confidentiality": "Politique de confidentialité",
+    "label_legal": "Aller à la page Mention légales",
+    "text_legal": "Mentions légales",
+    "label_confidentiality": "Aller à la page Politique de confidentialité",
+    "text_confidentiality": "Politique de confidentialité",
     "text_copyrights": "© 2024 Thalys Développement",
     "label_copyrights": "Retour à la page d'accueil",
-    "text_href_credits": "Développement web par Pierre Etrillard",
-    "label_href_credits": "Visiter le site de Pierre Etrillard, développeur freelance"
+    "text_credits": "Développement web par Pierre Etrillard",
+    "label_credits": "Visiter le site de Pierre Etrillard, développeur freelance",
+    "href_credits": "https://www.malt.fr/profile/pierreetrillard"
   }
 }   
