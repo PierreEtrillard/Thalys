@@ -255,32 +255,87 @@ document.addEventListener("DOMContentLoaded", async () => {
     case "legal":
       //          ***INJECTION DE LA PAGE MENTIONS LEGALES***
       await injectHTML("/pages/legal.html").then(() => {
+        const presentation_text = document.getElementById("presentation_text");
+        const presentation_picture = document.getElementById("presentation_picture");
+        const title = document.getElementById("title"); 
+        const title_1 = document.getElementById("title_1"); 
+        const identification_1 = document.getElementById("identification_1"); 
+        const identification_2 = document.getElementById("identification_2"); 
+        const identification_3 = document.getElementById("identification_3"); 
+        const identification_4 = document.getElementById("identification_4"); 
+        const identification_5 = document.getElementById("identification_5"); 
+        const identification_6 = document.getElementById("identification_6"); 
+        const title_2 = document.getElementById("title_2"); 
+        const sub_title_1 = document.getElementById("sub_title_1"); 
+        const text_1 = document.getElementById("text_1"); 
+        const sub_title_2 = document.getElementById("sub_title_2"); 
+        const text_2 = document.getElementById("text_2"); 
+        const sub_title_3 = document.getElementById("sub_title_3"); 
+        const text_3 = document.getElementById("text_3"); 
+        const sub_title_4 = document.getElementById("sub_title_4"); 
+        const text_4 = document.getElementById("text_4"); 
+        const sub_title_5 = document.getElementById("sub_title_5"); 
+        const text_5 = document.getElementById("text_5"); 
+        const sub_title_6 = document.getElementById("sub_title_6"); 
+        const text_6 = document.getElementById("text_6"); 
+
         fetch("/LANG/text.json")
         .then((res) => res.json())
         .then((textObject) => {
-          head_title.textContent = textObject.head.title_legal; 
-          intro_title.textContent = textObject.header.legal.intro_title;
-          intro_quote.textContent = textObject.header.legal.intro_quote;
-          presentation_text.textContent = textObject.header.legal.presentation_text;
-          presentation_picture.setAttribute("src", textObject.header.legal.presentation_picture_src);
-          presentation_picture.setAttribute("alt", textObject.header.legal.presentation_picture_alt);
+        //HEADER
+        head_title.textContent = textObject.head.title_contact; 
+        intro_title.textContent = textObject.legal.intro_title;
+        intro_quote.textContent = textObject.legal.intro_quote;
+        //CONFIDENTIALITY
+        presentation_text.textContent = textObject.legal.presentation_text;
+        presentation_picture.setAttribute("src", textObject.legal.presentation_picture_src);
+        presentation_picture.setAttribute("alt", textObject.legal.presentation_picture_alt);
+        
+        title.textContent = textObject.legal.title;        
+        title_1.textContent = textObject.legal.title_1;       
+        identification_1.textContent = textObject.legal.identification_1;   
+        identification_2.textContent = textObject.legal.identification_2;
+        identification_3.textContent = textObject.legal.identification_3;
+        identification_4.textContent = textObject.legal.identification_4;
+        identification_5.textContent = textObject.legal.identification_5;
+        identification_6.textContent = textObject.legal.identification_6;
+        title_2.textContent = textObject.legal.title_2;
+        sub_title_1.textContent = textObject.legal.sub_title_1;
+        text_1.textContent = textObject.legal.text_1;
+        sub_title_2.textContent = textObject.legal.sub_title_2;
+        text_2.textContent = textObject.legal.text_2;
+        sub_title_3.textContent = textObject.legal.sub_title_3;
+        text_3.textContent = textObject.legal.text_3;        
+        sub_title_4.textContent = textObject.legal.sub_title_4;
+        text_4.textContent = textObject.legal.text_4;
+        sub_title_5.textContent = textObject.legal.sub_title_5;
+        text_5.textContent = textObject.legal.text_5;
+        sub_title_6.textContent = textObject.legal.sub_title_6;
+        text_6.textContent = textObject.legal.text_6;
         });
       });
       break;
     case "confidentiality":
       //          ***INJECTION DE LA PAGE DECLARATION DE CONFIDENTIALITE***
       await injectHTML("/pages/confidentiality.html").then(() => {
+        const presentation_text = document.getElementById("presentation_text");
+        const presentation_picture = document.getElementById("presentation_picture");
+        const title = document.getElementById("title"); 
+        const text_1 = document.getElementById("text_1"); 
+        const link_text = document.getElementById("link_text"); 
+        const text_2 = document.getElementById("text_2"); 
         fetch("/LANG/text.json")
         .then((res) => res.json())
         .then((textObject) => {
-          
-    console.table(textObject);
           head_title.textContent = textObject.head.title_confidentiality; 
-          intro_title.textContent = textObject.header.confidentiality.intro_title;
-          intro_quote.textContent = textObject.header.confidentiality.intro_quote;
+          intro_title.textContent = textObject.confidentiality.intro_title;
+          intro_quote.textContent = textObject.confidentiality.intro_quote;
           presentation_text.textContent = textObject.header.confidentiality.presentation_text;
-          presentation_picture.setAttribute("src", textObject.header.confidentiality.presentation_picture_src);
-          presentation_picture.setAttribute("alt", textObject.header.confidentiality.presentation_picture_alt);
+          presentation_picture.setAttribute("src", textObject.confidentiality.presentation_picture_src);
+          presentation_picture.setAttribute("alt", textObject.confidentiality.presentation_picture_alt);
+          text_1.textContent = textObject.confidentiality.text_1;
+          link_text.textContent = textObject.confidentiality.link_text;
+          text_2.textContent = textObject.confidentiality.text_2;
         });
       });
       break;

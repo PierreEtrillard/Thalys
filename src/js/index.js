@@ -39,7 +39,7 @@ const credits = document.getElementById("credits");
 fetch("/LANG/text.json")
   .then((res) => res.json())
   .then((textObject) => {
-    console.table(textObject);
+    //console.table(textObject);
     html_language.setAttribute("lang", textObject.html.langue);
     head_title.textContent = textObject.head.title; 
     head_title_social_media1.setAttribute("content", textObject.head.title_social_media1);
