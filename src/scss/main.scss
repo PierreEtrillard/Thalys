@@ -191,6 +191,7 @@ header {
 }
 //  ****      -------------------------     ****
 .presentation {
+  padding: 1.5em;
   color: color.$grey;
   font-family: "citation", sans-serif;
   @include layout.centralizer;
@@ -307,9 +308,18 @@ section {
       display: flex;
       flex-direction: column;
       align-items: center;
-      textarea,
+      textarea{
+        width: 75vw;
+        margin-bottom: 5px;
+        width: 75vw;
+        height: 10em;
+        font-size: 1.5em;
+        font-family: auto;
+      };
       input {
         width: 75vw;
+        font-size: 1.5em;
+        font-family: auto;
       }
     }
   }

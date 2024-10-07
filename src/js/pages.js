@@ -27,9 +27,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         const presentation_text = document.getElementById("presentation_text");
         const presentation_picture = document.getElementById("presentation_picture");
         //OFFER
-        const title_Listening = document.getElementById("title_Listening");
-        const text_Listening = document.getElementById("text_Listening");
-        const call_to_action_2 = document.getElementById("call_to_action_2");
         const title_special = document.getElementById("title_special");
         const title_special_1 = document.getElementById("title_special_1");
         const text_special_1 = document.getElementById("text_special_1");
@@ -41,15 +38,16 @@ document.addEventListener("DOMContentLoaded", async () => {
         const special_quote_1 = document.getElementById("special_quote_1");
         const special_quote_2 = document.getElementById("special_quote_2");
         const special_quote_3 = document.getElementById("special_quote_3");
+        const call_to_action_1 = document.getElementById("call_to_action_1");
         const title_individual = document.getElementById("title_individual");
         const text_individual = document.getElementById("text_individual");
         const title_individual_quote = document.getElementById("title_individual_quote");
-        const alt_individual_quote = document.getElementById("alt_individual_quote");
         const individual_quote_1 = document.getElementById("individual_quote_1");
         const individual_quote_2 = document.getElementById("individual_quote_2");
-        const individual_quote_3 = document.getElementById("individual_quote_3");
+        const individual_quote_3 = document.getElementById("individual_quote_3"); 
+        const call_to_action_2 = document.getElementById("call_to_action_2");
         const title_group = document.getElementById("title_group");
-        const text_group = document.getElementById("text_group");
+        const text_group_1 = document.getElementById("text_group_1");
         fetch("/LANG/text.json")
         .then((res) => res.json())
         .then((textObject) => {
@@ -59,9 +57,6 @@ document.addEventListener("DOMContentLoaded", async () => {
           presentation_text.textContent = textObject.offer.presentation_text;
           presentation_picture.setAttribute("src", textObject.offer.presentation_picture_src);
           presentation_picture.setAttribute("alt", textObject.offer.presentation_picture_alt);
-          title_Listening.textContent = textObject.offer.title_Listening; 
-          text_Listening.textContent = textObject.offer.text_Listening; 
-          call_to_action_2.textContent = textObject.offer.call_to_action_2;
           title_special.textContent = textObject.offer.title_special;
           title_special_1.textContent = textObject.offer.title_special_1;
           text_special_1.textContent = textObject.offer.text_special_1;
@@ -73,14 +68,16 @@ document.addEventListener("DOMContentLoaded", async () => {
           special_quote_1.textContent = textObject.offer.special_quote_1; 
           special_quote_2.textContent = textObject.offer.special_quote_2;
           special_quote_3.textContent = textObject.offer.special_quote_3;
+          call_to_action_1.textContent = textObject.offer.call_to_action_1;    
           title_individual.textContent = textObject.offer.title_individual;
           text_individual.textContent = textObject.offer.text_individual;
           title_individual_quote.textContent = textObject.offer.title_individual_quote;
           individual_quote_1.textContent = textObject.offer.individual_quote_1;
           individual_quote_2.textContent = textObject.offer.individual_quote_2;
           individual_quote_3.textContent = textObject.offer.individual_quote_3;
+          call_to_action_2.textContent = textObject.offer.call_to_action_2;        
           title_group.textContent = textObject.offer.title_group;
-          text_group.textContent = textObject.offer.text_group;
+          text_group_1.textContent = textObject.offer.text_group_1;
 
         });
         menulinks[1].classList.toggle("link-selected");
@@ -179,8 +176,13 @@ document.addEventListener("DOMContentLoaded", async () => {
       //          ***INJECTION DE LA PAGE PROPOS***
       await injectHTML("/pages/about.html").then(() => {
         //HEADER
-        const presentation_video = document.getElementById("presentation_video");
         const presentation_text = document.getElementById("presentation_text");
+        const presentation_video = document.getElementById("presentation_video");
+             
+        const title = document.getElementById("title");
+        const text_1 = document.getElementById("text_1");
+        const text_2 = document.getElementById("text_2");
+        const text_3 = document.getElementById("text_3");         
         //ABOUT
         fetch("/LANG/text.json")
         .then((res) => res.json())
@@ -191,6 +193,11 @@ document.addEventListener("DOMContentLoaded", async () => {
           presentation_text.textContent = textObject.about.presentation_text;
           presentation_video.setAttribute("src", textObject.about.presentation_video_src);
           presentation_video.setAttribute("title", textObject.about.presentation_video_title);
+          
+          title.textContent = textObject.about.title;
+          text_1.textContent = textObject.about.text_1;
+          text_2.textContent = textObject.about.text_2;
+          text_3.textContent = textObject.about.text_3;
         });
       });
       menulinks[2].classList.toggle("link-selected");
@@ -200,7 +207,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       await injectHTML("/pages/contact.html").then(() => {
         const presentation_text = document.getElementById("presentation_text");
         const presentation_picture = document.getElementById("presentation_picture");
-        const contact_text = document.getElementById("contact_text");        
+        const title = document.getElementById("title"); 
+        const text_1 = document.getElementById("text_1"); 
+        const text_2 = document.getElementById("text_2"); 
+        const message = document.getElementById("message"); 
+        const mail = document.getElementById("client-email");
+        const button = document.getElementById("sender-btn");
+        const text_3 = document.getElementById("text_3"); 
+      
         fetch("/LANG/text.json")
         .then((res) => res.json())
         .then((textObject) => {
@@ -212,7 +226,13 @@ document.addEventListener("DOMContentLoaded", async () => {
           presentation_text.textContent = textObject.contact.presentation_text;
           presentation_picture.setAttribute("src", textObject.contact.presentation_picture_src);
           presentation_picture.setAttribute("alt", textObject.contact.presentation_picture_alt);
-          contact_text.textContent = textObject.contact.contact_text;
+          title.textContent = textObject.contact.title;
+          text_1.textContent = textObject.contact.text_1;
+          text_2.textContent = textObject.contact.text_2;
+          message.setAttribute("placeholder", textObject.contact.text_message);
+          mail.setAttribute("placeholder", textObject.contact.text_email);
+          button.textContent = textObject.contact.text_button;
+          text_3.textContent = textObject.contact.text_3;
         });
         const contactForm = document.getElementById("contact-form");
         const messageField = document.getElementById("message");

@@ -83,37 +83,40 @@
   "offer": {
       "intro_title":"Offres d'Accompagnement et de Soutien",
       "intro_quote": "Différentes propositions pour répondre au plus près à vos besoins.",
-      "presentation_text": "Pour repartir après la tempête, les oiseaux recueillis ont besoin d'une présence régulière et adaptée.",
+      "presentation_text": "Pour être assez forts et repartir après une tempête, les oiseaux recueillis ont besoin d'une présence régulière et adaptée.",
       "presentation_picture_src": "../assets/anais_jetée.webp",
       "presentation_picture_alt": "Un phare au bout d'une jetée qui s'élance dans la mer à marée basse. Le soleil perce au travers d'un ciel chargé après le passage d'un orage",
-     
-      "call_to_action_2": "Je fait l'essai !",
       
       "title_special": "OFFRE SPECIALE: Accompagnement court",
-      "title_special_1": "Première séance offerte.",
+      "title_special_1": "Première séance offerte",
       "text_special_1": "Pour faire connaissance et voir si nous choisissons de faire un bout de chemin ensemble. Si mon approche vous convient vous pouvez bénéficier du Pack 4 séances.",
       
       "title_special_2": "Pack 4 séances “Coup de pouce pour se lancer”",
-      "text_special_2": "Entretiens individuels hebdomadaires de 45 minutes en visio au tarif préférentiel de 180€. Par virement en une fois au départ ou en 4 fois 45€ le jour de la séance.",
+      "text_special_2": "Entretiens individuels hebdomadaires de 45 minutes en visio au tarif préférentiel de 180€, par virement en une fois au départ ou en 4 fois 45€ le jour de la séance.",
       
       "title_special_3": "Et Après?",
-      "text_special_3": "Si vous souhaitez poursuivre avec un accompagnement individuel,Nous conviendrons ensemble de la fréquence et de la durée souhaitée.",
+      "text_special_3": "Si vous souhaitez poursuivre avec un accompagnement individuel, nous conviendrons ensemble de la fréquence et de la durée souhaitée.",
       
-      "title_special_quote": "Ce qu'en pensent ceux qui ont bénéficié de cette offre",
+      "title_special_quote": "Leurs retours...",
       "special_quote_1": "“L'écoute patiente et encourageante de Nathalie m'a permis de m'épancher sans gêne. Cela m'a donné le courage de prendre mes responsabilités et la force de passer a l'action.”",
       "special_quote_2": "“Grâce à des questions bien ciblées elle m'a aidé à faire des liens entre des faits passés vécus et des émotions présentes.”",
       "special_quote_3": "“Avec beaucoup de tact, de respect et de douceur, Nathalie m'a aidée à poser les mots sur les maux. Je me suis sentie comprise et écoutée.”",
       
+      "call_to_action_1": "Je fait l'essai !",
+
       "title_individual": "ACCOMPAGNEMENT INDIVIDUEL",
       "text_individual": "Certains de mes clients ont profité d'un accompagnement individuel pendant plusieurs mois. Nous avons adapté le rythme des séances aux besoins individuels.",
       
-      "title_individual_quote": "Ce qu'en pensent ceux qui ont bénéficié du suivi individuel",
+      "title_individual_quote": "Leurs retours...",
       "individual_quote_1": "“Nathalie m'a encouragé a m'exprimer, qu'importe alors l'ordre de mes idées, des mots, des phrases prononcées.”",
       "individual_quote_2": "“Nathalie m'a donné à une occasion toute particulière le courage de prendre mes responsabilités en dévoilant une situation à qui de droit, situation que je subissais alors et dont je ne parvenais à m'en sortir seule.”",
       "individual_quote_3": "“Je vivais une rupture sentimentale très douloureuse. Un vrai brouillard dans ma tête, dans mon cœur, dans ma vie. Grâce a elle, mon sentiment de culpabilité est devenu plus équilibré.”",
-      
+
+      "call_to_action_2": "Ça m'intéresse...",
+
       "title_group": "ACCOMPAGNEMENT DE GROUPES",
-      "text_group":"Mon projet est de développer l'accompagnement de groupes. Cette activité sera mise à disposition de mes clients dès qu'elle sera finalisée."
+      "text_group_1":"Mon projet est de développer l'accompagnement de groupes. Cette activité sera mise à disposition de mes clients dès qu'elle sera finalisée.",
+      "text_group_2":"Mon projet est de développer l'accompagnement de groupes. Cette activité sera mise à disposition de mes clients dès qu'elle sera finalisée."
   },
   "about": {
       "intro_title":"Mon parcours de vie",
@@ -121,15 +124,25 @@
       "presentation_text": "Dans cette courte vidéo, je vous présente mon parcours, mes formations et l'accompagnement que je vous propose. Bon visionnage!",
       "presentation_video_src0": "https://www.youtube.com/embed/LWKWCWu7Zfo",
       "presentation_video_src": "https://www.youtube.com/embed/sVkzdPbudKU",
-      "presentation_video_title": "Vignette portrait de la vidéo de Nathalie GODIER"
+      "presentation_video_title": "Vignette portrait de la vidéo de Nathalie GODIER",
+      "title":"Je voulais faire quelque chose pour eux…",
+      "text_1":"J’ai toujours été fascinée par la complexité et la beauté de l’être humain. Voir quelqu'un en souffrance morale m’a toujours profondément émue. Issue du milieu de l’ingénierie scientifique, j’ai décidé de changer de métier après avoir été confrontée de très près à la détresse des parents d’enfants gravement malades. Ces parents étaient si seuls face à leur douleur… Ils avaient tant besoin de soutien, d’un “endroit” où se reposer, d’une pause dans leur immense souffrance. C’était une évidence, ma vocation était en train de naître : j’allais accompagner les personnes à surmonter leurs difficultés émotionnelles et psychologiques. Animée par cette mission, j’ai cherché comment concrétiser ce projet passionnant.  J'ai découvert “l'Approche Centrée sur la Personne » de Carl Rogers. J'ai été formée à ce type d’accompagnement pendant 2 ans et l’utilise depuis avec succès. Mon esprit curieux cherche inlassablement à découvrir, apprendre et surtout comprendre. C’est pourquoi j’ai aussi étudié la Communication Non Violente, l’Intelligence Relationnelle, la Process Communication et le Coaching. Actuellement inscrite à l'école Gestalt+ de Rennes, j'expérimente encore et acquiert de nouvelles compétences  qui enrichissent grandement ma pratique.",
+      "text_2":"Aujourd’hui, je suis heureuse de pouvoir vous offrir un refuge où vous pouvez être vous-même et partager en toute confiance vos peurs les plus profondes, vos colères, vos doutes et votre honte. Sarah, mère de famille épanouie, ressentait un épuisement constant. Elle vivait mal les tensions avec sa fille ainée. Au fur et à mesure de l'accompagnement et grâce à l’écoute bienveillante et authentique à laquelle je suis formée, Sarah s'est sentie comprise et écoutée. L'aider à poser des mots sur ses maux lui a été particulièrement bénéfique: elle a commencé à comprendre ce qui se jouait et a réussi, petit à petit, à faire la part des choses entre son bagage éducatif et son rôle de maman.  Elle a pu apaiser le dialogue avec sa fille, se montrer plus juste et plus à l'écoute, en établissant avec elle une communication non violente et bienveillante. Nous étions loin de nous douter que le COVID allait passer par là et que nous allions être tous confinés. Elle m'a confié plus tard que cette aide est vraiment arrivée au bon moment! Après avoir accompagné avec succès des personnes comme Sarah, je suis toujours aussi émerveillée de constater à quel point cette pratique peut offrir une pause dans la souffrance et bien plus encore.",
+      "text_3":"Accompagner mes clients jusqu’à leur envol m'anime profondément. Cela me donne l’énergie et la motivation de vous accueillir à votre tour dans ce refuge, pour déployer vos ailes vers de nouveaux horizons."
   }, 
   "contact": {
       "intro_title":"Se lancer et prendre Contact",
       "intro_quote": "Choisissez le moyen qui vous convient pour me contacter.",
-      "presentation_text": "Félicitations! Ce premier pas, pour trouver la force de repartir, est peut-être celui qui demande le plus de courage.",
+      "presentation_text": "Ce premier pas, pour trouver la force de repartir, est peut-être celui qui demande le plus de courage.",
       "presentation_picture_src": "../assets/anais_confidentialite.jpg", 
       "presentation_picture_alt": "Un homme d'âge mur avec un chapeau envoie un message depuis son téléphone portable",
-      "contact_text" : "J'ai encore des disponibilités dans mon emploi du temps pour de nouveaux clients. N'hésitez pas à me contacter!"
+      "title" : "Aimeriez vous me rencontrer?",
+      "text_1" : "J'ai encore des disponibilités dans mon emploi du temps pour de nouveaux clients. N'hésitez pas à me contacter!",
+      "text_2" : "Je vous invite à me laisser un message, et votre email pour que je puisse vous recontacter.",
+      "text_message":"Votre message",
+      "text_email":"votre@mail.com",
+      "text_button":"Envoyer",
+      "texte_3" : "Si je ne vous ai pas répondu dans la semaine, il se peut qu'il y ai eu un problème technique dans l'envoi du mail. N'hésitez pas à m'envoyer un message directement par téléphone."
   },
   "legal": {
       "intro_title":"Informations légales",
