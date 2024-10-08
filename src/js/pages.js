@@ -48,7 +48,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         const call_to_action_2 = document.getElementById("call_to_action_2");
         const title_group = document.getElementById("title_group");
         const text_group_1 = document.getElementById("text_group_1");
-        fetch("/LANG/text.json")
+        
+        const call_to_action_3 = document.getElementById("call_to_action_3");
+        const call_to_action_4 = document.getElementById("call_to_action_4");
+
+      fetch("/LANG/text.json")
         .then((res) => res.json())
         .then((textObject) => {
           head_title.textContent = textObject.head.title_offer; 
@@ -78,6 +82,10 @@ document.addEventListener("DOMContentLoaded", async () => {
           call_to_action_2.textContent = textObject.offer.call_to_action_2;        
           title_group.textContent = textObject.offer.title_group;
           text_group_1.textContent = textObject.offer.text_group_1;
+          call_to_action_3.textContent = textObject.offer.call_to_action_3; 
+          call_to_action_3.setAttribute("alt", textObject.offer.alt_cta3);
+          call_to_action_4.textContent = textObject.offer.call_to_action_4; 
+          call_to_action_4.setAttribute("alt", textObject.offer.alt_cta4);
 
         });
         menulinks[1].classList.toggle("link-selected");
@@ -182,7 +190,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         const title = document.getElementById("title");
         const text_1 = document.getElementById("text_1");
         const text_2 = document.getElementById("text_2");
-        const text_3 = document.getElementById("text_3");         
+        const text_3 = document.getElementById("text_3");  
+        
+        const call_to_action_3 = document.getElementById("call_to_action_3");
+        const call_to_action_4 = document.getElementById("call_to_action_4");
+       
         //ABOUT
         fetch("/LANG/text.json")
         .then((res) => res.json())
@@ -198,6 +210,12 @@ document.addEventListener("DOMContentLoaded", async () => {
           text_1.textContent = textObject.about.text_1;
           text_2.textContent = textObject.about.text_2;
           text_3.textContent = textObject.about.text_3;
+
+          call_to_action_3.textContent = textObject.about.call_to_action_3; 
+          call_to_action_3.setAttribute("alt", textObject.about.alt_cta3);
+          call_to_action_4.textContent = textObject.about.call_to_action_4; 
+          call_to_action_4.setAttribute("alt", textObject.about.alt_cta4);
+
         });
       });
       menulinks[2].classList.toggle("link-selected");
@@ -214,6 +232,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         const mail = document.getElementById("client-email");
         const button = document.getElementById("sender-btn");
         const text_3 = document.getElementById("text_3"); 
+        const call_to_action_3 = document.getElementById("call_to_action_3");
+        const call_to_action_4 = document.getElementById("call_to_action_4");
       
         fetch("/LANG/text.json")
         .then((res) => res.json())
@@ -233,6 +253,11 @@ document.addEventListener("DOMContentLoaded", async () => {
           mail.setAttribute("placeholder", textObject.contact.text_email);
           button.textContent = textObject.contact.text_button;
           text_3.textContent = textObject.contact.text_3;
+          call_to_action_3.textContent = textObject.contact.call_to_action_3; 
+          call_to_action_3.setAttribute("alt", textObject.contact.alt_cta3);
+          call_to_action_4.textContent = textObject.contact.call_to_action_4; 
+          call_to_action_4.setAttribute("alt", textObject.contact.alt_cta4);
+
         });
         const contactForm = document.getElementById("contact-form");
         const messageField = document.getElementById("message");
@@ -384,13 +409,14 @@ function formSubmit(event) {
   event.preventDefault();
   const message = document.getElementById("message").value;
   const clientEmail = document.getElementById("client-email").value;
-  sendMessage(message, clientEmail).then((res) => {
+  const language = document.getElementById("html_language").getAttribute("lang");
+  sendMessage(message, clientEmail,language).then((res) => {
     customersAlert.textContent = res;
     customersAlertWrapper.classList.remove("hidden");
     customersAlert.classList.remove("hidden");
-    setTimeout(() => {
-      customersAlert.classList.add("hidden");
-      customersAlertWrapper.classList.add("hidden");
-    }, 5000);
+    //setTimeout(() => {
+    //  customersAlert.classList.add("hidden");
+    //  customersAlertWrapper.classList.add("hidden");
+    //}, 5000);
   });
 }

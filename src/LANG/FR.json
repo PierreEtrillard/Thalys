@@ -1,6 +1,6 @@
 {
   "html" :{
-    "langue" : "fr"
+    "langue" : "en"
   },
   "head": {
     "title": "Nathalie GODIER - Thalys Développement",
@@ -73,12 +73,11 @@
     "quote_1": "“L'écoute patiente et encourageante de Nathalie m'a permis de m'épancher sans gêne. Cela m'a donné le courage de prendre mes responsabilités et la force de passer a l'action.”",
     "quote_2": "“Grâce à des questions bien ciblées elle m'a aidé à faire des liens entre des faits passés vécus et des émotions présentes.”",
     "quote_3": "“Avec beaucoup de tact, de respect et de douceur, Nathalie m'a aidée à poser les mots sur les maux. Je me suis sentie comprise et écoutée.”",
-    
-    "contact_msg": "Si vous avez envie qu'on se rencontre, je vous invite à me laisser un message",
-    "contact_msg_prompt": "votre message",
-    "contact_mail": "et votre email pour que je puisse vous recontacter",
-    "contact_mail_prompt": "votre @ mail",
-    "contact_send_btn": "Envoyer"
+
+    "call_to_action_3": "Qui est Nathalie?",
+    "alt_cta3": "Aller à la page à propos",    
+    "call_to_action_4": "Comment ça se passe?",
+    "alt_cta4": "Aller à la page offre"
   },
   "offer": {
       "intro_title":"Offres d'Accompagnement et de Soutien",
@@ -97,7 +96,7 @@
       "title_special_3": "Et Après?",
       "text_special_3": "Si vous souhaitez poursuivre avec un accompagnement individuel, nous conviendrons ensemble de la fréquence et de la durée souhaitée.",
       
-      "title_special_quote": "Leurs retours...",
+      "title_special_quote": "Quelques retours sur des accompagnements courts",
       "special_quote_1": "“L'écoute patiente et encourageante de Nathalie m'a permis de m'épancher sans gêne. Cela m'a donné le courage de prendre mes responsabilités et la force de passer a l'action.”",
       "special_quote_2": "“Grâce à des questions bien ciblées elle m'a aidé à faire des liens entre des faits passés vécus et des émotions présentes.”",
       "special_quote_3": "“Avec beaucoup de tact, de respect et de douceur, Nathalie m'a aidée à poser les mots sur les maux. Je me suis sentie comprise et écoutée.”",
@@ -107,7 +106,7 @@
       "title_individual": "ACCOMPAGNEMENT INDIVIDUEL",
       "text_individual": "Certains de mes clients ont profité d'un accompagnement individuel pendant plusieurs mois. Nous avons adapté le rythme des séances aux besoins individuels.",
       
-      "title_individual_quote": "Leurs retours...",
+      "title_individual_quote": "Quelques retours sur des accompagnements individuels:",
       "individual_quote_1": "“Nathalie m'a encouragé a m'exprimer, qu'importe alors l'ordre de mes idées, des mots, des phrases prononcées.”",
       "individual_quote_2": "“Nathalie m'a donné à une occasion toute particulière le courage de prendre mes responsabilités en dévoilant une situation à qui de droit, situation que je subissais alors et dont je ne parvenais à m'en sortir seule.”",
       "individual_quote_3": "“Je vivais une rupture sentimentale très douloureuse. Un vrai brouillard dans ma tête, dans mon cœur, dans ma vie. Grâce a elle, mon sentiment de culpabilité est devenu plus équilibré.”",
@@ -116,7 +115,13 @@
 
       "title_group": "ACCOMPAGNEMENT DE GROUPES",
       "text_group_1":"Mon projet est de développer l'accompagnement de groupes. Cette activité sera mise à disposition de mes clients dès qu'elle sera finalisée.",
-      "text_group_2":"Mon projet est de développer l'accompagnement de groupes. Cette activité sera mise à disposition de mes clients dès qu'elle sera finalisée."
+      "text_group_2":"Mon projet est de développer l'accompagnement de groupes. Cette activité sera mise à disposition de mes clients dès qu'elle sera finalisée.",
+      
+      "call_to_action_3": "Qui est Nathalie?",
+      "alt_cta3": "Aller à la page à propos",    
+      "call_to_action_4": "Retour à l'accueil",
+      "alt_cta4": "Aller à la page accueil"
+  
   },
   "about": {
       "intro_title":"Mon parcours de vie",
@@ -128,8 +133,12 @@
       "title":"Je voulais faire quelque chose pour eux…",
       "text_1":"J’ai toujours été fascinée par la complexité et la beauté de l’être humain. Voir quelqu'un en souffrance morale m’a toujours profondément émue. Issue du milieu de l’ingénierie scientifique, j’ai décidé de changer de métier après avoir été confrontée de très près à la détresse des parents d’enfants gravement malades. Ces parents étaient si seuls face à leur douleur… Ils avaient tant besoin de soutien, d’un “endroit” où se reposer, d’une pause dans leur immense souffrance. C’était une évidence, ma vocation était en train de naître : j’allais accompagner les personnes à surmonter leurs difficultés émotionnelles et psychologiques. Animée par cette mission, j’ai cherché comment concrétiser ce projet passionnant.  J'ai découvert “l'Approche Centrée sur la Personne » de Carl Rogers. J'ai été formée à ce type d’accompagnement pendant 2 ans et l’utilise depuis avec succès. Mon esprit curieux cherche inlassablement à découvrir, apprendre et surtout comprendre. C’est pourquoi j’ai aussi étudié la Communication Non Violente, l’Intelligence Relationnelle, la Process Communication et le Coaching. Actuellement inscrite à l'école Gestalt+ de Rennes, j'expérimente encore et acquiert de nouvelles compétences  qui enrichissent grandement ma pratique.",
       "text_2":"Aujourd’hui, je suis heureuse de pouvoir vous offrir un refuge où vous pouvez être vous-même et partager en toute confiance vos peurs les plus profondes, vos colères, vos doutes et votre honte. Sarah, mère de famille épanouie, ressentait un épuisement constant. Elle vivait mal les tensions avec sa fille ainée. Au fur et à mesure de l'accompagnement et grâce à l’écoute bienveillante et authentique à laquelle je suis formée, Sarah s'est sentie comprise et écoutée. L'aider à poser des mots sur ses maux lui a été particulièrement bénéfique: elle a commencé à comprendre ce qui se jouait et a réussi, petit à petit, à faire la part des choses entre son bagage éducatif et son rôle de maman.  Elle a pu apaiser le dialogue avec sa fille, se montrer plus juste et plus à l'écoute, en établissant avec elle une communication non violente et bienveillante. Nous étions loin de nous douter que le COVID allait passer par là et que nous allions être tous confinés. Elle m'a confié plus tard que cette aide est vraiment arrivée au bon moment! Après avoir accompagné avec succès des personnes comme Sarah, je suis toujours aussi émerveillée de constater à quel point cette pratique peut offrir une pause dans la souffrance et bien plus encore.",
-      "text_3":"Accompagner mes clients jusqu’à leur envol m'anime profondément. Cela me donne l’énergie et la motivation de vous accueillir à votre tour dans ce refuge, pour déployer vos ailes vers de nouveaux horizons."
-  }, 
+      "text_3":"Accompagner mes clients jusqu’à leur envol m'anime profondément. Cela me donne l’énergie et la motivation de vous accueillir à votre tour dans ce refuge, pour déployer vos ailes vers de nouveaux horizons.",
+      "call_to_action_3": "Comment ça se passe?",
+      "alt_cta3": "Aller à la page offre",    
+      "call_to_action_4": "Retour à l'accueil",
+      "alt_cta4": "Aller à la page accueil"
+      }, 
   "contact": {
       "intro_title":"Se lancer et prendre Contact",
       "intro_quote": "Choisissez le moyen qui vous convient pour me contacter.",
@@ -142,7 +151,11 @@
       "text_message":"Votre message",
       "text_email":"votre@mail.com",
       "text_button":"Envoyer",
-      "texte_3" : "Si je ne vous ai pas répondu dans la semaine, il se peut qu'il y ai eu un problème technique dans l'envoi du mail. N'hésitez pas à m'envoyer un message directement par téléphone."
+      "texte_3" : "Si je ne vous ai pas répondu dans la semaine, il se peut qu'il y ai eu un problème technique dans l'envoi du mail. N'hésitez pas à m'envoyer un message directement par téléphone.",
+      "call_to_action_3": "Comment ça se passe?",
+      "alt_cta3": "Aller à la page offre",    
+      "call_to_action_4": "Retour à l'accueil",
+      "alt_cta4": "Aller à la page accueil"
   },
   "legal": {
       "intro_title":"Informations légales",

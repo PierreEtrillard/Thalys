@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
      // Valider l'origine de la requête
-     $allowed_origin = 'https://www.thalys-developpement.fr';
+     $allowed_origin = 'https://www.thalys-developpement.com';
      if ($_SERVER['HTTP_ORIGIN'] !== $allowed_origin) {
          http_response_code(403);
          echo 'Access denied.';
@@ -13,19 +13,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Configurer l'email
     $to = 'ngodier@thalys-developpement.fr'; 
-    $subject = 'Nouveau message en provenance du site de la part de ' . $from;
+    $subject = 'EN_Nouveau message en provenance du site de la part de ' . $from;
     $body = "$from\n\nMessage:\n$message";
     $headers = "From: $from";
 
     // Envoyer l'email
     if (mail($to, $subject, $body, $headers)) {
-        echo 'Email envoyé avec succès.';
+        echo 'Your email has been sent successfully!';
     } else {
-        echo 'Échec de l\'envoi de l\'email.';
+        echo 'Email could not be sent.';
     }
 }
 else{
     http_response_code(405); // Méthode non autorisée
-    echo 'Méthode non autorisée.';
+    echo 'Non authorised method.';
 }
 ?>

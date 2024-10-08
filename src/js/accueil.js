@@ -45,6 +45,8 @@ const title_3_3 = document.getElementById("title_3_3");
 const quote_1 = document.getElementById("quote_1");
 const quote_2 = document.getElementById("quote_2");
 const quote_3 = document.getElementById("quote_3");
+const call_to_action_3 = document.getElementById("call_to_action_3");
+const call_to_action_4 = document.getElementById("call_to_action_4");
 
 // Carrousel:
 const carrousel = document.getElementById("accueil-carousel");
@@ -103,6 +105,11 @@ fetch("/LANG/text.json")
     quote_1.textContent = textObject.home.quote_1; 
     quote_2.textContent = textObject.home.quote_2; 
     quote_3.textContent = textObject.home.quote_3; 
+    call_to_action_3.textContent = textObject.home.call_to_action_3; 
+    call_to_action_3.setAttribute("alt", textObject.home.alt_cta3);
+    call_to_action_4.textContent = textObject.home.call_to_action_4; 
+    call_to_action_4.setAttribute("alt", textObject.home.alt_cta4);
+    
    });
 
 
