@@ -19,11 +19,11 @@
     "build:html:pages": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/pages/pages.html -o dist/pages/pages.html",
     "build:html:contact": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/pages/contact.html -o dist/pages/contact.html",
     "build:html:about": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/pages/about.html -o dist/pages/about.html",
-    "build:html:offre": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/pages/offre.html -o dist/pages/offre.html",
+    "build:html:offer": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/pages/offer.html -o dist/pages/offer.html",
     "build:html:legal": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/pages/legal.html -o dist/pages/legal.html",
     "build:html:confidentiality": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/pages/confidentiality.html -o dist/pages/confidentiality.html",
     "build:html:404": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true src/pages/404.html -o dist/pages/404.html",
-    "build:html": "npm run build:html:index && npm run build:html:pages && npm run build:html:contact && npm run build:html:about && npm run build:html:offre && npm run build:html:legal && npm run build:html:confidentiality && npm run build:html:404",
+    "build:html": "npm run build:html:index && npm run build:html:pages && npm run build:html:contact && npm run build:html:about && npm run build:html:offer && npm run build:html:legal && npm run build:html:confidentiality && npm run build:html:404",
     "build": "npm run build:css && npm run minify:css && npm run build:js && npm run build:html",
     "build_fr": "npm run build && json-minify src/LANG/FR.json > dist/LANG/text.json",
     "build_en": "npm run build && json-minify src/LANG/EN.json > dist/LANG/text.json"

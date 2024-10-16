@@ -21,11 +21,11 @@ const chevron_alt_img = document.getElementById("chevron_alt_img");
 const chevron_label_contact = document.getElementById("chevron_label_contact");
 //HEADER
 const header_full_name = document.getElementById("header_full_name");
-const header_alt_photo = document.getElementById("header_alt_photo");
-const header_label_href_home = document.getElementById("header_label_href_home");
-const header_label_href_offer = document.getElementById("header_label_href_offer");
-const header_label_href_about = document.getElementById("header_label_href_about");
-const header_label_href_contact = document.getElementById("header_label_href_contact");
+const header_alt_photo = document.getElementById("header_photo");
+const header_link_home = document.getElementById("header_link_home");
+const header_link_offer = document.getElementById("header_link_offer");
+const header_link_about = document.getElementById("header_link_about");
+const header_link_contact = document.getElementById("header_link_contact");
 const intro_title = document.getElementById("intro_title");
 const intro_quote = document.getElementById("intro_quote");
 //FOOTER
@@ -50,7 +50,17 @@ fetch("/LANG/text.json")
     chevron_label_up.setAttribute("aria-label", textObject.chevron.label_up);
     chevron_alt_img.setAttribute("alt", textObject.chevron.alt_img);
     chevron_label_contact.setAttribute("aria-label", textObject.chevron.label_contact);
+    //HEADER
     header_full_name.textContent = textObject.header.full_name; 
+    header_alt_photo.setAttribute("aria-label", textObject.header.alt_photo);
+    header_link_home.textContent = textObject.header.link_home; 
+    header_link_offer.textContent = textObject.header.link_offer; 
+    header_link_about.textContent = textObject.header.link_about; 
+    header_link_contact.textContent = textObject.header.link_contact;
+    header_link_home.setAttribute("alt", textObject.header.label_href_home);
+    header_link_offer.setAttribute("alt", textObject.header.label_href_offer);
+    header_link_about.setAttribute("alt", textObject.header.label_href_home);
+    header_link_contact.setAttribute("alt", textObject.header.label_href_about);
     //HOME 
     intro_title.textContent = textObject.home.intro_title;
     intro_quote.textContent = textObject.home.intro_quote;

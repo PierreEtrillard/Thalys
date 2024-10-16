@@ -23,6 +23,10 @@
   "header": {
     "full_name": "Nathalie GODIER",
     "alt_photo": "photo portrait de Nathalie GODIER. Clicker pour accéder à mon parcours de vie.",
+    "link_home":"Accueil",
+    "link_offer":"Mon offre",
+    "link_about":"A propos",
+    "link_contact":"Contact",
     "label_href_home": "Aller à la page Accueil",
     "label_href_offer": "Aller à la page Mon offre",
     "label_href_about": "Aller à la page A propos",
@@ -36,15 +40,15 @@
     "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir",
     
     "title_1" :"VOUS SENTEZ-VOUS PARFOIS ENVAHIS PAR...",
-    "title_1_1":"La lassitude ?",
+    "title_1_1":"La lassitude?",
     "alt_1_1":"Personne d'âge moyen, avec une planche de surf sous le bras, pensive devant la mer, sur un fond de falaises et un coucher de soleil orangé",
     "text_1_1": "Comme un vide en vous, une fatigue pesante qui ne passe pas?",
     
-    "title_1_2": "La solitude ?",
+    "title_1_2": "La solitude?",
     "alt_1_2": "Une mouette seule sur une plage avec en fond une ville balnéaire et un lever de soleil",
     "text_1_2": "L'impression que personne ne mesure ce que vous vivez vraiment?", 
     
-    "title_1_3":"La confusion ?",
+    "title_1_3":"La confusion?",
     "alt_1_3": "Un homme pensif devant un port et ses bateaux perdus dans le brouillard",
     "text_1_3": "Comme du brouillard dans la tête, de la difficulté à prendre des décisions?",
     "call_to_action_1":"Me contacter",
@@ -69,15 +73,15 @@
     "call_to_action_2": "Un clic pour repartir",
     "alt_cta2": "Aller au formulaire de contact",
     
-    "title_3_3": "Quelques retours sur mes accompagnements:",
+    "title_3_3": "Quelques retours sur mes accompagnements",
     "quote_1": "“L'écoute patiente et encourageante de Nathalie m'a permis de m'épancher sans gêne. Cela m'a donné le courage de prendre mes responsabilités et la force de passer a l'action.”",
     "quote_2": "“Grâce à des questions bien ciblées elle m'a aidé à faire des liens entre des faits passés vécus et des émotions présentes.”",
     "quote_3": "“Avec beaucoup de tact, de respect et de douceur, Nathalie m'a aidée à poser les mots sur les maux. Je me suis sentie comprise et écoutée.”",
 
     "call_to_action_3": "Qui est Nathalie?",
-    "alt_cta3": "Aller à la page à propos",    
+    "alt_cta3": "Aller à la page A propos",    
     "call_to_action_4": "Comment ça se passe?",
-    "alt_cta4": "Aller à la page offre"
+    "alt_cta4": "Aller à la page Offre"
   },
   "offer": {
       "intro_title":"Offres d'Accompagnement et de Soutien",
@@ -86,7 +90,7 @@
       "presentation_picture_src": "../assets/anais_jetée.webp",
       "presentation_picture_alt": "Un phare au bout d'une jetée qui s'élance dans la mer à marée basse. Le soleil perce au travers d'un ciel chargé après le passage d'un orage",
       
-      "title_special": "OFFRE SPECIALE: Accompagnement court",
+      "title_special": "OFFRE SPECIALE ponctuelle: Accompagnement court",
       "title_special_1": "Première séance offerte",
       "text_special_1": "Pour faire connaissance et voir si nous choisissons de faire un bout de chemin ensemble. Si mon approche vous convient vous pouvez bénéficier du Pack 4 séances.",
       
@@ -127,7 +131,6 @@
       "intro_title":"Mon parcours de vie",
       "intro_quote": "Découvrez ce qui m'a amené à me ré-orienter vers ce métier passionnant!",
       "presentation_text": "Dans cette courte vidéo, je vous présente mon parcours, mes formations et l'accompagnement que je vous propose. Bon visionnage!",
-      "presentation_video_src0": "https://www.youtube.com/embed/LWKWCWu7Zfo",
       "presentation_video_src": "https://www.youtube.com/embed/sVkzdPbudKU",
       "presentation_video_title": "Vignette portrait de la vidéo de Nathalie GODIER",
       "title":"Je voulais faire quelque chose pour eux…",

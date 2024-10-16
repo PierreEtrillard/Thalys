@@ -19,9 +19,9 @@ let comment2Selected = 0;
 document.addEventListener("DOMContentLoaded", async () => {
   switch (selectedPage) {
 
-    case "offre":
-      //          ***INJECTION DE LA PAGE OFFRE***
-      await injectHTML("/pages/offre.html").then(() => {
+    case "offer":
+      //          ***INJECTION DE LA PAGE offer***
+      await injectHTML("/pages/offer.html").then(() => {
        //Le elements de la page ne sont accessibles que lorsque la page est injectée dans le html 
         //HEADER 
         const presentation_text = document.getElementById("presentation_text");
@@ -219,6 +219,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
       });
       menulinks[2].classList.toggle("link-selected");
+      //Lecture automatique en plein écran       presentation_video
+      //fermeture du plein écran à la fin de la lecture
       break;
     case "contact":
       //          ***INJECTION DE LA PAGE CONTACT***

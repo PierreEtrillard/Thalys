@@ -1,0 +1,215 @@
+{
+    "html" :{
+      "langue" : "en"
+    },
+    "head": {
+      "title": "Nathalie GODIER - Thalys Developement",
+      "title_offer": "Offer of support",
+      "title_about": "About Nathalie GODIER",
+      "title_contact": "Contact Nathalie GODIER - Thalys Developement",
+      "title_legal": "Legal terms ",
+      "title_confidentiality": "Confidentiality",
+      "title_social_media1": "Nathalie GODIER - Thalys Developement",
+      "title_social_media2": "Nathalie GODIER - Thalys Dévelopement",
+      "description": "Find out more about the caring psychological support I offer. Feel free to get in touch if you want to know more.",
+      "description_social_media1": "Nathalie's caring psychological support.",
+      "description_social_media2": "Nathalie's caring psychological support."
+    },
+    "chevron": {
+      "label_up": "Top of the page",
+      "alt_img": "Top arrow",
+      "label_contact": "Go to Contact Page"
+    },
+    "header": {
+      "full_name": "Nathalie GODIER",
+      "alt_photo": "Nathalie GODIER's portrait photo. Clik here to know more about me.",
+      "link_home":"Home",
+      "link_offer":"My offer",
+      "link_about":"About",
+      "link_contact":"Contact",
+      "label_href_home": "Go to Home page",
+      "label_href_offer": "Go to Offer page",
+      "label_href_about": "Go to About page",
+      "label_href_contact": "Go to Contact page"
+    },
+    "home":  {
+      "intro_title":"Caring Psychological Support",
+      "intro_quote": "By visio, wherever you are, you can have access to genuine empathetic support to help you face personal challenges.",
+      "presentation_text": "Wounded and exhausted birds need a refuge to rest and get better to be able to safely fly off again.",
+      "presentation_picture_src": "assets/logo.webp",
+      "presentation_picture_alt": "logo: a little bird flying off. Texte: Thalys development-Find the strength to carry on",
+      
+      "title_1" :"Do you sometime feel overwhelmed by...",
+      "title_1_1":"Fatigue?",
+      "alt_1_1":"Middle aged person carrying a surf board under his arm, reflecting, looking at the the sea and waves, an orange sunset in the background.",
+      "text_1_1": "Like emptiness inside, weariness that doesn't let go?",
+      
+      "title_1_2": "Loneliness?",
+      "alt_1_2": "A lonely gull on a beach of a sea side town, at dawn",
+      "text_1_2": "The impression that no one fully understand what you are going through?", 
+      
+      "title_1_3":"Confusion?",
+      "alt_1_3": "Pensive man looking at the fog in a small harbour",
+      "text_1_3": "Like fog in your head, finding it difficult to make decisions?",
+      "call_to_action_1":"Get in touch",
+      "alt_cta1": "Go to the contact page",
+  
+      "title_Listening": "Have you ever been REALLY LISTENED TO?",
+      "text_Listening":"With kindness, empathy and unconditional positive regard? Accepted without judgement by someone acknowledging  your experience?",      
+  
+      "title_2":"Are you deeply longing for...",
+      "title_2_1": "Joie de vivre?",
+      "alt_2_1": "Young boy jumping joyfully over the waves of the sea",
+      "text_2_1": "Regain access to your inner freedom, to your original optimism, joy and simplicity.",
+      
+      "title_2_2": "Peace of mind?",
+      "alt_2_2":"Relaxed couple walking on a low tide beach on a cold day, holding hands, a rainbow in the background",
+      "text_2_2": "Enjoy the soothing effect of unconditional positive regard and deep empathetic listening.",
+      
+      "title_2_3": "The courage to swing into action?",
+      "alt_2_3": "Teenage boy jumping from a high diving board, stretching out to a lightly cloudy sky",
+      "text_2_3": "Dive into the fears hindering you, reconnect to what is important to you and find the strength to take action.",
+      
+      "title_3": "Feel like having a go?",
+      "call_to_action_2": "Only a click away",
+      "alt_cta2": "Go to the contact page",
+      
+      "title_3_3": "Feedback from some of my clients",
+      "quote_1": "“Nathalie's patient and encouraging listening allowed me to express myself without embarrassment. It gave me the courage to take responsibility and the strength to take action.”",
+      "quote_2": "“Thanks to well-targeted questions, she helped me make connections between past events and present emotions.”",
+      "quote_3": "“With great tact, respect and gentleness, Nathalie helped me put words to the pain. I felt understood and listened to.”",
+  
+      "call_to_action_3": "Who is Nathalie?",
+      "alt_cta3": "Go to the About page",    
+      "call_to_action_4": "What to expect?",
+      "alt_cta4": "Go to the Offer page"
+    },
+    "offer": {
+        "intro_title":"Offers for support",
+        "intro_quote": "Different formats to best meet your needs",
+        "presentation_text": "Injured birds found after the storm are in need of regular and appropriate support to best recover.",
+        "presentation_picture_src": "../assets/anais_jetée.webp",
+        "presentation_picture_alt": "A lighthouse at the end of a pier that juts out into the sea at low tide. The sun breaks through a heavy sky after a storm passes",
+        
+        "title_special": "One-off SPECIAL OFFER: short accompaniment",
+        "title_special_1": "First session offered",
+        "text_special_1": "To get to know each other and check out if we feel ready to work together. If my pratice suits you, you can go for the 4 session Pack. ",
+        
+        "title_special_2": "4 session pack:  “Helping hand to start off”",
+        "text_special_2": "4 weekly sessions for just 180€, payable at once at the start or 45€ the day of the session.",
+        
+        "title_special_3": "What's next?",
+        "text_special_3": "If you feel that you need further support, we will find together a pace that suits you.",
+        
+        "title_special_quote": "Some Feedback from short accompaniements",
+        "special_quote_1": "“Nathalie's patient and encouraging listening allowed me to express myself without embarrassment. It gave me the courage to take responsibility and the strength to take action.”",
+        "special_quote_2": "“Thanks to well-targeted questions, she helped me make connections between past events and present emotions.”",
+        "special_quote_3": "“With great tact, respect and gentleness, Nathalie helped me put words to the pain. I felt understood and listened to.”",
+         
+        "call_to_action_1": "I want to have a go !",
+  
+        "title_individual": "Personnal support",
+        "text_individual": "Some of my clients have benefited from a personnal support for several months. We have adapted the session rythm to individual needs.",
+        
+        "title_individual_quote": "Feedback from some who have had personal support",
+        "individual_quote_1": "“Nathalie encouraged me to express myself, regardless of the order of my ideas, words and sentences.”",
+        "individual_quote_2": "“On a very special occasion, Nathalie gave me the courage to take responsibility by revealing a situation to the right people, a situation I was suffering from at the time and couldn't get out of on my own.”",
+        "individual_quote_3": "“I was going through a very painful breakup. A real fog in my head, in my heart, in my life. Thanks to her, my feelings of guilt have become more balanced.”",
+  
+        "call_to_action_2": "I am interested...",
+  
+        "title_group": "Group work",
+        "text_group_1":"My project is to set up group work. If you are interested, I will get back to you when this format is ready.",
+        "text_group_2":"Mon projet est de développer l'accompagnement de groupes. Cette activité sera mise à disposition de mes clients dès qu'elle sera finalisée.",
+        
+        "call_to_action_3": "Who is Nathalie?",
+        "alt_cta3": "Go to the About page",    
+        "call_to_action_4": "Back to Home page",
+        "alt_cta4": "Go back to the home page"
+    
+    },
+    "about": {
+        "intro_title":"My life story",
+        "intro_quote": "Find out what made me decide to switch to this amawing profession!",
+        "presentation_text": "In this short video, I present my career path, my training courses and the support I offer. Enjoy!",
+        "presentation_video_src": "https://www.youtube.com/embed/etMsIjJIYfM",
+        "presentation_video_title": "Thumbnail portrait of Nathalie GODIER's video",
+        "title":"I just wanted to do something for them...",
+        "text_1":"I've always been fascinated by the complexity and beauty of human beings. Seeing someone in moral distress has always moved me deeply. Coming from a scientific engineering background, I decided to change professions after coming face-to-face with the distress of parents of seriously ill children. These parents were so alone in their pain... They needed support, a “place” to rest, a break from their immense suffering. It was obvious, my vocation was being born: I was going to help people overcome their emotional and psychological difficulties. Driven by this mission, I set out to find out how I could make this exciting project a reality.  I discovered Carl Rogers' “Person-Centred Approach”. I was trained in this approach for 2 years and have been using it successfully ever since. My inquisitive mind is constantly seeking to discover, learn and, above all, understand. That's why I've also studied Non-Violent Communication, Relational Intelligence, Process Communication and Coaching. Currently enrolled at a Gestalt school in France, I'm still experimenting and acquiring new skills that greatly enrich my practice.",
+        "text_2":"Today, I'm happy to be able to offer you a safe haven where you can be yourself and confidently share your deepest fears, angers, doubts and shame. Sarah, a successful mother, was experiencing constant exhaustion. She was having a hard time coping with the tensions with her eldest daughter. As the coaching progressed, and thanks to the kind, authentic listening I've been trained to do, Sarah felt understood and listened to. Helping her to put words to her feelings was particularly beneficial: she began to understand what was going on and, little by little, was able to distinguish between her educational background and her role as a mother.  She was able to calm the dialogue with her daughter, to be fairer and a better listener, and to establish non-violent, caring communication with her. Little did we know that COVID would be coming along and that we would all be confined. She told me later that this help really came at the right time! Having successfully accompanied people like Sarah, I'm still amazed at how this practice can offer a break from suffering and so much more.",
+        "text_3":"Accompanying my customers to stand on their two feet is what drives me. It gives me the energy and motivation to welcome you to this refuge, to spread your wings towards new horizons.",
+        "call_to_action_3": "How does it work?",
+        "alt_cta3": "Go to the Offer page",    
+        "call_to_action_4": "Home page",
+        "alt_cta4": "go back to the home page"
+        }, 
+    "contact": {
+        "intro_title":"Getting started and making contact",
+        "intro_quote": "Choose the way you prefer to contact me.",
+        "presentation_text": "This first step to find the strength to start again, is perhaps the one that requires the most courage.",
+        "presentation_picture_src": "../assets/anais_confidentialite.jpg", 
+        "presentation_picture_alt": "A middle-aged man in a hat sends a message from his cell phone",
+        "title" : "Would you like to meet me?",
+        "text_1" : "I still have time in my schedule for new customers. Please do not hesitate to contact me!",
+        "text_2" : "I invite you to leave me a message, and your email so that I can contact you.",
+        "text_message":"Your message",
+        "text_email":"your@mail.com",
+        "text_button":"send",
+        "texte_3" : "If I haven't replied within a week, there may have been a technical problem sending the e-mail. Please do not hesitate to contact me directly by phone.",
+        "call_to_action_3": "How does it work?",
+        "alt_cta3": "Go to the Offer page",    
+        "call_to_action_4": "Home page",
+        "alt_cta4": "go back to the home page"
+    },
+    "legal": {
+        "intro_title":"Legal terms",
+        "intro_quote": "Please find below all the information about my company and the terms of use of my website.",
+        "presentation_text": "Nathalie GODIER - 8 rue de Malabry, 35 780 La Richardais - FRANCE ",
+        "presentation_picture_src": "../assets/logo.webp",
+        "presentation_picture_alt": "logo: a little bird flying off. Texte: Thalys development-Find the strength to carry on",
+        "title": "Mentions Légales",
+        "title_1": "Coordonnées du propriétaire",
+        "identification_1": "Raison sociale : Thalys Développement",
+        "identification_2": "Adresse : 8 rue de Malabry, 35 780 La Richardais",
+        "identification_3": "Directeur de la publication : GODIER Nathalie",
+        "identification_4": "APE : 6201Z",
+        "identification_5": "SIRET : 850 350 422 00018",
+        "identification_6": "Forme juridique : Auto-entreprise",
+        "title_2": "Conditions générales d'utilisation",
+        "sub_title_1": "Conditions générales d’utilisation du site et des services proposés",
+        "text_1": "L’utilisation du site www.thalys-developpement.fr implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site www.thalys-developpement.fr sont donc invités à les consulter régulièrement. Ce site est généralement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être toutefois décidée par Thalys Développement, qui s’efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de l’intervention. Le site www.thalys-developpement.fr est mis à jour régulièrement par son directeur de publication. De la même façon, les mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre connaissance.",
+        "sub_title_2": "Description des services fournis",
+        "text_2": "Le site www.thalys-developpement.fr a pour objet de fournir une information concernant l’ensemble des activités de la société. Thalys Développement s’efforce de fournir sur le site www.thalys-developpement.fr des informations aussi précises que possible. Toutefois, il ne pourra être tenue responsable des omissions, des inexactitudes et des carences dans la mise à jour, qu’elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations. Tous les informations indiquées sur le site www.thalys-developpement.fr sont données à titre indicatif, et sont susceptibles d’évoluer. Par ailleurs, les renseignements figurant sur le site www.thalys-developpement.fr ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne.",
+        "sub_title_3": "Limitations contractuelles sur les données techniques",
+        "text_3": "Le site www.thalys-developpement.fr utilise la technologie JavaScript. Le site www.thalys-developpement.fr ne pourra être tenu responsable de dommages matériels liés à son utilisation. De plus, l’utilisateur du site www.thalys-developpement.fr s’engage à accéder au site en utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour.",
+        "sub_title_4": "Propriété intellectuelle et contrefaçons",
+        "text_4": "Thalys Développement est propriétaire des droits de propriété intellectuelle ou détient les droits d’usage sur tous les éléments accessibles sur le site, notamment les textes, images, graphismes, logo, icônes, sons et logiciels. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Thalys Développement. Toute exploitation non autorisée du site www.thalys-developpement.fr ou de l’un quelconque des éléments qu’il contient sera considérée comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.",
+        "sub_title_5": "Limites de responsabilité",
+        "text_5": "Thalys Développement ne pourra être tenue responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site www.thalys-developpement.fr, et résultant soit de l’utilisation d’un matériel ne répondant pas aux spécifications indiquées au point 3, soit de l’apparition d’un bug ou d’une incompatibilité. Thalys Développement ne pourra également être tenu responsable des dommages indirects (tels par exemple qu’une perte de marché ou perte d’une chance) consécutifs à l’utilisation du site www.thalys-developpement.fr.",
+        "sub_title_6": "Droit applicable et attribution de juridiction",
+        "text_6": "Tout litige en relation avec l’utilisation du site www.thalys-developpement.fr est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de St Malo."    
+    },
+    "confidentiality": {
+        "intro_title":"La confidentialité: ",
+        "intro_quote": "Composante essentielle à la sécurité relationelle",
+        "presentation_text": "Pour s'ouvrir et se confier, il est indispensable de se sentir protégé et en sécurité.",
+        "presentation_picture_src": "../assets/logo.webp",
+        "title": "Politique de confidentialité",
+        "text_1": "Soucieuse d'apporter un cadre sécurisant à mes clients, je respecte les règles de confidentialité comme décrites dans le code de déontologie de la FPGT.",
+        "link_text": "Consulter le site.",
+        "text_2": " "
+    },
+    "footer": {
+      "label_call_btn": "Call Nathalie Godier",
+      "label_legal": "Go to the Legal terms page",
+      "text_legal": "Legal terms",
+      "label_confidentiality": "Go to the Confidentiality page",
+      "text_confidentiality": "Confidentiality",
+      "text_copyrights": "© 2024 Thalys Développement",
+      "label_copyrights": "Back to the Home page",
+      "text_credits": "Web Developpement web by Pierre Etrillard",
+      "label_credits": "Visit Pierre Etrillard's web site",
+      "href_credits": "https://www.malt.fr/profile/pierreetrillard"
+    }
+  }   
+  

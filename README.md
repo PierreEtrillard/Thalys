@@ -51,6 +51,6 @@ Le fichier **scss/main.scss centralise toutes les régles** et dépend des parti
 main.scss est structué ainsi : 
 - les variables global en premier
 - puis les régles sont écritent dans le déroulé du DOM.
-- les **régles spécifiques aux pages** about, contact, offre, legal, confidentiality sont **dans les class du même nom** wrappées dans **la régle 'section'** (ainsi cela suit toujours l'ordre de lecture du html). 
+- les **régles spécifiques aux pages** about, contact, offer, legal, confidentiality sont **dans les class du même nom** wrappées dans **la régle 'section'** (ainsi cela suit toujours l'ordre de lecture du html). 
 
 Le **changement de typo ou de couleurs** ce fait dans les partials **scss/_typos.scss** et **scss/_colors.scss**

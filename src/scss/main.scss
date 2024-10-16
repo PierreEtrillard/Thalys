@@ -149,8 +149,10 @@ header {
       margin: 0;
       border-top: solid 2px transparent;
       &-selected {
-        border-top: solid 2px color.$warn;
-        color: color.$warn;
+        border-top: solid 3px color.$warn; 
+        //color: color.$warn; changé car pose souci en accessibilité.. dommage c'était joli!
+        //border-top: solid 2px color.$primary;
+        font-weight: bold;
       }
       &:hover,
       &:focus {
@@ -267,8 +269,8 @@ section {
       width: 80vw;
     }
   }
-  //________________________PAGE OFFRE__________________________
-  #offre {
+  //________________________PAGE offer__________________________
+  #offer {
     border-bottom: solid 0.2rem color.$accent;
     display: flex;
     flex-direction: column;

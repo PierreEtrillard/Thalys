@@ -54,7 +54,7 @@ const commentSelector = carrousel.querySelector(".comment-selector");
 const previewComment = carrousel.querySelector(".arrow-crsl-left");
 const nextComment = carrousel.querySelector(".arrow-crsl-right");
 let commentSelected = 0;
-const delay = 8; // Temps en seconde entre chaque affichage de commentaire
+const delay = 10; // Temps en seconde entre chaque affichage de commentaire
 let commentDisplayer; // Cible l'afficheur pour le démarrer ou le réinitialiser
 let touchStartX = 0;
 let touchEndX = 0;
@@ -86,6 +86,7 @@ fetch("/LANG/text.json")
     alt_1_3.setAttribute("alt", textObject.home.alt_1_3);
     text_1_3.textContent = textObject.home.text_1_3; 
     call_to_action_1.textContent = textObject.home.call_to_action_1;
+    call_to_action_1.setAttribute("aria-label", textObject.home.alt_cta1);
     title_Listening.textContent = textObject.home.title_Listening; 
     text_Listening.textContent = textObject.home.text_Listening; 
     title_2.textContent = textObject.home.title_2;
@@ -100,15 +101,15 @@ fetch("/LANG/text.json")
     text_2_3.textContent = textObject.home.text_2_3; 
     title_3.textContent = textObject.home.title_3; 
     call_to_action_2.textContent = textObject.home.call_to_action_2; 
-    call_to_action_2.setAttribute("alt", textObject.home.alt_cta2);
+    call_to_action_2.setAttribute("aria-label", textObject.home.alt_cta2);
     title_3_3.textContent = textObject.home.title_3_3; 
     quote_1.textContent = textObject.home.quote_1; 
     quote_2.textContent = textObject.home.quote_2; 
     quote_3.textContent = textObject.home.quote_3; 
     call_to_action_3.textContent = textObject.home.call_to_action_3; 
-    call_to_action_3.setAttribute("alt", textObject.home.alt_cta3);
+    call_to_action_3.setAttribute("aria-label", textObject.home.alt_cta3);
     call_to_action_4.textContent = textObject.home.call_to_action_4; 
-    call_to_action_4.setAttribute("alt", textObject.home.alt_cta4);
+    call_to_action_4.setAttribute("aria-label", textObject.home.alt_cta4);
     
    });
 

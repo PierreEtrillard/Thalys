@@ -51,7 +51,7 @@
     <header>
         <div class="top-header">
             <h2 id="header_full_name">Nathalie GODIER</h2>
-            <div id="menuTrigger" role="button" aria-label="ouvre ou ferme le menu">
+            <div id="menuTrigger" role="button" aria-label="open-close menu">
                 <div class="stripe"></div>
                 <div class="stripe"></div>
                 <div class="stripe"></div>
@@ -59,18 +59,18 @@
         </div>
         <nav class="menu menu-hidden">
             <ul>
-                <li><a href="" class="link link-selected" aria-label="Aller à la page Accueil">Accueil</a></li>
-                <li><a href="pages/pages.html?offre" class="link" aria-label="Aller à la page Mon offre">Mon offre</a>
+                <li><a id="header_link_home" href="" class="link link-selected" aria-label="Aller à la page Accueil">Accueil</a></li>
+                <li><a id="header_link_offer" href="pages/pages.html?offer" class="link" aria-label="Aller à la page Mon offre">Mon offre</a>
                 </li>
-                <li><a href="pages/pages.html?about" class="link" aria-label="Aller à la page À propos">À propos</a>
+                <li><a id="header_link_about" href="pages/pages.html?about" class="link" aria-label="Aller à la page À propos">À propos</a>
                 </li>
-                <li><a href="pages/pages.html?contact" class="link" aria-label="Aller à la page Contact">Contact</a>
+                <li><a id="header_link_contact" href="pages/pages.html?contact" class="link" aria-label="Aller à la page Contact">Contact</a>
                 </li>
             </ul>
         </nav>
         <div class="introduction">
             <h1 id ="intro_title">Accompagnement Psychologique Bienveillant</h1>
-            <a href= "pages/pages.html?about"><img src="assets/portrait_nat.webp" alt="photo portrait de Nathalie GODIER. Clicker pour accéder à mon parcours de vie."></a>
+            <a href= "pages/pages.html?about"><img id="header_photo" src="assets/portrait_nat.webp" alt="photo portrait de Nathalie GODIER. Clicker pour accéder à mon parcours de vie."></a>
             <blockquote id ="intro_quote">
                 Grâce à la visioconférence je vous apporte un soutien empathique dans vos
                 difficultés ou que vous soyez.
@@ -193,8 +193,8 @@
         </section>
 <section class="UX">
 
-    <a id ="call_to_action_3" class="cta-btn link" href="pages/pages.html?about">Qui est Nathalie?</a>
-    <a id ="call_to_action_4" class="cta-btn link" href="pages/pages.html?offre">Comment ça se passe?</a>
+    <a id ="call_to_action_3" class="cta-btn link" aria-label="Aller à la page A propos"  href="pages/pages.html?about">Qui est Nathalie?</a>
+    <a id ="call_to_action_4" class="cta-btn link" aria-label="Aller à la page Offre" href="pages/pages.html?offer">Comment ça se passe?</a>
  
 </section>
 
@@ -223,8 +223,8 @@
             35 780 La Richardais <br>
             FRANCE <br>
         </p>
-        <a id ="href_legal" href="pages/pages.html?legal" aria-label="Aller à la page mention légal">Mention légales</a>
-        <a id="href_confidentiality" href="pages/pages.html?confidentiality" aria-label="Aller à la page politique de confidentialée">Politique de
+        <a id ="href_legal" href="pages/pages.html?legal" aria-label="Aller à la page mentions légales">Mentions légales</a>
+        <a id="href_confidentiality" href="pages/pages.html?confidentiality" aria-label="Aller à la page politique de confidentialité">Politique de
             confidentialité</a>
        <!--<img src="../assets/logo-white.webp" alt="logo de thalys-developpent">
             --> 
