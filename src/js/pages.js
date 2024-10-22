@@ -416,6 +416,7 @@ function formSubmit(event) {
     customersAlert.textContent = res;
     customersAlertWrapper.classList.remove("hidden");
     customersAlert.classList.remove("hidden");
+
     //setTimeout(() => {
     //  customersAlert.classList.add("hidden");
     //  customersAlertWrapper.classList.add("hidden");

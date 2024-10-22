@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
      // Valider l'origine de la requête
-     $allowed_origin = 'https://www.thalys-developpement.com';
+     $allowed_origin = 'https://www.thalys-development.com';
      if ($_SERVER['HTTP_ORIGIN'] !== $allowed_origin) {
          http_response_code(403);
          echo 'Access denied.';
@@ -13,8 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Configurer l'email
     $to = 'ngodier@thalys-developpement.fr'; 
-    $subject = 'EN_Nouveau message en provenance du site de la part de ' . $from;
-    $body = "$from\n\nMessage:\n$message";
+    $subject = 'New message from website from ' . $from;
+    $body = "Sender:$from\n\nMessage:\n$message";
     $headers = "From: $from";
 
     // Envoyer l'email
