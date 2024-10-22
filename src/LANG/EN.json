@@ -51,8 +51,6 @@
       "title_1_3":"Confusion?",
       "alt_1_3": "Pensive man looking at the fog in a small harbour",
       "text_1_3": "Like fog in your head, finding it difficult to make decisions?",
-      "call_to_action_1":"Get in touch",
-      "alt_cta1": "Go to the contact page",
   
       "title_Listening": "Have you ever been REALLY LISTENED TO?",
       "text_Listening":"With kindness, empathy and unconditional positive regard? Accepted without judgement by someone acknowledging  your experience?",      
@@ -102,9 +100,9 @@
         "text_special_3": "If you feel that you need further support, we will find together a pace that suits you.",
         
         "title_special_quote": "Some Feedback from short accompaniements",
-        "special_quote_1": "“Nathalie's patient and encouraging listening allowed me to express myself without embarrassment. It gave me the courage to take responsibility and the strength to take action.”",
-        "special_quote_2": "“Thanks to well-targeted questions, she helped me make connections between past events and present emotions.”",
-        "special_quote_3": "“With great tact, respect and gentleness, Nathalie helped me put words to the pain. I felt understood and listened to.”",
+        "special_quote_1": "“Nathalie has always had a desire to help and care. Her sessions are marked by gentle listening and empathy. ”",
+        "special_quote_2": "“I feel really welcomed: When I don't want to do something it's no problem!” - a teenager",
+        "special_quote_3": "“Nathalie really put me at ease from the start thanks to this delicacy that characterizes her.”",
          
         "call_to_action_1": "I want to have a go !",
   
@@ -147,7 +145,7 @@
         "intro_title":"Getting started and making contact",
         "intro_quote": "Choose the way you prefer to contact me.",
         "presentation_text": "This first step to find the strength to start again, is perhaps the one that requires the most courage.",
-        "presentation_picture_src": "../assets/anais_confidentialite.jpg", 
+        "presentation_picture_src": "../assets/anais_contact.webp", 
         "presentation_picture_alt": "A middle-aged man in a hat sends a message from his cell phone",
         "title" : "Would you like to meet me?",
         "text_1" : "I still have time in my schedule for new customers. Please do not hesitate to contact me!",
