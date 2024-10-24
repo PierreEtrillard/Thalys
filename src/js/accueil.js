@@ -85,8 +85,6 @@ fetch("/LANG/text.json")
     title_1_3.textContent = textObject.home.title_1_3; 
     alt_1_3.setAttribute("alt", textObject.home.alt_1_3);
     text_1_3.textContent = textObject.home.text_1_3; 
-    //call_to_action_1.textContent = textObject.home.call_to_action_1;
-    //call_to_action_1.setAttribute("aria-label", textObject.home.alt_cta1);
     title_Listening.textContent = textObject.home.title_Listening; 
     text_Listening.textContent = textObject.home.text_Listening; 
     title_2.textContent = textObject.home.title_2;

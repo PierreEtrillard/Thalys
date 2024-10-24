@@ -34,7 +34,7 @@
   },
   "home":  {
     "intro_title":"Accompagnement Psychologique Bienveillant",
-    "intro_quote": "Grâce à la visioconférence je vous apporte un soutien empathique dans vos difficultés ou que vous soyez.",
+    "intro_quote": "Grâce à la visioconférence je vous apporte un soutien empathique dans vos difficultés où que vous soyez.",
     "presentation_text": "Les oiseaux, blessés ou épuisés, ont besoin d’un refuge pour se soigner et récupérer des forces avant de poursuivre leur voyage.",
     "presentation_picture_src": "assets/logo.webp",
     "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir",
@@ -53,9 +53,9 @@
     "text_1_3": "Comme du brouillard dans la tête, de la difficulté à prendre des décisions?",
 
     "title_Listening": "Avez-vous déjà été VRAIMENT ÉCOUTÉ?",
-    "text_Listening":"Avec bienveillance, compassion et sans jugement? Une écoute qui permet de se sentir compris et de se décharger de ce qui vous pèse.\nGoutez l'apaisement de faire une pause dans un quotidien parfois lourd et douloureux.",      
+    "text_Listening":"Avec bienveillance, compassion et sans jugement? Une écoute qui permet de se sentir compris et de se décharger de ce qui vous pèse. Goûtez l'apaisement de faire une pause dans un quotidien parfois lourd et douloureux.",      
 
-    "title_2":"ASPIREZ VOUS SINCEREMENT A RETROUVER...",
+    "title_2":"ASPIREZ-VOUS SINCEREMENT A RETROUVER...",
     "title_2_1": "La joie de vivre ?",
     "alt_2_1": "Jeune garçon qui saute en jouant avec les vagues de la mer",
     "text_2_1": "Retrouver de la spontanéité, de la liberté, de la créativité et de la légèreté! Le plaisir des bonheurs simples.",
@@ -68,7 +68,7 @@
     "alt_2_3": "Adolescent qui saute d'un plongoir, en extention vers un ciel bleu avec quelques nuages",
     "text_2_3": "Oser découvrir les peurs qui vous entravent, se reconnecter à ce qui vous inspire et trouver le courage de faire ce qui est important pour vous.",
     
-    "title_3": "Envie de vous lançer ?",
+    "title_3": "Envie de vous lancer ?",
     "call_to_action_2": "Un clic pour repartir",
     "alt_cta2": "Aller au formulaire de contact",
     
@@ -142,18 +142,19 @@
       "alt_cta4": "Aller à la page accueil"
       }, 
   "contact": {
-      "intro_title":"Se lancer et prendre Contact",
+      "intro_title":"Se lancer et prendre contact",
       "intro_quote": "Choisissez le moyen qui vous convient pour me contacter.",
       "presentation_text": "Ce premier pas, pour trouver la force de repartir, est peut-être celui qui demande le plus de courage.",
       "presentation_picture_src": "../assets/anais_contact.webp", 
-      "presentation_picture_alt": "Un homme d'âge mur avec un chapeau envoie un message depuis son téléphone portable",
-      "title" : "Aimeriez vous me rencontrer?",
+      "presentation_picture_alt": "Une main s'avance pour atteindre et prendre une main tendue",
+      "title" : "Aimeriez-vous me rencontrer?",
       "text_1" : "J'ai encore des disponibilités dans mon emploi du temps pour de nouveaux clients. N'hésitez pas à me contacter!",
-      "text_2" : "Je vous invite à me laisser un message, et votre email pour que je puisse vous recontacter.",
+      "text_2" : "Je vous invite à me laisser un message et votre email pour que je puisse vous recontacter.",
+      "text_3" : "Merci beaucoup pour votre message. Si je ne vous ai pas répondu dans la semaine, il se peut qu'il y ai eu un problème technique dans l'envoi du mail. N'hésitez pas à me renvoyer un message ou à m'appeler directement.",
       "text_message":"Votre message",
       "text_email":"votre@mail.com",
       "text_button":"Envoyer",
-      "texte_3" : "Si je ne vous ai pas répondu dans la semaine, il se peut qu'il y ai eu un problème technique dans l'envoi du mail. N'hésitez pas à m'envoyer un message directement par téléphone.",
+      "texte_3" : "Si je ne vous ai pas répondu dans la semaine, il se peut qu'il y ait eu un problème technique dans l'envoi du mail. N'hésitez pas à m'envoyer un message directement par téléphone.",
       "call_to_action_3": "Comment ça se passe?",
       "alt_cta3": "Aller à la page offre",    
       "call_to_action_4": "Retour à l'accueil",
@@ -167,7 +168,7 @@
       "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir",
       "title": "Mentions Légales",
       "title_1": "Coordonnées du propriétaire",
-      "identification_1": "Raison sociale : Thalys Développement",
+      "identification_1": "Raison sociale : Nathalie GODIER",
       "identification_2": "Adresse : 8 rue de Malabry, 35 780 La Richardais",
       "identification_3": "Directeur de la publication : GODIER Nathalie",
       "identification_4": "APE : 6201Z",
@@ -175,15 +176,15 @@
       "identification_6": "Forme juridique : Auto-entreprise",
       "title_2": "Conditions générales d'utilisation",
       "sub_title_1": "Conditions générales d’utilisation du site et des services proposés",
-      "text_1": "L’utilisation du site www.thalys-developpement.fr implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site www.thalys-developpement.fr sont donc invités à les consulter régulièrement. Ce site est généralement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être toutefois décidée par Thalys Développement, qui s’efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de l’intervention. Le site www.thalys-developpement.fr est mis à jour régulièrement par son directeur de publication. De la même façon, les mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre connaissance.",
+      "text_1": "L’utilisation du site www.thalys-developpement.fr implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site www.thalys-developpement.fr sont donc invités à les consulter régulièrement. Ce site est généralement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être toutefois décidée par Nathalie GODIER, qui s’efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de l’intervention. Le site www.thalys-developpement.fr est mis à jour régulièrement par son directeur de publication. De la même façon, les mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre connaissance.",
       "sub_title_2": "Description des services fournis",
-      "text_2": "Le site www.thalys-developpement.fr a pour objet de fournir une information concernant l’ensemble des activités de la société. Thalys Développement s’efforce de fournir sur le site www.thalys-developpement.fr des informations aussi précises que possible. Toutefois, il ne pourra être tenue responsable des omissions, des inexactitudes et des carences dans la mise à jour, qu’elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations. Tous les informations indiquées sur le site www.thalys-developpement.fr sont données à titre indicatif, et sont susceptibles d’évoluer. Par ailleurs, les renseignements figurant sur le site www.thalys-developpement.fr ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne.",
+      "text_2": "Le site www.thalys-developpement.fr a pour objet de fournir une information concernant l’ensemble des activités de l'entreprise. Nathalie GODIER s’efforce de fournir sur le site www.thalys-developpement.fr des informations aussi précises que possible. Toutefois, il ne pourra être tenue responsable des omissions, des inexactitudes et des carences dans la mise à jour, qu’elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations. Tous les informations indiquées sur le site www.thalys-developpement.fr sont données à titre indicatif, et sont susceptibles d’évoluer. Par ailleurs, les renseignements figurant sur le site www.thalys-developpement.fr ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne.",
       "sub_title_3": "Limitations contractuelles sur les données techniques",
       "text_3": "Le site www.thalys-developpement.fr utilise la technologie JavaScript. Le site www.thalys-developpement.fr ne pourra être tenu responsable de dommages matériels liés à son utilisation. De plus, l’utilisateur du site www.thalys-developpement.fr s’engage à accéder au site en utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour.",
       "sub_title_4": "Propriété intellectuelle et contrefaçons",
-      "text_4": "Thalys Développement est propriétaire des droits de propriété intellectuelle ou détient les droits d’usage sur tous les éléments accessibles sur le site, notamment les textes, images, graphismes, logo, icônes, sons et logiciels. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Thalys Développement. Toute exploitation non autorisée du site www.thalys-developpement.fr ou de l’un quelconque des éléments qu’il contient sera considérée comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.",
+      "text_4": "Nathalie GODIER est propriétaire des droits de propriété intellectuelle ou détient les droits d’usage sur tous les éléments accessibles sur le site, notamment les textes, graphismes, logo, icônes, sons et logiciels. Les photos du site sont la propriété intellectuelle de Anaïs Khatchikian et protégées par copyright. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Nathalie GODIER et Anaïs Khatchikian pour les photos. Toute exploitation non autorisée du site www.thalys-developpement.fr ou de l’un quelconque des éléments qu’il contient sera considérée comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.",
       "sub_title_5": "Limites de responsabilité",
-      "text_5": "Thalys Développement ne pourra être tenue responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site www.thalys-developpement.fr, et résultant soit de l’utilisation d’un matériel ne répondant pas aux spécifications indiquées au point 3, soit de l’apparition d’un bug ou d’une incompatibilité. Thalys Développement ne pourra également être tenu responsable des dommages indirects (tels par exemple qu’une perte de marché ou perte d’une chance) consécutifs à l’utilisation du site www.thalys-developpement.fr.",
+      "text_5": "Nathalie GODIER ne pourra être tenue responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site www.thalys-developpement.fr, et résultant soit de l’utilisation d’un matériel ne répondant pas aux spécifications indiquées au point 3, soit de l’apparition d’un bug ou d’une incompatibilité. Nathalie GODIER ne pourra également être tenu responsable des dommages indirects (tels par exemple qu’une perte de marché ou perte d’une chance) consécutifs à l’utilisation du site www.thalys-developpement.fr.",
       "sub_title_6": "Droit applicable et attribution de juridiction",
       "text_6": "Tout litige en relation avec l’utilisation du site www.thalys-developpement.fr est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de St Malo."    
   },
@@ -207,6 +208,10 @@
     "label_copyrights": "Retour à la page d'accueil",
     "text_credits": "Développement web par Pierre Etrillard",
     "label_credits": "Visiter le site de Pierre Etrillard, développeur freelance",
-    "href_credits": "https://www.malt.fr/profile/pierreetrillard"
+    "href_credits": "https://www.malt.fr/profile/pierreetrillard",
+    "text_photos": "Photos du site © Anaïs Khatchikian. Tous droits réservés",
+    "label_photos": "Photos du site © Anaïs Khatchikian. Tous droits réservés",
+    "href_photos": "https://www.instagram.com/des_restes_diode/"
+
   }
 }   

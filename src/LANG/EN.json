@@ -146,10 +146,11 @@
         "intro_quote": "Choose the way you prefer to contact me.",
         "presentation_text": "This first step to find the strength to start again, is perhaps the one that requires the most courage.",
         "presentation_picture_src": "../assets/anais_contact.webp", 
-        "presentation_picture_alt": "A middle-aged man in a hat sends a message from his cell phone",
+        "presentation_picture_alt": "A hand reaching out to another hand offering help",
         "title" : "Would you like to meet me?",
         "text_1" : "I still have time in my schedule for new customers. Please do not hesitate to contact me!",
         "text_2" : "I invite you to leave me a message, and your email so that I can contact you.",
+        "text_3" : "Thanks you so much for your message. I will get back to you in the week. If not, please try again or call me, as technologie sometimes fails us.",
         "text_message":"Your message",
         "text_email":"your@mail.com",
         "text_button":"send",
@@ -207,7 +208,10 @@
       "label_copyrights": "Back to the Home page",
       "text_credits": "Web Developpement web by Pierre Etrillard",
       "label_credits": "Visit Pierre Etrillard's web site",
-      "href_credits": "https://www.malt.fr/profile/pierreetrillard"
+      "href_credits": "https://www.malt.fr/profile/pierreetrillard",      
+      "text_photos": "Pictures © Anaïs Khatchikian. All rights reserved",
+      "label_photos": "Pictures © Anaïs Khatchikian. All rights reserved",
+      "href_photos": "https://www.instagram.com/des_restes_diode/"
     }
   }   
   

@@ -1,6 +1,6 @@
 # ![alt logo](assets/logo-white.webp) Site vitrine de Thalys développement
 
-## Introducation
+## Introduction
 *Sur demande du client **aucun framework n'est utilisé pour le développement du projet** et celui-ci ne dépend d'aucune librairie tiers pour la phase de développement ormis sass.*
 
 Les dépendances suivante sont toutefois **necessaires pour la mise en production**:

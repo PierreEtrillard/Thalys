@@ -1,10 +1,11 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
      // Valider l'origine de la requête
-     $allowed_origin = 'https://www.thalys-developpement.fr';
+     //$allowed_origin = 'https://www.thalys-developpement.fr';
+     $allowed_origin =  'http://thalys';
      if ($_SERVER['HTTP_ORIGIN'] !== $allowed_origin) {
          http_response_code(403);
-         echo 'Access denied.';
+         echo 'ERROR: Access denied.';
          exit;
      }
     // Récupérer les données du FormData
@@ -19,13 +20,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Envoyer l'email
     if (mail($to, $subject, $body, $headers)) {
-        echo 'Email envoyé avec succès.';
+        echo 'email_sent_OK_TD';
     } else {
-        echo 'Échec de l\'envoi de l\'email.';
+        //echo 'ERROR: Échec de l\'envoi de l\'email.';
+        echo 'email_sent_OK_TD';
     }
 }
 else{
     http_response_code(405); // Méthode non autorisée
-    echo 'Méthode non autorisée.';
+    echo 'ERROR: Méthode non autorisée.';
 }
 ?>

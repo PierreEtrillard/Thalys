@@ -34,6 +34,7 @@ const legal = document.getElementById("href_legal");
 const confidentiality = document.getElementById("href_confidentiality");
 const copyrights = document.getElementById("copyrights");
 const credits = document.getElementById("credits");
+const photos = document.getElementById("photos");
 //--------------------------INITIALISATION--------------------------------//
 //  injection du texte ds LANG/**.json
 fetch("/LANG/text.json")
@@ -75,6 +76,9 @@ fetch("/LANG/text.json")
     credits.setAttribute("aria-label", textObject.footer.label_credits);
     credits.setAttribute("href", textObject.footer.href_credits);
     credits.textContent = textObject.footer.text_credits;
+    photos.setAttribute("aria-label", textObject.footer.label_photos);
+    photos.setAttribute("href", textObject.footer.href_photos);
+    photos.textContent = textObject.footer.text_photos;
   });
 document.addEventListener("DOMContentLoaded", () => {
   // Ajout d'un écouteur d'événement pour le scroll
