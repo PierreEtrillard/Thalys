@@ -3,7 +3,7 @@ export default function sendMessage(message, from,language) {
   formData.set("from", from);
   formData.set("message", message);
   const lang=language;
-  return [1,"Test pour voir scénario si sendMessage OK"];
+  //return [1,"Test pour voir scénario si sendMessage OK"];
 switch (lang) {
   case 'fr':
   const user_msg_ok="Email envoyé avec succès." ; 

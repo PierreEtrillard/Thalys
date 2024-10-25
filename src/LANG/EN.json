@@ -107,8 +107,9 @@
         "call_to_action_1": "I want to have a go !",
   
         "title_individual": "Personnal support",
-        "text_individual": "Some of my clients have benefited from a personnal support for several months. We have adapted the session rythm to individual needs.",
-        
+        "text_individual_1": "Some of my clients have benefited from a personnal support for several months. We have adapted the session rythm to individual needs.",
+        "text_individual_2": "The price of the 45-minute session is €60. From experience, one session per week is the most productive pace.",
+
         "title_individual_quote": "Feedback from some who have had personal support",
         "individual_quote_1": "“Nathalie encouraged me to express myself, regardless of the order of my ideas, words and sentences.”",
         "individual_quote_2": "“On a very special occasion, Nathalie gave me the courage to take responsibility by revealing a situation to the right people, a situation I was suffering from at the time and couldn't get out of on my own.”",
@@ -208,7 +209,7 @@
       "label_copyrights": "Back to the Home page",
       "text_credits": "Web Developpement web by Pierre Etrillard",
       "label_credits": "Visit Pierre Etrillard's web site",
-      "href_credits": "https://www.malt.fr/profile/pierreetrillard",      
+      "href_credits": "https://clickonaute.fr/",      
       "text_photos": "Pictures © Anaïs Khatchikian. All rights reserved",
       "label_photos": "Pictures © Anaïs Khatchikian. All rights reserved",
       "href_photos": "https://www.instagram.com/des_restes_diode/"

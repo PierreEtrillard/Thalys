@@ -107,9 +107,10 @@
       "call_to_action_1": "Je fait l'essai !",
 
       "title_individual": "ACCOMPAGNEMENT INDIVIDUEL",
-      "text_individual": "Certains de mes clients ont profité d'un accompagnement individuel pendant plusieurs mois. Nous avons adapté le rythme des séances aux besoins individuels.",
+      "text_individual_1": "Certains de mes clients ont profité d'un accompagnement individuel pendant plusieurs mois. Nous avons adapté le rythme des séances aux besoins individuels.",
+      "text_individual_2": "Le tarif de la séance de 45 minutes est de 60€. Par expérience, le rythme d'une séance par semaine est le plus constructif.",
       
-      "title_individual_quote": "Quelques retours sur des accompagnements individuels:",
+      "title_individual_quote": "Quelques retours sur des accompagnements individuels",
       "individual_quote_1": "“Nathalie m'a encouragé a m'exprimer, qu'importe alors l'ordre de mes idées, des mots, des phrases prononcées.”",
       "individual_quote_2": "“Nathalie m'a donné à une occasion toute particulière le courage de prendre mes responsabilités en dévoilant une situation à qui de droit, situation que je subissais alors et dont je ne parvenais à m'en sortir seule.”",
       "individual_quote_3": "“Je vivais une rupture sentimentale très douloureuse. Un vrai brouillard dans ma tête, dans mon cœur, dans ma vie. Grâce a elle, mon sentiment de culpabilité est devenu plus équilibré.”",
@@ -138,7 +139,7 @@
       "text_3":"Accompagner mes clients jusqu’à leur envol m'anime profondément. Cela me donne l’énergie et la motivation de vous accueillir à votre tour dans ce refuge, pour déployer vos ailes vers de nouveaux horizons.",
       "call_to_action_3": "Comment ça se passe?",
       "alt_cta3": "Aller à la page offre",    
-      "call_to_action_4": "Retour à l'accueil",
+      "call_to_action_4": "Retour à l’accueil",
       "alt_cta4": "Aller à la page accueil"
       }, 
   "contact": {
@@ -148,13 +149,13 @@
       "presentation_picture_src": "../assets/anais_contact.webp", 
       "presentation_picture_alt": "Une main s'avance pour atteindre et prendre une main tendue",
       "title" : "Aimeriez-vous me rencontrer?",
-      "text_1" : "J'ai encore des disponibilités dans mon emploi du temps pour de nouveaux clients. N'hésitez pas à me contacter!",
+      "text_1" : "J'ai encore des disponibilités dans mon emploi du temps pour de nouveaux clients. N’hésitez pas à me contacter!",
       "text_2" : "Je vous invite à me laisser un message et votre email pour que je puisse vous recontacter.",
-      "text_3" : "Merci beaucoup pour votre message. Si je ne vous ai pas répondu dans la semaine, il se peut qu'il y ai eu un problème technique dans l'envoi du mail. N'hésitez pas à me renvoyer un message ou à m'appeler directement.",
+      "text_3" : "Merci beaucoup pour votre message. Si je ne vous ai pas répondu dans la semaine, il se peut qu’il y ai eu un problème technique dans l’envoi du mail. N’hésitez pas à me renvoyer un message ou à m'appeler directement.",
       "text_message":"Votre message",
       "text_email":"votre@mail.com",
       "text_button":"Envoyer",
-      "texte_3" : "Si je ne vous ai pas répondu dans la semaine, il se peut qu'il y ait eu un problème technique dans l'envoi du mail. N'hésitez pas à m'envoyer un message directement par téléphone.",
+      "texte_3" : "Si je ne vous ai pas répondu dans la semaine, il se peut qu’il y ait eu un problème technique dans l’envoi du mail. N’hésitez pas à m’envoyer un message directement par téléphone.",
       "call_to_action_3": "Comment ça se passe?",
       "alt_cta3": "Aller à la page offre",    
       "call_to_action_4": "Retour à l'accueil",
@@ -208,10 +209,9 @@
     "label_copyrights": "Retour à la page d'accueil",
     "text_credits": "Développement web par Pierre Etrillard",
     "label_credits": "Visiter le site de Pierre Etrillard, développeur freelance",
-    "href_credits": "https://www.malt.fr/profile/pierreetrillard",
+    "href_credits": "https://clickonaute.fr/",
     "text_photos": "Photos du site © Anaïs Khatchikian. Tous droits réservés",
     "label_photos": "Photos du site © Anaïs Khatchikian. Tous droits réservés",
     "href_photos": "https://www.instagram.com/des_restes_diode/"
-
   }
 }   

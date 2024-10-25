@@ -40,7 +40,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         const special_quote_3 = document.getElementById("special_quote_3");
         const call_to_action_1 = document.getElementById("call_to_action_1");
         const title_individual = document.getElementById("title_individual");
-        const text_individual = document.getElementById("text_individual");
+        const text_individual_1 = document.getElementById("text_individual_1");
+        const text_individual_2 = document.getElementById("text_individual_2");
         const title_individual_quote = document.getElementById("title_individual_quote");
         const individual_quote_1 = document.getElementById("individual_quote_1");
         const individual_quote_2 = document.getElementById("individual_quote_2");
@@ -74,7 +75,8 @@ document.addEventListener("DOMContentLoaded", async () => {
           special_quote_3.textContent = textObject.offer.special_quote_3;
           call_to_action_1.textContent = textObject.offer.call_to_action_1;    
           title_individual.textContent = textObject.offer.title_individual;
-          text_individual.textContent = textObject.offer.text_individual;
+          text_individual_1.textContent = textObject.offer.text_individual_1;
+          text_individual_2.textContent = textObject.offer.text_individual_2;
           title_individual_quote.textContent = textObject.offer.title_individual_quote;
           individual_quote_1.textContent = textObject.offer.individual_quote_1;
           individual_quote_2.textContent = textObject.offer.individual_quote_2;
@@ -279,8 +281,13 @@ document.addEventListener("DOMContentLoaded", async () => {
             : senderBtn.classList.add("sender-btn-disabled");
         });
         contactForm.addEventListener("submit", (event) => {
+          formSubmit(event);
+          contactForm.reset();
+          senderBtn.classList.add("sender-btn-disabled");
+        });
+        //contactForm.addEventListener("submit", (event) => {
           //ERREUR lorsqu'on click sur le bouton: fait planetr la page...
-          console.log(event);
+          //console.log(event);
            //formSubmit(event);
              //.then(res =>
              //{  console.log("resultat de formSubmit dans contactForm.addEventListener "+res)
@@ -290,26 +297,26 @@ document.addEventListener("DOMContentLoaded", async () => {
              //.catch(err=>console.log("l'erreur suivante a été récupérée:"+err))
           //voir ce qu'il est préférable de mettre ici et ce qu'il est plus judicieux de mettre directement dans la fonction 
           //const sentOK=0;
-           if (sentOK) {
+          // if (sentOK) {
              // Enlever le formulaire et text_1 et text_2
-             contactForm.classList.add("hidden");
-             text_1.classList.add("hidden");
-             text_2.classList.add("hidden");
+             //contactForm.classList.add("hidden");
+             //text_1.classList.add("hidden");
+             //text_2.classList.add("hidden");
              //Afficher texte_3
-             text_3.classList.remove("hidden");
-           }
-           else {
+             //text_3.classList.remove("hidden");
+           //}
+           //else {
             // Enlever le text_1 et text_2
-            text_1.classList.add("hidden");
-            text_2.classList.add("hidden");
+            //text_1.classList.add("hidden");
+            //text_2.classList.add("hidden");
              //Si besoin, Remplir le formulaire des données rentrées par l'utilisateur
              //message.textContent=message_text;
              //mail.textContent=clientEmail;
              //Afficher l'option d'envoi par whatsApp
-             text_4.classList.remove("hidden");
-             whatsapp.classList.remove("hidden"); 
+             //text_4.classList.remove("hidden");
+             //whatsapp.classList.remove("hidden"); 
              //PUIS QQCH FAIT PLANTER LA PAGE...
-           } 
+           //} 
           //contactForm.reset();
           //senderBtn.classList.add("sender-btn-disabled");
         //});
@@ -319,7 +326,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             customersAlertWrapper.classList.add("hidden");
           });
         });
-      }); 
+      //}); 
       menulinks[3].classList.toggle("link-selected");     
       break;
     case "legal":

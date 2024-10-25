@@ -22,11 +22,12 @@ h3{
   padding: 5px;
 }
 blockquote {
-  font-family: "citation", sans-serif;
-}
-p,
-blockquote {
+  font-family: "citation", sans-serif; 
   font-size: 1.5rem;
+  padding: 5px;
+}
+p {
+  font-size: 1rem;
   padding: 5px;
 }
 li {
@@ -219,7 +220,7 @@ section {
   //________________________ACCUEIL__________________________
   .feelings,
   .targets {
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: all 2s;
   }
   .cta {
