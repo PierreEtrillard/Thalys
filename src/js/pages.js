@@ -289,65 +289,15 @@ document.addEventListener("DOMContentLoaded", async () => {
             : senderBtn.classList.add("sender-btn-disabled");
         });
         contactForm.addEventListener("submit", (event) => {
-          return formSubmit(event)
-          .then ((res) =>{
-            console.log("Résultat de la fonction formSubmit reçu dans addEventListener: "+res);
-            //Si la fonction formSubmit réussit
-            contactForm.reset(); 
-            senderBtn.classList.add("sender-btn-disabled");
-            //Afficher texte_3
-            text_3.classList.remove("hidden");
-          })
-          .catch ((error) =>{
-            console.log("Erreur de la fonction formSubmit reçu dans addEventListener: "+error);
-            //Si la fonction formSubmit génère une erreur
-             //Afficher texte_4
-             text_4.classList.remove("hidden");
-          });
-          //onsole.log (sentOK);
+          formSubmit(event);
           //contactForm.reset();
           senderBtn.classList.add("sender-btn-disabled");
         });
-        //contactForm.addEventListener("submit", (event) => {
-          //ERREUR lorsqu'on click sur le bouton: fait planetr la page...
-          //console.log(event);
-           //formSubmit(event);
-             //.then(res =>
-             //{  console.log("resultat de formSubmit dans contactForm.addEventListener "+res)
-               //choses à faire
-             //}
-             //)
-             //.catch(err=>console.log("l'erreur suivante a été récupérée:"+err))
-          //voir ce qu'il est préférable de mettre ici et ce qu'il est plus judicieux de mettre directement dans la fonction 
-          //const sentOK=0;
-          // if (sentOK) {
-             // Enlever le formulaire et text_1 et text_2
-             //contactForm.classList.add("hidden");
-             //text_1.classList.add("hidden");
-             //text_2.classList.add("hidden");
-             //Afficher texte_3
-             //text_3.classList.remove("hidden");
-           //}
-           //else {
-            // Enlever le text_1 et text_2
-            //text_1.classList.add("hidden");
-            //text_2.classList.add("hidden");
-             //Si besoin, Remplir le formulaire des données rentrées par l'utilisateur
-             //message.textContent=message_text;
-             //mail.textContent=clientEmail;
-             //Afficher l'option d'envoi par whatsApp
-             //text_4.classList.remove("hidden");
-             //whatsapp.classList.remove("hidden"); 
-             //PUIS QQCH FAIT PLANTER LA PAGE...
-           //} 
-          //contactForm.reset();
-          //senderBtn.classList.add("sender-btn-disabled");
-        //});
         //Clicker sur l'alerte pour la cacher
-          customersAlertWrapper.addEventListener("click", ()=>{      
-            customersAlert.classList.add("hidden");
-            customersAlertWrapper.classList.add("hidden");
-          });
+        customersAlertWrapper.addEventListener("click", ()=>{      
+          customersAlert.classList.add("hidden");
+          customersAlertWrapper.classList.add("hidden");
+        });
         });
       //}); 
       menulinks[3].classList.toggle("link-selected");     
@@ -482,29 +432,15 @@ function injectHTML(htmlFileUrl) {
 // Fonction d'envoi du formulaire
 function formSubmit(event) {
   event.preventDefault();
-  const message_text = document.getElementById("message").value;
+  const message = document.getElementById("message").value;
   const clientEmail = document.getElementById("client-email").value;
-  const language = document.getElementById("html_language").getAttribute("lang");
-  return sendMessage(message_text, clientEmail,language)
-  .then((res) => {
-    console.log("resultat de sendMessage reçu dans formSubmit"+res);
-    customersAlert.textContent = res[1];
+  sendMessage(message, clientEmail).then((res) => {
+    customersAlert.textContent = res;
     customersAlertWrapper.classList.remove("hidden");
     customersAlert.classList.remove("hidden");
-    //const sentOK = res[0];
-    const sentOK = 1;
-    return sentOK;
-    //setTimeout(() => {
-    //  customersAlert.classList.add("hidden");
-    //  customersAlertWrapper.classList.add("hidden");
-    //}, 5000);
-  })
-  .catch((error)=>{
-    console.error("Erreur de sendMessage reçu  dans FormSubmit: ", error);
-    customersAlert.textContent = "Désolée, une erreur s'est produite lors de l'envoi du mail. Si le problême persiste, merci de m'en informer. Nathalie.";
-    customersAlertWrapper.classList.remove("hidden");
-    customersAlert.classList.remove("hidden");
-    const sentOK = 0;
-    return sentOK;
+    setTimeout(() => {
+      customersAlert.classList.add("hidden");
+      customersAlertWrapper.classList.add("hidden");
+    }, 5000);
   });
 }

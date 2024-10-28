@@ -1,5 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    //test si construit avec npm build
      // Valider l'origine de la requête
      $allowed_origin = 'https://thalys-developpement.fr';
      //$allowed_origin =  'http://thalys';
