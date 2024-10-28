@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const call_to_action_2 = document.getElementById("call_to_action_2");
         const title_group = document.getElementById("title_group");
         const text_group_1 = document.getElementById("text_group_1");
+        const text_group_2 = document.getElementById("text_group_2");
         
         const call_to_action_3 = document.getElementById("call_to_action_3");
         const call_to_action_4 = document.getElementById("call_to_action_4");
@@ -84,6 +85,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           call_to_action_2.textContent = textObject.offer.call_to_action_2;        
           title_group.textContent = textObject.offer.title_group;
           text_group_1.textContent = textObject.offer.text_group_1;
+          text_group_2.textContent = textObject.offer.text_group_2;
           call_to_action_3.textContent = textObject.offer.call_to_action_3; 
           call_to_action_3.setAttribute("alt", textObject.offer.alt_cta3);
           call_to_action_4.textContent = textObject.offer.call_to_action_4; 
@@ -260,10 +262,10 @@ document.addEventListener("DOMContentLoaded", async () => {
           mail.setAttribute("placeholder", textObject.contact.text_email);
           button.textContent = textObject.contact.text_button;
           text_3.textContent = textObject.contact.text_3;
-          //text_4.textContent = textObject.contact.text_4;
-          //whatsapp.setAttribute("href", textObject.contact.href_whatsapp);
-          //whatsapp.setAttribute("aria-label", textObject.contact.alt_whatsapp);
-          //whatsapp.textContent = textObject.contact.text_whatsapp;
+          text_4.textContent = textObject.contact.text_4;
+          whatsapp.setAttribute("href", textObject.contact.href_whatsapp);
+          whatsapp.setAttribute("aria-label", textObject.contact.alt_whatsapp);
+          whatsapp.textContent = textObject.contact.text_whatsapp;
           call_to_action_3.textContent = textObject.contact.call_to_action_3; 
           call_to_action_3.setAttribute("alt", textObject.contact.alt_cta3);
           call_to_action_4.textContent = textObject.contact.call_to_action_4; 
@@ -281,8 +283,23 @@ document.addEventListener("DOMContentLoaded", async () => {
             : senderBtn.classList.add("sender-btn-disabled");
         });
         contactForm.addEventListener("submit", (event) => {
-          formSubmit(event);
-          contactForm.reset();
+          return formSubmit(event)
+          .then ((res) =>{
+            console.log("Résultat de la fonction formSubmit reçu dans addEventListener: "+res);
+            //Si la fonction formSubmit réussit
+            contactForm.reset(); 
+            senderBtn.classList.add("sender-btn-disabled");
+            //Afficher texte_3
+            text_3.classList.remove("hidden");
+          })
+          .catch ((error) =>{
+            console.log("Erreur de la fonction formSubmit reçu dans addEventListener: "+error);
+            //Si la fonction formSubmit génère une erreur
+             //Afficher texte_4
+             text_4.classList.remove("hidden");
+          });
+          //onsole.log (sentOK);
+          //contactForm.reset();
           senderBtn.classList.add("sender-btn-disabled");
         });
         //contactForm.addEventListener("submit", (event) => {
@@ -462,16 +479,26 @@ function formSubmit(event) {
   const message_text = document.getElementById("message").value;
   const clientEmail = document.getElementById("client-email").value;
   const language = document.getElementById("html_language").getAttribute("lang");
-  sendMessage(message_text, clientEmail,language).then((res) => {
-    console.log("resultat de sendMessage"+res);
+  return sendMessage(message_text, clientEmail,language)
+  .then((res) => {
+    console.log("resultat de sendMessage reçu dans formSubmit"+res);
     customersAlert.textContent = res[1];
     customersAlertWrapper.classList.remove("hidden");
     customersAlert.classList.remove("hidden");
-    const sentOK = res[0];
+    //const sentOK = res[0];
+    const sentOK = 1;
     return sentOK;
     //setTimeout(() => {
     //  customersAlert.classList.add("hidden");
     //  customersAlertWrapper.classList.add("hidden");
     //}, 5000);
+  })
+  .catch((error)=>{
+    console.error("Erreur de sendMessage reçu  dans FormSubmit: ", error);
+    customersAlert.textContent = "Désolée, une erreur s'est produite lors de l'envoi du mail. Si le problême persiste, merci de m'en informer. Nathalie.";
+    customersAlertWrapper.classList.remove("hidden");
+    customersAlert.classList.remove("hidden");
+    const sentOK = 0;
+    return sentOK;
   });
 }
