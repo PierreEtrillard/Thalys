@@ -23,6 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (mail($to, $subject, $body, $headers)) {
         echo 'email_sent_OK_TD';
     } else {
+        http_response_code(500);
         echo 'ERROR: Échec de l\'envoi de l\'email.';
         //echo 'email_sent_OK_TD';
     }

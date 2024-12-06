@@ -9,9 +9,11 @@ export default function sendMessage(message, from) {
   })
     .then((response) => {
       if (!response.ok) {
-        return "erreur technique, votre message n'as pas été envoyé, veuillez réessayer ultérieurement.";
+        //return "erreur technique, votre message n'as pas été envoyé, veuillez réessayer ultérieurement.";
+        return "ERROR";
       }
-      return response.text();
+      //return response.text();
+      return "OK"
     })
     .catch((error) => {
       console.error("Error:", error);

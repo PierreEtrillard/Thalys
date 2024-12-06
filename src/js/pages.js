@@ -249,7 +249,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         
         const call_to_action_3 = document.getElementById("call_to_action_3");
         const call_to_action_4 = document.getElementById("call_to_action_4");
-      
+      //Déclaration des variables en dehors du fetch pour pouvoir utiliser les valeurs ensuite
+        let success_msg;
+        let error_msg; 
+        let text_1_succcess;
+        let text_2_succcess;
+        let text_1_error;
+        let text_2_error;
+
         fetch("/LANG/text.json")
         .then((res) => res.json())
         .then((textObject) => {
@@ -267,8 +274,6 @@ document.addEventListener("DOMContentLoaded", async () => {
           message.setAttribute("placeholder", textObject.contact.text_message);
           mail.setAttribute("placeholder", textObject.contact.text_email);
           button.textContent = textObject.contact.text_button;
-          text_3.textContent = textObject.contact.text_3;
-          text_4.textContent = textObject.contact.text_4;
           whatsapp.setAttribute("href", textObject.contact.href_whatsapp);
           whatsapp.setAttribute("aria-label", textObject.contact.alt_whatsapp);
           whatsapp.textContent = textObject.contact.text_whatsapp;
@@ -276,6 +281,12 @@ document.addEventListener("DOMContentLoaded", async () => {
           call_to_action_3.setAttribute("alt", textObject.contact.alt_cta3);
           call_to_action_4.textContent = textObject.contact.call_to_action_4; 
           call_to_action_4.setAttribute("alt", textObject.contact.alt_cta4);
+          success_msg = textObject.contact.success_msg;
+          error_msg = textObject.contact.error_msg;
+          text_1_succcess = textObject.contact.text_1_succcess;
+          text_2_succcess = textObject.contact.text_2_succcess;
+          text_1_error = textObject.contact.text_1_error;
+          text_2_error = textObject.contact.text_2_error;
 
         });
         const contactForm = document.getElementById("contact-form");
@@ -288,10 +299,107 @@ document.addEventListener("DOMContentLoaded", async () => {
             ? senderBtn.classList.remove("sender-btn-disabled")
             : senderBtn.classList.add("sender-btn-disabled");
         });
+        customersAlertWrapper.addEventListener("click", () => {
+          customersAlert.classList.add("hidden");
+          customersAlertWrapper.classList.add("hidden");
+        })
         contactForm.addEventListener("submit", (event) => {
-          formSubmit(event);
-          //contactForm.reset();
-          senderBtn.classList.add("sender-btn-disabled");
+          //formSubmit(event);
+          //Remplacé par le contenu de la fonction car pas utilisé ailleurs
+          event.preventDefault();
+          sendMessage(message.value, mail.value).then((res) => {
+            //console.log (res);
+            //Affichage du message
+            if (res=="OK"){
+              customersAlert.textContent = success_msg;
+            }
+            else {
+              customersAlert.textContent = error_msg;  
+            }         
+            customersAlertWrapper.classList.remove("hidden");
+            customersAlert.classList.remove("hidden");
+            //Configuration de la page en fonction du résultat
+            if (res=="OK"){
+              //Remise à zéro du formulaire et remise en grisé du bouton
+              contactForm.reset();
+              senderBtn.classList.add("sender-btn-disabled");
+              //Changement du contenu des textes pour afficher le succes
+              text_1.textContent = text_1_succcess;
+              text_2.textContent = text_2_succcess;
+            }
+            else {
+              text_1.textContent = text_1_error;
+              text_2.textContent = text_2_error;
+            }  
+            // setTimeout(() => {
+            //   customersAlert.classList.add("hidden");
+            //   customersAlertWrapper.classList.add("hidden");
+            // }, 5000);
+          })
+          .catch(err=>
+            console.error(err)
+          )
+          // code écrit avec Pierre Etrillard le 30/11/2024
+          // const url="/api/test_error.php";
+          // fetch(url)
+          //   .then(res=>{
+          //     console.log(res);
+          //     return res}
+          //   )
+          //   .catch(err=>
+          //     console.error(err)
+          //   )
+
+          // try {
+          //   fetch(url);
+          //   console.log(event);
+          // } catch (error) {
+          //   console.log(error);
+          // }
+          // if (response.ok) { // if HTTP-status is 200-299
+          //   // obtenir le corps de réponse (la méthode expliquée ci-dessous)
+          //   let json = await response.json();
+          // } else {
+          //   alert("HTTP-Error: " + response.status);
+          // }
+          // 
+          //   fetch(url)
+          // .then(res => res.text())          // convert to plain text
+          // .then(text => console.log(text))  
+          // // try {
+          //   const response = await fetch(url);
+          //   if (response.ok) {
+          //     console.log(response);
+          //   }
+          //   if (!response.ok) {
+          //     throw new Error(`Response status: ${response.status}`);
+          //   }
+          //   } 
+          //   catch (error) {
+          //     console.error(error.message);
+          //     console.error(error);
+          //   }
+          
+
+  //          
+  //fetch('http://127.0.0.1:8000/api/v1/users/profiles/?format=api')
+  // .then(res => res.text())          // convert to plain text
+  // .then(text => console.log(text)) 
+          // return fetch("/api/test_error.php.php", {
+          //   method: "POST",
+          //   body: formData,
+          // })
+          //   .then((response) => {
+          //     if (!response.ok) {
+          //       return "erreur technique, votre message n'as pas été envoyé, veuillez réessayer ultérieurement.";
+          //     }
+          //     return response.text();
+          //   })
+          //   .catch((error) => {
+          //     console.error("Error:", error);
+          //   });
+
+
         });
         //Clicker sur l'alerte pour la cacher
         customersAlertWrapper.addEventListener("click", ()=>{      
@@ -431,6 +539,8 @@ function injectHTML(htmlFileUrl) {
 }
 // Fonction d'envoi du formulaire
 function formSubmit(event) {
+  //Le comportement par défaut est d'envoyer les données à l'URL (ici pas d'attribut action dans le formulaire donc par d'ULR de spécifié) et de recharger la page
+  //On empêche ce comportement pour traiter les données avec js et afficher des messages dynamiques à l'utilisateur 
   event.preventDefault();
   const message = document.getElementById("message").value;
   const clientEmail = document.getElementById("client-email").value;
@@ -442,5 +552,8 @@ function formSubmit(event) {
       customersAlert.classList.add("hidden");
       customersAlertWrapper.classList.add("hidden");
     }, 5000);
-  });
+  })
+  .catch(err=>
+    console.error(err)
+  )
 }
