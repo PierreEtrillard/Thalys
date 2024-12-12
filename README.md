@@ -23,10 +23,12 @@ L'ensemble de ces dépendances ainsi que sass est **installable en une seul comm
 
 - [ ] Pour la **mise en production** il suffit d'**envoyer** les repertoires **dist/**, **asset/**, **fonts/**, **LANG/**, **api/** et mettre le fichier **assets\favicon_alt\favicon.ico** à la racine ainsi que les fichiers '**license**' sur le serveur.
 
+- Pour le site anglais, renommer index.html en FR_index.html et EN_index.html en index.html afin de favoriser le SEO en anglais
+
 ## Maintenance 
 ### Architecture
 
-Le projet est construit comme un site purement static avec la page d'accueil en index.html afin de favoriser le SEO.
+Le projet est construit comme un site purement static avec la page d'accueil en index.html (et EN_index.html pour le version anglaise) afin de favoriser le SEO.
 
 Afin d'eviter la répetition des headers et footers des autres pages, à la maniére d'une Single Page App, **un generateur de contenu en JavaScript est implémenté dans le fichier pages.js**.
 Celui-ci est **rattaché pages.html** et *y injecte le contenu des fichiers html placés dans le repertoire pages/*

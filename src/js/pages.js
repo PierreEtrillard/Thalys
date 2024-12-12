@@ -293,6 +293,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const messageField = document.getElementById("message");
         const emailField = document.getElementById("client-email");
         const senderBtn = document.getElementById("sender-btn");
+        const language = document.getElementById("html_language").getAttribute("lang");
 
         contactForm.addEventListener("change", () => {
           messageField.validity.valid && emailField.validity.valid
@@ -306,8 +307,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         contactForm.addEventListener("submit", (event) => {
           //formSubmit(event);
           //Remplacé par le contenu de la fonction car pas utilisé ailleurs
-          event.preventDefault();
-          sendMessage(message.value, mail.value).then((res) => {
+          event.preventDefault();     
+ 
+          sendMessage(message.value, mail.value,language).then((res) => {
             //console.log (res);
             //Affichage du message
             if (res=="OK"){
