@@ -74,7 +74,9 @@ fetch("/LANG/text.json")
     intro_title.textContent = textObject.home.intro_title;
     intro_quote.textContent = textObject.home.intro_quote;
     presentation_text.textContent = textObject.home.presentation_text;
-    presentation_picture.textContent = textObject.home.presentation_picture;
+    //presentation_picture.textContent = textObject.home.presentation_picture;
+    presentation_picture.setAttribute("src", textObject.home.presentation_picture_src);    
+    presentation_picture.setAttribute("alt", textObject.home.presentation_picture_alt);
     title_1.textContent = textObject.home.title_1; 
     title_1_1.textContent = textObject.home.title_1_1; 
     alt_1_1.setAttribute("alt", textObject.home.alt_1_1);
