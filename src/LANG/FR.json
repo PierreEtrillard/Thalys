@@ -30,7 +30,11 @@
     "label_href_home": "Aller à la page Accueil",
     "label_href_offer": "Aller à la page Mon offre",
     "label_href_about": "Aller à la page A propos",
-    "label_href_contact": "Aller à la page Contact"
+    "label_href_contact": "Aller à la page Contact",
+    "label_href_language": "English version",
+    "href_language": "https://www.thalys-development.com/",
+    "language_picture_src": "../assets/UK United Kingdom flag.png",
+    "language_picture_alt": "UK flag"
   },
   "home":  {
     "intro_title":"Accompagnement Psychologique Bienveillant",

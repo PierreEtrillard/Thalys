@@ -26,6 +26,8 @@ const header_link_home = document.getElementById("header_link_home");
 const header_link_offer = document.getElementById("header_link_offer");
 const header_link_about = document.getElementById("header_link_about");
 const header_link_contact = document.getElementById("header_link_contact");
+const header_link_language = document.getElementById("header_link_language");
+const header_language_picture = document.getElementById("header_language_picture");
 const intro_title = document.getElementById("intro_title");
 const intro_quote = document.getElementById("intro_quote");
 //FOOTER
@@ -62,6 +64,11 @@ fetch("/LANG/text.json")
     header_link_offer.setAttribute("alt", textObject.header.label_href_offer);
     header_link_about.setAttribute("alt", textObject.header.label_href_home);
     header_link_contact.setAttribute("alt", textObject.header.label_href_about);
+    header_link_language.setAttribute("alt", textObject.header.label_href_language);
+    header_link_language.setAttribute("href", textObject.header.href_language);
+    header_language_picture.setAttribute("src", textObject.header.language_picture_src);
+    header_language_picture.setAttribute("alt", textObject.header.language_picture_alt);
+
     //HOME 
     intro_title.textContent = textObject.home.intro_title;
     intro_quote.textContent = textObject.home.intro_quote;

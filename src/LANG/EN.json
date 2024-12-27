@@ -30,7 +30,11 @@
       "label_href_home": "Go to Home page",
       "label_href_offer": "Go to Offer page",
       "label_href_about": "Go to About page",
-      "label_href_contact": "Go to Contact page"
+      "label_href_contact": "Go to Contact page",
+      "label_href_language": "Site en Français",
+      "href_language": "https://www.thalys-developpement.fr/",
+      "language_picture_src": "../assets/France flag.png",
+      "language_picture_alt": "Drapeau Français"
     },
     "home":  {
       "intro_title":"Caring Psychological Support",
