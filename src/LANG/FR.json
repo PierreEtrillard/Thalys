@@ -3,14 +3,14 @@
     "langue" : "fr"
   },
   "head": {
-    "title": "Nathalie GODIER - Thalys Développement",
+    "title": "Nathalie GODIER",
     "title_offer": "Offre d'Accompagnement",
     "title_about": "A propos de Nathalie GODIER",
-    "title_contact": "Contacter Nathalie GODIER - Thalys Développement",
+    "title_contact": "Contacter Nathalie GODIER",
     "title_legal": "Mentions légales ",
     "title_confidentiality": "Confidentialité",
-    "title_social_media1": "Nathalie GODIER - Thalys Développement",
-    "title_social_media2": "Nathalie GODIER - Thalys Développement",
+    "title_social_media1": "Nathalie GODIER",
+    "title_social_media2": "Nathalie GODIER",
     "description": "Découvrez l'accompagnement psychologique bienveillant que je vous propose. Vous pourrez également me contacter si vous êtes à la recherche d'un soutien empathique.",
     "description_social_media1": "Accompagnement psychologique bienveillant par Nathalie GODIER.",
     "description_social_media2": "Accompagnement psychologique bienveillant par Nathalie GODIER."
@@ -172,7 +172,7 @@
       "intro_title":"Informations légales",
       "intro_quote": "Ci dessous toutes les informations concernant mon entreprise et les conditions d'utilisation de mon site.",
       "presentation_text": "Nathalie GODIER - 8 rue de Malabry, 35 780 La Richardais - FRANCE ",
-      "presentation_picture_src": "../assets/logo.webp",
+      "presentation_picture_src": "../assets/Logo_Nathalie Godier_Français V1.png",
       "presentation_picture_alt": "logo: un petit oiseau s'envole. Texte: Thalys développement-Trouvez la force pour repartir",
       "title": "Mentions Légales",
       "title_1": "Coordonnées du propriétaire",
@@ -197,13 +197,14 @@
       "text_6": "Tout litige en relation avec l’utilisation du site www.thalys-developpement.fr est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de St Malo."    
   },
   "confidentiality": {
-      "intro_title":"La confidentialité: ",
+      "intro_title":"La confidentialité ",
       "intro_quote": "Composante essentielle à la sécurité relationelle",
       "presentation_text": "Pour s'ouvrir et se confier, il est indispensable de se sentir protégé et en sécurité.",
-      "presentation_picture_src": "../assets/logo.webp",
+      "presentation_picture_src": "../assets/Logo_Nathalie Godier_Français V1.png",
       "title": "Politique de confidentialité",
       "text_1": "Soucieuse d'apporter un cadre sécurisant à mes clients, je respecte les règles de confidentialité comme décrites dans le code de déontologie de la FPGT.",
       "link_text": "Consulter le site.",
+      "link_href": "https://www.fpgt.fr/page/912639-codes-de-deontologie#:~:text=B3%20Confidentialit%C3%A9",
       "text_2": " "
   },
   "footer": {

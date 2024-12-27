@@ -27,7 +27,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       //          ***INJECTION DE LA PAGE offer***
       await injectHTML("/pages/offer.html").then(() => {
        //Le elements de la page ne sont accessibles que lorsque la page est injectée dans le html 
-        //HEADER 
+        //HEADER
+        const intro_title = document.getElementById("intro_title");
+        const intro_quote = document.getElementById("intro_quote"); 
         const presentation_text = document.getElementById("presentation_text");
         const presentation_picture = document.getElementById("presentation_picture");
         //OFFER
@@ -194,6 +196,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       //          ***INJECTION DE LA PAGE PROPOS***
       await injectHTML("/pages/about.html").then(() => {
         //HEADER
+        const intro_title = document.getElementById("intro_title");
+        const intro_quote = document.getElementById("intro_quote");
         const presentation_text = document.getElementById("presentation_text");
         const presentation_video = document.getElementById("presentation_video");
              
@@ -235,6 +239,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     case "contact":
       //          ***INJECTION DE LA PAGE CONTACT***
       await injectHTML("/pages/contact.html").then(() => {
+        const intro_title = document.getElementById("intro_title");
+        const intro_quote = document.getElementById("intro_quote");
         const presentation_text = document.getElementById("presentation_text");
         const presentation_picture = document.getElementById("presentation_picture");
         const title = document.getElementById("title"); 
@@ -415,6 +421,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     case "legal":
       //          ***INJECTION DE LA PAGE MENTIONS LEGALES***
       await injectHTML("/pages/legal.html").then(() => {
+        const intro_title = document.getElementById("intro_title");
+        const intro_quote = document.getElementById("intro_quote");
         const presentation_text = document.getElementById("presentation_text");
         const presentation_picture = document.getElementById("presentation_picture");
         const title = document.getElementById("title"); 
@@ -446,7 +454,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         head_title.textContent = textObject.head.title_contact; 
         intro_title.textContent = textObject.legal.intro_title;
         intro_quote.textContent = textObject.legal.intro_quote;
-        //CONFIDENTIALITY
+        //LEGAL
         presentation_text.textContent = textObject.legal.presentation_text;
         presentation_picture.setAttribute("src", textObject.legal.presentation_picture_src);
         presentation_picture.setAttribute("alt", textObject.legal.presentation_picture_alt);
@@ -478,7 +486,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     case "confidentiality":
       //          ***INJECTION DE LA PAGE DECLARATION DE CONFIDENTIALITE***
       await injectHTML("/pages/confidentiality.html").then(() => {
-        const presentation_text = document.getElementById("presentation_text");
+        const intro_title = document.getElementById("intro_title");
+        const intro_quote = document.getElementById("intro_quote");const presentation_text = document.getElementById("presentation_text");
         const presentation_picture = document.getElementById("presentation_picture");
         const title = document.getElementById("title"); 
         const text_1 = document.getElementById("text_1"); 
@@ -490,11 +499,13 @@ document.addEventListener("DOMContentLoaded", async () => {
           head_title.textContent = textObject.head.title_confidentiality; 
           intro_title.textContent = textObject.confidentiality.intro_title;
           intro_quote.textContent = textObject.confidentiality.intro_quote;
-          presentation_text.textContent = textObject.header.confidentiality.presentation_text;
+          presentation_text.textContent = textObject.confidentiality.presentation_text;
           presentation_picture.setAttribute("src", textObject.confidentiality.presentation_picture_src);
           presentation_picture.setAttribute("alt", textObject.confidentiality.presentation_picture_alt);
+          title.textContent = textObject.confidentiality.title;
           text_1.textContent = textObject.confidentiality.text_1;
           link_text.textContent = textObject.confidentiality.link_text;
+          link_text.setAttribute("href", textObject.confidentiality.link_href);
           text_2.textContent = textObject.confidentiality.text_2;
         });
       });
