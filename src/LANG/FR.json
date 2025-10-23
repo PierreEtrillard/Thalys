@@ -122,13 +122,28 @@
       "call_to_action_2": "Ça m'intéresse...",
 
       "title_group": "ACCOMPAGNEMENT DE GROUPES",
-      "text_group_1":"Mon projet est de développer l'accompagnement de groupes. Cette activité sera mise à disposition de mes clients dès qu'elle sera finalisée.",
-      "text_group_2":"",
+      "title_group_1":"Ma Vie Amoureuse",
+      "text_group_1_1":"Et si vous preniez le temps de comprendre votre parcours amoureux ?\rD’explorer vos besoins, vos blessures, vos élans ?\rEt surtout, de poser un nouveau regard sur la relation à l’autre ?",
+      "text_group_1_2":"Une formation de groupe en visio de 12h, réparties en 6 séance, qui vous permettront d'échanger, si vous le souhaitez et en toute sécurité, sur des thèmes comme: <ul><li> Quelles sont les grandes étapes dans une relation amoureuse? </li><li>Quels sont les fondamentaux d'une relation saine?</li><li>Comment créer et entretenir l'intimité affective? </li><li>Comment faire face au désillusions ?</li><li>Quels sont les obstacles à l'amour? </li><li>Existe-t-il des éléments favorables pour faire naître (ou renaître) l'étincelle?</li></ul>",
       
-      "call_to_action_3": "Qui est Nathalie?",
-      "alt_cta3": "Aller à la page à propos",    
-      "call_to_action_4": "Retour à l'accueil",
-      "alt_cta4": "Aller à la page accueil"
+      "title_group_2":"Public",
+      "text_group_2":"Personnes en couple ou seules (célibataire, séparé(e) divorcé(e), veuf ou veuve). Sélection sur entretien préalable.",
+      
+      "title_group_3":"Tarifs",
+      "text_group_3":"<ul><li>120€ avec règlement d'un acompte de 60€ au moment de l'inscription </li><li>Offre spéciale couples: 200€ pour deux (acompte de 100€)</li><li>Jeunes: me consulter</li></ul>",
+      
+      "title_group_4":"Dates*",
+      "text_group_4":" <ul><li>Novembre 2025 : tous les lundis soir de 19h-21h du 3 novembre au 15 décembre (sauf le 1er décembre)</li><li>Janvier 2026 : tous les mercredis soirs de 19h à 21h, à parir du 7 janvier (dates a préciser)</li></ul><br>*sous réserve d'un nombre suffisant de participants",
+            
+      "title_group_quote":"Témoignage de participants",
+      "group_quote_1":"Une renaissance ! Voilà ce qu'a apporté cette formation à mon couple... je dirai même plus : à ma famille !!! La boîte à outils fonctionne il ne tient qu'à chacun de l'utiliser! ",
+      "group_quote_2":"D'une manière extraordinaire, Nathalie crée un espace sécurisant et bienveillant qui invite à la confidence, à la vérité, sans jugements!",
+      "group_quote_3":"En réalité les seules conditions pour accéder à cette formation c'est d'avoir le courage et la volonté d'affronter ses difficultés ! Merci est un mot bien maigre pour lui exprimer ma reconnaissance. Merci Nathalie! ",
+
+      "call_to_action_3": "Contacter Nathalie",
+      "alt_cta3": "Aller à la page contact",    
+      "call_to_action_4": "Qui est Nathalie?",
+      "alt_cta4": "Aller à la page à propos"
   
   },
   "about": {

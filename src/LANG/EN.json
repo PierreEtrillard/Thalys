@@ -121,15 +121,30 @@
   
         "call_to_action_2": "I'm interested...",
   
-        "title_group": "Group work",
-        "text_group_1":"My project is to set up group work. If you are interested, I will get back to you when this format is ready.",
-        "text_group_2":"",
-        
-        "call_to_action_3": "Who is Nathalie?",
-        "alt_cta3": "Go to the About page",    
-        "call_to_action_4": "Back to Home page",
-        "alt_cta4": "Go back to the home page"
-    
+      "title_group": "GROUP WORK",
+      "title_group_1":"My Love Life",
+      "text_group_1_1":"What if you took the time to understand your romantic journey?\rTo explore your needs, your wounds, your impulses?\rAnd above all, to take a new look at your relationship with others?",
+      "text_group_1_2":"Une formation de groupe en visio de 12h, réparties en 6 séance, qui vous permettront d'échanger, si vous le souhaitez et en toute sécurité, sur des thèmes comme: <ul><li> Quelles sont les grandes étapes dans une relation amoureuse? </li><li>Quels sont les fondamentaux d'une relation saine?</li><li>Comment créer et entretenir l'intimité affective? </li><li>Comment faire face au désillusions ?</li><li>Quels sont les obstacles à l'amour? </li><li>Existe-t-il des éléments favorables pour faire naître (ou renaître) l'étincelle?</li></ul>",
+            
+      "title_group_2":"Public",
+      "text_group_2":"People in a couple or alone (single, separated, divorced, widowed). Selection based on a prior interview.",
+      
+      "title_group_3":"Prices",
+      "text_group_3":"<ul><li>€120 with a €60 deposit upon registration</li><li>Special offer for couples: €200 for two (€100 deposit)</li><li>Young people: contact me</li></ul>",
+      
+      "title_group_4":"Dates*",
+      "text_group_4":"All sessions are in french for the moment.",
+            
+      "title_group_quote":"Participants' feedback",
+      "group_quote_1":"A rebirth! This is what this training has brought to my couple... I would even say more: to my family!!! The toolbox works, it is up to each of us to use it!",
+      "group_quote_2":"In an extraordinary way, Nathalie creates a safe and caring space that invites confidence, truth, without judgment!",
+      "group_quote_3":"In reality, the only conditions for accessing this training are to have the courage and the will to face your difficulties! Thank you is a very weak word to express my gratitude. Thank you Nathalie ",
+
+      "call_to_action_3": "Contact Nathalie",
+      "alt_cta3": "Go to the Contact page",    
+      "call_to_action_4": "Who is Nathalie?",
+      "alt_cta4": "Go to the About page"
+   
     },
     "about": {
         "intro_title":"My life story",

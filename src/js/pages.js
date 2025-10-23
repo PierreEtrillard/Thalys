@@ -18,6 +18,7 @@ const head_title = document.getElementById("head_title");
 
 let comment1Selected = 0;
 let comment2Selected = 0;
+let comment3Selected = 0;
 //--------------------------INITIALISATION--------------------------------//
 // Initialisation du DOMContentLoaded avant l'injection du main
 document.addEventListener("DOMContentLoaded", async () => {
@@ -54,8 +55,19 @@ document.addEventListener("DOMContentLoaded", async () => {
         const individual_quote_3 = document.getElementById("individual_quote_3"); 
         const call_to_action_2 = document.getElementById("call_to_action_2");
         const title_group = document.getElementById("title_group");
-        const text_group_1 = document.getElementById("text_group_1");
+        const title_group_1 = document.getElementById("title_group_1");
+        const text_group_1_1 = document.getElementById("text_group_1_1");
+        const text_group_1_2 = document.getElementById("text_group_1_2");
+        const title_group_2 = document.getElementById("title_group_2");
         const text_group_2 = document.getElementById("text_group_2");
+        const title_group_3 = document.getElementById("title_group_3");
+        const text_group_3 = document.getElementById("text_group_3");
+        const title_group_4 = document.getElementById("title_group_4");
+        const text_group_4 = document.getElementById("text_group_4");
+        const title_group_quote = document.getElementById("title_group_quote");
+        const group_quote_1 = document.getElementById("group_quote_1");
+        const group_quote_2 = document.getElementById("group_quote_2");
+        const group_quote_3 = document.getElementById("group_quote_3");
         
         const call_to_action_3 = document.getElementById("call_to_action_3");
         const call_to_action_4 = document.getElementById("call_to_action_4");
@@ -90,13 +102,23 @@ document.addEventListener("DOMContentLoaded", async () => {
           individual_quote_3.textContent = textObject.offer.individual_quote_3;
           call_to_action_2.textContent = textObject.offer.call_to_action_2;        
           title_group.textContent = textObject.offer.title_group;
-          text_group_1.textContent = textObject.offer.text_group_1;
+          title_group_1.textContent = textObject.offer.title_group_1;
+          text_group_1_1.innerHTML = textObject.offer.text_group_1_1;
+          text_group_1_2.innerHTML = textObject.offer.text_group_1_2; 
+          title_group_2.textContent = textObject.offer.title_group_2;
           text_group_2.textContent = textObject.offer.text_group_2;
+          title_group_3.textContent = textObject.offer.title_group_3;      
+          text_group_3.textContent = textObject.offer.text_group_3;
+          title_group_4.textContent = textObject.offer.title_group_4;
+          text_group_4.textContent = textObject.offer.text_group_4;      
+          title_group_quote.textContent = textObject.offer.title_group_quote;
+          group_quote_1.textContent = textObject.offer.group_quote_1;
+          group_quote_2.textContent = textObject.offer.group_quote_2;      
+          group_quote_3.textContent = textObject.offer.group_quote_3;
           call_to_action_3.textContent = textObject.offer.call_to_action_3; 
           call_to_action_3.setAttribute("alt", textObject.offer.alt_cta3);
           call_to_action_4.textContent = textObject.offer.call_to_action_4; 
           call_to_action_4.setAttribute("alt", textObject.offer.alt_cta4);
-
         });
         menulinks[1].classList.toggle("link-selected");
         //injecter les valeurs des div introduction et presentation
@@ -189,6 +211,50 @@ document.addEventListener("DOMContentLoaded", async () => {
             comment2Selected
           );
           comment2Selected = selectedComment;
+        });
+        //carrousel 3
+        const GroupComments = document.getElementById("group_feedback");
+        const previewComment3 =
+          GroupComments.querySelector(".arrow-crsl-left");
+        const nextComment3 =
+          GroupComments.querySelector(".arrow-crsl-right");
+        const selectorBtn3 =
+          GroupComments.querySelector(".comment-selector");
+        let touchStartX3 = 0;
+        let touchEndX3 = 0;
+        // init
+        commentSwitcher(0, GroupComments, comment3Selected);
+        previewComment3.addEventListener("click", () => {
+          commentSwitcher(-1, GroupComments, comment3Selected);
+          comment3Selected = selectedComment;
+        });
+        nextComment3.addEventListener("click", () => {
+          commentSwitcher(+1, GroupComments, comment3Selected);
+          comment3Selected = selectedComment;
+        });
+        selectorBtn3.addEventListener("change", (event) => {
+          event.preventDefault();
+          commentSwitcher(
+            event.target.value - comment3Selected,
+            GroupComments,
+            comment3Selected
+          );
+          comment3Selected = selectedComment;
+        });
+        //glissement tactile sur le carrousel
+        GroupComments.addEventListener("touchstart", (event) => {
+          touchStartX3 = event.changedTouches[0].screenX; // capture le premier point de contact
+        });
+
+        GroupComments.addEventListener("touchend", (event) => {
+          touchEndX3 = event.changedTouches[0].screenX; // capture le dernier point de contact
+          handleSwipe(
+            touchStartX3,
+            touchEndX3,
+            GroupComments,
+            comment3Selected
+          );
+          comment3Selected = selectedComment;
         });
       });
       break;
